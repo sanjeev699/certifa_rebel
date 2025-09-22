@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../public/hero4.jpg"; // Adjust path if needed
+import heroImage from "../Assets/hero4.jpg"; // Adjust path if needed
 
 const HeroSection = () => {
   return (
@@ -11,21 +11,22 @@ const HeroSection = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
       {/* Content */}
       <div className="relative z-10 px-4">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-yellow-400 mb-6">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-brandYellow mb-6">
           No Fake Prestige. Only Real Credentials.
         </h1>
         <p className="text-white text-lg md:text-2xl mb-8">
-          Certifa gives you global certifications and hands-on skills that hiring managers actually respect.
+          Certifa gives you <span className="font-semibold">global certifications</span> and 
+          <span className="font-semibold"> hands-on skills</span> that hiring managers actually respect.
         </p>
         <a
           href="#brochure"
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
+          className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
         >
-          Get Certified. Get Skilled. Get Hired
+          Get Started!
         </a>
       </div>
     </section>
