@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as BrokenEducationIcon } from "../Assets/broken-education-icon.jpg"; // Ensure the path is correct
+import brokenEducationImg from "../Assets/broken-education-icon.jpg"; // normal import for JPG/PNG
 
 const ProblemSection = () => {
   return (
@@ -31,7 +31,11 @@ const ProblemSection = () => {
 
         {/* Illustration / Image */}
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
-          <BrokenEducationIcon className="w-64 h-64 text-gray-700" />
+          <img
+            src={brokenEducationImg}
+            alt="Problem Illustration"
+            className="w-64 md:w-96 h-64 md:h-96"
+          />
         </div>
       </div>
     </section>
