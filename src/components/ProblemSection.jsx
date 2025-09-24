@@ -22,23 +22,25 @@ const ProblemSection = () => {
             <span className="font-bold text-brandYellow">We rebel</span> against fake prestige and empty promises. Certifa focuses on{" "}
             <span className="font-bold text-brandYellow">real skills, global certifications, and career preparation</span>.
           </p>
-
-          {/* Single Button — always below text */}
-          <a
-            href="#comparison"
-            className="mt-6 md:mt-8 bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 w-auto md:w-max text-center"
-          >
-            See How We Are Different
-          </a>
         </div>
 
         {/* Illustration / Image */}
-        <div className="md:w-1/2 flex justify-center order-2 md:order-2">
+        <div className="md:w-1/2 flex justify-center order-2 md:order-1">
           <img
             src={brokenEducationImg}
             alt="Problem Illustration"
             className="w-80 md:w-[600px] h-80 md:h-[600px] transform transition-transform duration-500 hover:scale-105 rounded-lg shadow-lg"
           />
+        </div>
+
+        {/* Single Button — below image on mobile, below text on desktop */}
+        <div className="flex justify-center mt-6 order-3 md:order-2 w-full md:w-auto">
+          <a
+            href="#comparison"
+            className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 w-auto md:w-max text-center"
+          >
+            See How We Are Different
+          </a>
         </div>
 
       </div>
