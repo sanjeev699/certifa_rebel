@@ -16,7 +16,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold text-brandYellow mb-6">
-         Earn Certifications that matter!  And not so-called-certificates from so-called-premium-institutes
+         Earn Certifications that matter!
         </h1>
         <p className="text-white text-lg md:text-2xl mb-8">
           Certifa helps you earn <span className="font-semibold">Global Certifications</span> and 
