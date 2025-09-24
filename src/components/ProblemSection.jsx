@@ -34,7 +34,7 @@ const ProblemSection = () => {
           <img
             src={brokenEducationImg}
             alt="Problem Illustration"
-            className="w-64 md:w-96 h-64 md:h-96"
+             className="w-96 md:w-[600px] h-96 md:h-[600px]"
           />
         </div>
       </div>
