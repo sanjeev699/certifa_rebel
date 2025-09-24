@@ -24,7 +24,7 @@ const ProgramSection = () => {
               <span className="font-bold text-brandBlue">
                 Microsoft Power BI Certification Track
               </span>{" "}
-              – Get certified, build real projects, and boost your analytics career.
+              Get certified, build real projects, and boost your analytics career.
             </p>
             <a
               href="/programs/data-analytics-pro"
