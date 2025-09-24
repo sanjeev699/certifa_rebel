@@ -1,5 +1,5 @@
 import React from "react";
-import brokenEducationImg from "../Assets/No Real Skills (1).jpg";
+import brokenEducationImg from "../Assets/rebel.jpg";
 
 const ProblemSection = () => {
   return (
