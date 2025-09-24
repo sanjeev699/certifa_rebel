@@ -1,5 +1,4 @@
 import React from "react";
-import heroImage from "../hero4.jpg"; // Adjust path if needed
 
 const HeroSection = () => {
   return (
@@ -7,7 +6,7 @@ const HeroSection = () => {
       id="hero"
       className="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
       style={{
-        backgroundImage: `url(${heroImage})`,
+        backgroundImage: "url('/hero4.jpg')", // image from public folder
       }}
     >
       {/* Overlay */}
