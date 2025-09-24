@@ -7,7 +7,7 @@ const HeroSection = () => {
       id="hero"
       className="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
       style={{
-        backgroundImage: `url(${heroImage})`,
+      backgroundImage: `url('/hero4.jpg')`, // notice the slash
       }}
     >
       {/* Overlay */}
