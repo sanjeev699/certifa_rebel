@@ -32,7 +32,7 @@ const ComparisonSection = () => {
               <li className="flex items-start gap-3">
                 <FaTimesCircle className="text-red-500 flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
-                  Sell <span className="font-bold">overpriced European/American certificates</span>
+                  Sell <span className="font-bold">overpriced European/American/Domestic universities useless certificates</span>
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -68,7 +68,7 @@ const ComparisonSection = () => {
               <li className="flex items-start gap-3">
                 <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
-                  Offers globally recognized <span className="font-bold text-brandBlue">Microsoft, AWS, Salesforce</span> certifications
+                  We train you to crack globally recognized certifications from <span className="font-bold text-brandBlue">Microsoft, AWS, Salesforce, PMI etc </span> - proving real skills
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -80,8 +80,8 @@ const ComparisonSection = () => {
               <li className="flex items-start gap-3">
                 <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
-                  Supports students with <span className="font-bold text-brandBlue">exam fees, resume building, and interview prep</span>
-                </span>
+                  No False Promises, rather supports students with <span className="font-bold text-brandBlue">resume building, LinkedIn profile enhancement and interview prep</span>
+                </span> to help increase job opportunities
               </li>
               <li className="flex items-start gap-3">
                 <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
