@@ -1,9 +1,9 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import microsoftLogo from "../Assets/microsoft-logo.png";
-import awsLogo from "../Assets/aws-logo.png";
-import salesforceLogo from "../Assets/salesforce-logo.png";
-import pmiLogo from "../Assets/pmi-logo.png";
+import microsoftLogo from "../Assets/microsoft.png";
+import awsLogo from "../Assets/aws.png";
+import salesforceLogo from "../Assets/salesf1.png";
+import pmiLogo from "../Assets/PMI-Logo.png";
 
 const CertificationsSection = () => {
   return (
