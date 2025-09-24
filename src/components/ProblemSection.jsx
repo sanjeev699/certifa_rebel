@@ -4,9 +4,9 @@ import brokenEducationImg from "../Assets/broken-education-icon.jpg"; // normal 
 const ProblemSection = () => {
   return (
     <section id="problem" className="py-20 bg-[#ffffff]">
-      <div className="container mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center">
+      <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center">
         {/* Text Content */}
-        <div className="md:w-1/2 md:pr-12">
+        <div className="md:w-1/2 md:pr-12 order-1">  {/* Text */}
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brandBlue">
             EdTech Is Broken. Students Are Paying for Hype.
           </h2>
@@ -30,11 +30,12 @@ const ProblemSection = () => {
         </div>
 
         {/* Illustration / Image */}
-        <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+      <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center order-2"> {/* Image */}
+
           <img
             src={brokenEducationImg}
             alt="Problem Illustration"
-             className="w-96 md:w-[600px] h-96 md:h-[600px]"
+             className="w-96 md:w-[600px] h-96 md:h-[600px] transform transition-transform duration-500 hover:scale-105"
           />
         </div>
       </div>
