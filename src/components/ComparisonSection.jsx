@@ -4,7 +4,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 const ComparisonSection = () => {
   return (
     <section className="relative py-20 overflow-hidden">
-      {/* Premium Background */}
+      {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#f9cd05] via-[#fff8c2] to-[#fff5c2] z-0"></div>
 
       {/* Floating/Abstract Shapes */}
@@ -13,7 +13,8 @@ const ComparisonSection = () => {
       <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-blue-200 opacity-8 rounded-full rotate-45 animate-pulse-slow"></div>
       <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500 opacity-6 rounded-full -rotate-12 animate-ping-slow"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center">
+      {/* Main Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-left">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-brandBlue">
           Others vs Certifa
         </h2>
@@ -28,26 +29,26 @@ const ComparisonSection = () => {
               What Others Do
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3">
-                <FaTimesCircle className="text-red-500 flex-shrink-0" />
+              <li className="flex items-start gap-3">
+                <FaTimesCircle className="text-red-500 flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
                   Sell <span className="font-bold">overpriced European/American certificates</span>
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <FaTimesCircle className="text-red-500 flex-shrink-0" />
+              <li className="flex items-start gap-3">
+                <FaTimesCircle className="text-red-500 flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
                   Promise <span className="font-bold">jobs or interviews</span> they can't deliver
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <FaTimesCircle className="text-red-500 flex-shrink-0" />
+              <li className="flex items-start gap-3">
+                <FaTimesCircle className="text-red-500 flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
                   Provide <span className="font-bold">no real skill-building</span>
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <FaTimesCircle className="text-red-500 flex-shrink-0" />
+              <li className="flex items-start gap-3">
+                <FaTimesCircle className="text-red-500 flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
                   Focus on <span className="font-bold">hype, not substance</span>
                 </span>
@@ -64,26 +65,26 @@ const ComparisonSection = () => {
               What Certifa Does
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3">
-                <FaCheckCircle className="text-brandYellow flex-shrink-0" />
+              <li className="flex items-start gap-3">
+                <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
                   Offers globally recognized <span className="font-bold text-brandBlue">Microsoft, AWS, Salesforce</span> certifications
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <FaCheckCircle className="text-brandYellow flex-shrink-0" />
+              <li className="flex items-start gap-3">
+                <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
                   Focuses on <span className="font-bold text-brandBlue">real skill-building</span> and career preparation
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <FaCheckCircle className="text-brandYellow flex-shrink-0" />
+              <li className="flex items-start gap-3">
+                <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
                   Supports students with <span className="font-bold text-brandBlue">exam fees, resume building, and interview prep</span>
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <FaCheckCircle className="text-brandYellow flex-shrink-0" />
+              <li className="flex items-start gap-3">
+                <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
                   Delivers knowledge that <span className="font-bold text-brandBlue">hiring managers value</span>
                 </span>
@@ -92,7 +93,7 @@ const ComparisonSection = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="mt-12">
           <a
             href="#certifications"
             className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
@@ -106,4 +107,3 @@ const ComparisonSection = () => {
 };
 
 export default ComparisonSection;
-
