@@ -53,37 +53,39 @@ const ComparisonSection = () => {
           </div>
 
           {/* Certifa Card */}
-          <div className="flex-1 bg-white p-8 md:p-10 rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.1)] border-t-4 border-brandYellow transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-500 z-20 -mt-4 md:mt-0">
-            <h3 className="text-xl font-semibold mb-6 text-brandYellow text-left">
-              What Certifa Does
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <FaCheckCircle className="text-brandYellow mt-1" />
-                <span className="text-gray-800 leading-relaxed">
-                  Offers globally recognized <span className="font-bold text-brandBlue">Microsoft, AWS, Salesforce</span> certifications
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <FaCheckCircle className="text-brandYellow mt-1" />
-                <span className="text-gray-800 leading-relaxed">
-                  Focuses on <span className="font-bold text-brandBlue">real skill-building</span> and career preparation
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <FaCheckCircle className="text-brandYellow mt-1" />
-                <span className="text-gray-800 leading-relaxed">
-                  Supports students with <span className="font-bold text-brandBlue">exam fees, resume building, and interview prep</span>
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <FaCheckCircle className="text-brandYellow mt-1" />
-                <span className="text-gray-800 leading-relaxed">
-                  Delivers knowledge that <span className="font-bold text-brandBlue">hiring managers value</span>
-                </span>
-              </li>
-            </ul>
-          </div>
+         {/* Certifa Card */}
+<div className="flex-1 bg-white p-8 md:p-10 rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.1)] border-t-4 border-brandYellow transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-500 z-20 -mt-4 md:mt-0">
+  <h3 className="text-xl font-semibold mb-6 text-brandYellow text-left">
+    What Certifa Does
+  </h3>
+  <ul className="space-y-4">
+    <li className="flex items-center gap-3">
+      <FaCheckCircle className="text-brandYellow flex-shrink-0" />
+      <span className="text-gray-800 leading-relaxed">
+        Offers globally recognized <span className="font-bold text-brandBlue">Microsoft, AWS, Salesforce</span> certifications
+      </span>
+    </li>
+    <li className="flex items-center gap-3">
+      <FaCheckCircle className="text-brandYellow flex-shrink-0" />
+      <span className="text-gray-800 leading-relaxed">
+        Focuses on <span className="font-bold text-brandBlue">real skill-building</span> and career preparation
+      </span>
+    </li>
+    <li className="flex items-center gap-3">
+      <FaCheckCircle className="text-brandYellow flex-shrink-0" />
+      <span className="text-gray-800 leading-relaxed">
+        Supports students with <span className="font-bold text-brandBlue">exam fees, resume building, and interview prep</span>
+      </span>
+    </li>
+    <li className="flex items-center gap-3">
+      <FaCheckCircle className="text-brandYellow flex-shrink-0" />
+      <span className="text-gray-800 leading-relaxed">
+        Delivers knowledge that <span className="font-bold text-brandBlue">hiring managers value</span>
+      </span>
+    </li>
+  </ul>
+</div>
+
         </div>
 
         <div className="text-center mt-12">
