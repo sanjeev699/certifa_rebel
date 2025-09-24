@@ -1,18 +1,24 @@
 import React from "react";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa"; // install react-icons if not installed
+import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 const ComparisonSection = () => {
   return (
-    <section id="comparison" className="py-20 bg-[#f9cd05]">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-brandBlue">
+    <section className="relative py-20 bg-gradient-to-b from-[#f9cd05] to-[#fff5c2] overflow-hidden">
+      {/* Decorative shapes */}
+      <div className="absolute top-0 left-0 w-48 h-48 bg-blue-500 opacity-10 rounded-full -translate-x-20 -translate-y-20"></div>
+      <div className="absolute bottom-0 right-0 w-64 h-64 bg-blue-500 opacity-10 rounded-full translate-x-20 translate-y-20"></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-brandBlue">
           Others vs Certifa
         </h2>
 
         <div className="flex flex-col md:flex-row gap-8">
           {/* Others Card */}
-          <div className="flex-1 bg-white p-8 rounded-xl shadow-md border-t-4 border-red-500">
-            <h3 className="text-xl font-semibold mb-6 text-red-600 text-center">What Others Do</h3>
+          <div className="flex-1 bg-white p-8 rounded-xl shadow-xl border-t-4 border-red-500 hover:scale-105 transition-transform duration-300">
+            <h3 className="text-xl font-semibold mb-6 text-red-600 text-center">
+              What Others Do
+            </h3>
             <ul className="text-gray-800 space-y-4">
               <li className="flex items-center">
                 <FaTimesCircle className="text-red-500 mr-3" />
@@ -34,8 +40,10 @@ const ComparisonSection = () => {
           </div>
 
           {/* Certifa Card */}
-          <div className="flex-1 bg-white p-8 rounded-xl shadow-md border-t-4 border-brandYellow">
-            <h3 className="text-xl font-semibold mb-6 text-brandYellow text-center">What Certifa Does</h3>
+          <div className="flex-1 bg-white p-8 rounded-xl shadow-xl border-t-4 border-brandYellow hover:scale-105 transition-transform duration-300">
+            <h3 className="text-xl font-semibold mb-6 text-brandYellow text-center">
+              What Certifa Does
+            </h3>
             <ul className="text-gray-800 space-y-4">
               <li className="flex items-center">
                 <FaCheckCircle className="text-brandYellow mr-3" />
