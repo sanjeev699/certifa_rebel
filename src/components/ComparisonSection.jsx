@@ -3,7 +3,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa"; // install react-
 
 const ComparisonSection = () => {
   return (
-    <section id="comparison" className="py-20 bg-gray-50">
+    <section id="comparison" className="py-20 bg-[#f9cd05]">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-brandBlue">
           Others vs Certifa
