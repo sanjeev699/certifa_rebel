@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./components/HeroSection";
 import ProblemSection from "./components/ProblemSection";
 import ComparisonSection from "./components/ComparisonSection";
+import CertificationsSection from "./components/CertificationsSection";
 // You will add other sections later, e.g. ComparisonSection, CertificationsSection, etc.
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
 
       {/* Add more sections below as we build them */}
       <ComparisonSection /> 
-      {/* <CertificationsSection /> */}
+      <CertificationsSection />
       {/* <ProgramSection /> */}
       {/* <AdvantagesSection /> */}
       {/* <ManifestoSection /> */}
