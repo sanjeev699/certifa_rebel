@@ -2,7 +2,13 @@ import React from "react";
 
 const ProgramSection = () => {
   return (
-    <section id="programs" className="py-20 bg-white">
+    <section
+      id="programs"
+      className="py-20"
+      style={{
+        background: "linear-gradient(135deg, #f9cd05 0%, #ffffff 70%, #0531f9 100%)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-brandBlue">
           Our Programs
