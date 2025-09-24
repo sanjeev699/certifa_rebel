@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactComponent as BrokenEducationIcon } from "../Assets/broken-education-icon.jpg"; // Ensure the path is correct
 
 const ProblemSection = () => {
   return (
@@ -10,13 +11,15 @@ const ProblemSection = () => {
             EdTech Is Broken. Students Are Paying for Hype.
           </h2>
           <p className="text-gray-800 mb-4">
-            Thousands of students spend lakhs on foreign university certificates that <span className="font-semibold text-brandYellow">add no real value</span> to their career.
+            Thousands of students spend lakhs on foreign university certificates that{" "}
+            <span className="font-semibold text-brandYellow">add no real value</span> to their career.
           </p>
           <p className="text-gray-800 mb-4">
             Courses are overpriced, promise jobs they can’t deliver, and leave learners frustrated.
           </p>
           <p className="text-gray-800 mb-6">
-            <span className="font-semibold text-brandYellow">We rebel</span> against fake prestige and empty promises. Certifa focuses on <span className="font-semibold text-brandYellow">real skills, global certifications, and career preparation</span>.
+            <span className="font-semibold text-brandYellow">We rebel</span> against fake prestige and empty promises. Certifa focuses on{" "}
+            <span className="font-semibold text-brandYellow">real skills, global certifications, and career preparation</span>.
           </p>
           <a
             href="#comparison"
@@ -28,11 +31,7 @@ const ProblemSection = () => {
 
         {/* Illustration / Image */}
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
-          <img
-            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-broken-education-online-learning-flaticons-lineal-color-flat-icons.png"
-            alt="Problem Illustration"
-            className="w-64 h-64"
-          />
+          <BrokenEducationIcon className="w-64 h-64 text-gray-700" />
         </div>
       </div>
     </section>
