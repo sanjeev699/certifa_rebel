@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../Assets/hero4.jpg"; // Adjust path if needed
+import heroImage from "../hero4.jpg"; // Adjust path if needed
 
 const HeroSection = () => {
   return (
