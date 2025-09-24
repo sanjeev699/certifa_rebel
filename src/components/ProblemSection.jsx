@@ -3,7 +3,7 @@ import brokenEducationImg from "../Assets/broken-education-icon.jpg"; // normal 
 
 const ProblemSection = () => {
   return (
-    <section id="problem" className="py-20 bg-gray-50">
+    <section id="problem" className="py-20 bg-[#ffffff]">
       <div className="container mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center">
         {/* Text Content */}
         <div className="md:w-1/2 md:pr-12">
