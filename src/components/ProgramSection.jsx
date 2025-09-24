@@ -22,7 +22,7 @@ const ProgramSection = () => {
             </h3>
             <p className="text-gray-700 mb-6">
               <span className="font-bold text-brandYellow">
-                Microsoft Power BI Track
+                Microsoft Power BI Certification Track
               </span>{" "}
               – Get certified, build real projects, and boost your analytics career.
             </p>
