@@ -12,15 +12,15 @@ const ProblemSection = () => {
             EdTech Is Broken. Students Are Paying for Hype.
           </h2>
           <p className="text-gray-800">
-            Thousands of students spend lakhs on foreign university certificates that{" "}
-            <span className="font-semibold text-brandYellow">add no real value</span> to their career.
+            Thousands of students spend lakhs on foreign/domestic university certificates that{" "}
+            <span className="font-extrabold text-brandYellow">add no real value</span> to their career.
           </p>
           <p className="text-gray-800">
             Courses are overpriced, promise jobs they can’t deliver, and leave learners frustrated.
           </p>
           <p className="text-gray-800">
             <span className="font-semibold text-brandYellow">We rebel</span> against fake prestige and empty promises. Certifa focuses on{" "}
-            <span className="font-semibold text-brandYellow">real skills, global certifications, and career preparation</span>.
+            <span className="font-extrabold text-brandYellow">real skills, global certifications, and career preparation</span>.
           </p>
 
           {/* Desktop Button */}
