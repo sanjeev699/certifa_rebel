@@ -17,11 +17,11 @@ const ProgramSection = () => {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Live Program Card */}
           <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-2xl transition-all duration-300">
-            <h3 className="text-xl font-semibold mb-4 text-brandBlue">
+            <h3 className="text-xl font-semibold mb-4 text-brandYellow">
               Data Analytics Pro Package
             </h3>
             <p className="text-gray-700 mb-6">
-              <span className="font-bold text-brandYellow">
+              <span className="font-bold text-brandBlue">
                 Microsoft Power BI Certification Track
               </span>{" "}
               – Get certified, build real projects, and boost your analytics career.
