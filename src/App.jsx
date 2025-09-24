@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "./components/HeroSection";
 import ProblemSection from "./components/ProblemSection";
+import ComparisonSection from "./components/ComparisonSection";
 // You will add other sections later, e.g. ComparisonSection, CertificationsSection, etc.
 
 function App() {
