@@ -14,7 +14,7 @@ const ComparisonSection = () => {
       <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500 opacity-6 rounded-full -rotate-12 animate-ping-slow"></div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-left">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-brandBlue">
           Others vs Certifa
         </h2>
