@@ -80,8 +80,8 @@ const ComparisonSection = () => {
               <li className="flex items-start gap-3">
                 <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
-                  No False Promises, rather supports students with <span className="font-bold text-brandBlue">resume building, LinkedIn profile enhancement and interview prep</span>
-                </span> to help increase job opportunities
+                  No False Promises, rather supports students with <span className="font-bold text-brandBlue">Resume Building, LinkedIn prof enhancement and Interview prep</span>
+                </span> 
               </li>
               <li className="flex items-start gap-3">
                 <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
