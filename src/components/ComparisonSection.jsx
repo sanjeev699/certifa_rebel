@@ -68,7 +68,7 @@ const ComparisonSection = () => {
               <li className="flex items-start gap-3">
                 <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
-                  We train you to crack globally recognized certifications from <span className="font-bold text-brandBlue">Microsoft, AWS, Salesforce, PMI etc </span> - proving real skills
+                  We train you to crack globally recognized certifications from <span className="font-bold text-brandBlue">Microsoft, AWS, Salesforce, PMI etc </span> - which proves real skills
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -80,13 +80,13 @@ const ComparisonSection = () => {
               <li className="flex items-start gap-3">
                 <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
-                  No False Promises, rather supports students with <span className="font-bold text-brandBlue">Resume Building, LinkedIn prof enhancement and Interview prep</span>
+                  No False Promises, rather supports students with <span className="font-bold text-brandBlue">Resume Building and Interview prep</span>
                 </span> 
               </li>
               <li className="flex items-start gap-3">
                 <FaCheckCircle className="text-brandYellow flex-shrink-0 mt-1" />
                 <span className="text-gray-800 leading-relaxed">
-                  Delivers knowledge that <span className="font-bold text-brandBlue">hiring managers value</span>
+                  Delivers knowledge that <span className="font-bold text-brandBlue">Hiring managers value</span>
                 </span>
               </li>
             </ul>
