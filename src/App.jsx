@@ -13,7 +13,7 @@ function App() {
       <ProblemSection />
 
       {/* Add more sections below as we build them */}
-      {/* <ComparisonSection /> */}
+      <ComparisonSection /> 
       {/* <CertificationsSection /> */}
       {/* <ProgramSection /> */}
       {/* <AdvantagesSection /> */}
