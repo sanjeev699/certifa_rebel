@@ -9,7 +9,7 @@ const ProblemSection = () => {
         {/* Text Content */}
         <div className="md:w-1/2 flex flex-col space-y-4 order-1">
           <h2 className="text-3xl md:text-4xl font-bold text-brandBlue leading-snug">
-            EdTech Is Broken. Students Are Paying for Hype.
+            Education System Is Broken. Students Are Paying for Hype.
           </h2>
           <p className="text-gray-800">
             Thousands of students spend lakhs on foreign/domestic university certificates that{" "}
