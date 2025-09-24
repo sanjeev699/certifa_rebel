@@ -1,4 +1,5 @@
 import React from "react";
+import heroImage from "../hero4.jpg"; // Adjust path if needed
 
 const HeroSection = () => {
   return (
@@ -6,7 +7,7 @@ const HeroSection = () => {
       id="hero"
       className="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('/hero4.jpg')", // image from public folder
+        backgroundImage: `url(${heroImage})`,
       }}
     >
       {/* Overlay */}
@@ -15,11 +16,11 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold text-brandYellow mb-6">
-          No Fake Prestige. Only Real Credentials.
+         Earn Certifications that matter!  And not so-called-certificates from so-called-premium-institutes
         </h1>
         <p className="text-white text-lg md:text-2xl mb-8">
-          Certifa gives you <span className="font-semibold">global certifications</span> and 
-          <span className="font-semibold"> hands-on skills</span> that hiring managers actually respect.
+          Certifa helps you earn <span className="font-semibold">Global Certifications</span> and 
+          <span className="font-semibold"> hands-on skills</span> that hiring managers actually seek and respect.
         </p>
         <a
           href="#brochure"
@@ -33,3 +34,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
