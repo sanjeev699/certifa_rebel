@@ -4,7 +4,7 @@ import ProblemSection from "./components/ProblemSection";
 import ComparisonSection from "./components/ComparisonSection";
 import CertificationsSection from "./components/CertificationsSection";
 import ProgramSection from "./components/ProgramSection";
-import ProgramDetailsSection.jsx from "./components/ProgramDetailsSection";
+import ProgramDetailsSection from "./components/ProgramDetailsSection";
 
 
 // You will add other sections later, e.g. ComparisonSection, CertificationsSection, etc.
