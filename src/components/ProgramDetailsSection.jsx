@@ -63,7 +63,7 @@ const ProgramDetailsSection = () => {
       {/* Impact Section */}
       <div className="max-w-6xl mx-auto px-6 md:px-12 mb-20">
       <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-12">
-          Some facts on Microsoft Power BI Certification
+          Why Microsoft Power BI Certification is a must.. Check facts below
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <img src={impact1} alt="Impact 1" className="rounded-lg shadow-md" />
