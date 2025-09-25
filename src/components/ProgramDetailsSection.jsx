@@ -3,10 +3,10 @@ import React from "react";
 
 // Import your assets
 import heroImg from "../Assets/program-hero3.jpg";
-import excelLogo from "../Assets/excel.jpeg";
-import powerBILogo from "../Assets/powerbi.jpeg";
-import sqlLogo from "../Assets/sql.jpeg";
-import pythonLogo from "../Assets/python.jpeg";
+import excelLogo from "../Assets/excel.png";
+import powerBILogo from "../Assets/powerbi.png";
+import sqlLogo from "../Assets/database.png";
+import pythonLogo from "../Assets/python.png";
 
 import impact1 from "../Assets/impact1.jpg";
 import impact2 from "../Assets/impact2.jpg";
