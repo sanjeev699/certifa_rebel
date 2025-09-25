@@ -55,7 +55,7 @@ const ProgramDetailsSection = () => {
             download
             className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
           >
-            Request for Brochure for complete curriculum
+            Request a Brochure for the Complete Curriculum
           </a>
         </div>
       </div>
@@ -63,7 +63,7 @@ const ProgramDetailsSection = () => {
       {/* Impact Section */}
       <div className="max-w-6xl mx-auto px-6 md:px-12 mb-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-brandBlue mb-12">
-          Some facts on Microsoft Power BI Certification?
+          Some facts on Microsoft Power BI Certification
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <img src={impact1} alt="Impact 1" className="rounded-lg shadow-md" />
@@ -75,7 +75,7 @@ const ProgramDetailsSection = () => {
       {/* Certificate Section */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 mb-20 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-brandBlue mb-8">
-          Here’s the Sample Microsoft Power BI Certificate
+          Here’s a Sample Microsoft Power BI Certificate
         </h2>
         <img
           src={certificateImg}
