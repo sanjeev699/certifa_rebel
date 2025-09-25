@@ -1,8 +1,9 @@
 // src/components/ProgramDetailsSection.jsx
+
 import React from "react";
 
-// Import assets
-import heroImg from "../Assets/program-hero1.jpg";
+// Import your assets
+import heroImg from "../Assets/program-hero2.jpg";
 import excelLogo from "../Assets/excel.jpeg";
 import powerBILogo from "../Assets/powerbi.jpeg";
 import sqlLogo from "../Assets/sql.jpeg";
@@ -15,17 +16,10 @@ import impact3 from "../Assets/impact3.jpg";
 import certificateImg from "../Assets/sample_cert.png";
 
 const ProgramDetailsSection = () => {
-  const topics = [
-    { name: "Excel for Analytics", logo: excelLogo },
-    { name: "Power BI Certification", logo: powerBILogo },
-    { name: "SQL for Data Management", logo: sqlLogo },
-    { name: "Python for Data Analysis", logo: pythonLogo },
-  ];
-
   return (
-    <section id="program-details" className="bg-brandYellow py-20">
+    <section id="program-details" className="bg-white py-20">
       {/* Hero Image */}
-      <div className="w-full mb-12">
+      <div className="w-full mb-16">
         <img
           src={heroImg}
           alt="Data Analytics Pro Program"
@@ -34,35 +28,50 @@ const ProgramDetailsSection = () => {
       </div>
 
       {/* Topics Covered */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-brandBlue mb-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-brandBlue mb-12">
           Topics Covered in the Program
         </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+          {/* Excel */}
+          <div className="bg-brandBlue rounded-lg p-6 flex flex-col items-center shadow hover:shadow-lg transition">
+            <img src={excelLogo} alt="Excel" className="h-16 mb-4" />
+            <h3 className="text-white font-semibold text-lg text-center">
+              Excel for Analytics
+            </h3>
+          </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-12 justify-items-center">
-          {topics.map((topic, idx) => (
-            <div
-              key={idx}
-              className="w-32 h-32 bg-brandBlue text-white flex flex-col items-center justify-center transform rotate-45 hover:scale-105 transition duration-300 shadow-lg"
-            >
-              <img
-                src={topic.logo}
-                alt={topic.name}
-                className="w-12 h-12 mb-2 transform -rotate-45"
-              />
-              <span className="font-semibold text-sm transform -rotate-45">
-                {topic.name}
-              </span>
-            </div>
-          ))}
+          {/* Power BI */}
+          <div className="bg-brandBlue rounded-lg p-6 flex flex-col items-center shadow hover:shadow-lg transition">
+            <img src={powerBILogo} alt="Power BI" className="h-16 mb-4" />
+            <h3 className="text-white font-semibold text-lg text-center">
+              Power BI Certification
+            </h3>
+          </div>
+
+          {/* SQL */}
+          <div className="bg-brandBlue rounded-lg p-6 flex flex-col items-center shadow hover:shadow-lg transition">
+            <img src={sqlLogo} alt="SQL" className="h-16 mb-4" />
+            <h3 className="text-white font-semibold text-lg text-center">
+              SQL for Data Management
+            </h3>
+          </div>
+
+          {/* Python */}
+          <div className="bg-brandBlue rounded-lg p-6 flex flex-col items-center shadow hover:shadow-lg transition">
+            <img src={pythonLogo} alt="Python" className="h-16 mb-4" />
+            <h3 className="text-white font-semibold text-lg text-center">
+              Python for Data Analysis
+            </h3>
+          </div>
         </div>
 
         {/* Download Brochure Button */}
-        <div className="mt-12">
+        <div className="text-center mt-10">
           <a
             href="/brochures/DataAnalyticsPro.pdf"
             download
-            className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
+            className="inline-block bg-brandYellow hover:bg-yellow-400 text-white font-bold py-3 px-8 rounded-md transition duration-300"
           >
             Download Brochure
           </a>
@@ -70,7 +79,7 @@ const ProgramDetailsSection = () => {
       </div>
 
       {/* Impact Section */}
-      <div className="max-w-6xl mx-auto px-6 md:px-12 mb-20">
+      <div className="max-w-6xl mx-auto px-6 md:px-12 mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-brandBlue mb-12">
           Why Get Power BI Certified?
         </h2>
