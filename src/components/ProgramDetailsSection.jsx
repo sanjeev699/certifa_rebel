@@ -3,7 +3,7 @@
 import React from "react";
 
 // Import your assets
-import heroImg from "../Assets/program-hero.jpg";
+import heroImg from "../Assets/program-hero1.jpg";
 import excelLogo from "../Assets/excel.jpeg";
 import powerBILogo from "../Assets/powerbi.jpeg";
 import sqlLogo from "../Assets/sql.jpeg";
