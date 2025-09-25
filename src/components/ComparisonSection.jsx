@@ -19,7 +19,7 @@ const ComparisonSection = () => {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-brandBlue">
-            Did you ask how Certifa is different than others?
+            How's Certifa different than others?
           </h2>
         </div>
 
