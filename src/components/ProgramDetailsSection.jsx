@@ -17,13 +17,13 @@ import certificateImg from "../Assets/sample_cert.png"; // <- Add your certifica
 
 const ProgramDetailsSection = () => {
   return (
-    <section id="program-details" className="bg-white py-20">
+    <section id="program-details" className="bg-[##f9cd05] py-20">
       {/* Hero Image */}
       <div className="w-full mb-12">
         <img
           src={heroImg}
           alt="Data Analytics Pro Program"
-          className="w-full h-auto rounded-lg shadow-md"
+          className="w-full h-auto rounded-lg -md"
         />
       </div>
 
