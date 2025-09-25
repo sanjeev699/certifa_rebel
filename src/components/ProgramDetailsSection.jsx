@@ -12,7 +12,7 @@ import impact1 from "../Assets/impact1.jpg";
 import impact2 from "../Assets/impact2.jpg";
 import impact3 from "../Assets/impact3.jpg";
 
-import certificateImg from "../Assets/sample_cert.png";
+import certificateImg from "../Assets/sample_cert1.png";
 
 const ProgramDetailsSection = () => {
   return (
