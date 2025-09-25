@@ -74,7 +74,7 @@ const ProgramDetailsSection = () => {
 
       {/* Certificate Section */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 mb-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-brandBlue mb-8">
+        <h2 className="text-xl md:text-2xl font-bold text-brandBlue mb-8">
           Here’s a Sample Microsoft Power BI Certificate
         </h2>
         <img
