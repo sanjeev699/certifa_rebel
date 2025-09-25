@@ -29,7 +29,7 @@ const ProgramDetailsSection = () => {
       {/* Topics Covered */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-brandBlue mb-12">
-          Topics Covered in the Program
+          Skills Covered in the Program
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
           {[{logo: excelLogo, title: "Excel for Analytics"},
@@ -55,7 +55,7 @@ const ProgramDetailsSection = () => {
             download
             className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
           >
-            Download Brochure
+            Request for Brochure for complete curriculum
           </a>
         </div>
       </div>
@@ -75,7 +75,7 @@ const ProgramDetailsSection = () => {
       {/* Certificate Section */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 mb-20 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-brandBlue mb-8">
-          Here’s the Certificate You Earn
+          Here’s the Sample Microsoft Power BI Certificate
         </h2>
         <img
           src={certificateImg}
