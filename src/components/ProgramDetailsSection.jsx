@@ -4,14 +4,14 @@ import React from "react";
 
 // Import your assets
 import heroImg from "../Assets/program-hero.jpg";
-import excelLogo from "../Assets/excel.png";
-import powerBILogo from "../Assets/powerbi.png";
-import sqlLogo from "../Assets/sql.png";
-import pythonLogo from "../Assets/python.png";
+import excelLogo from "../Assets/excel.jpeg";
+import powerBILogo from "../Assets/powerbi.jpeg";
+import sqlLogo from "../Assets/sql.jpeg";
+import pythonLogo from "../Assets/python.jpeg";
 
-import impact1 from "../Assets/impact1.png";
-import impact2 from "../Assets/impact2.png";
-import impact3 from "../Assets/impact3.png";
+import impact1 from "../Assets/impact1.jpg";
+import impact2 from "../Assets/impact2.jpg";
+import impact3 from "../Assets/impact3.jpg";
 
 import certificateImg from "../Assets/sample_cert.png"; // <- Add your certificate image here
 
