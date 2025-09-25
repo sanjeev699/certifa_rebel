@@ -28,7 +28,7 @@ const ProgramDetailsSection = () => {
 
       {/* Topics Covered */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
-       <h2 className="text-2xl md:text-3xl font-bold text-center text-brandBlue mb-12">
+       <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-12">
           Skills Covered in the Program
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
@@ -62,7 +62,7 @@ const ProgramDetailsSection = () => {
 
       {/* Impact Section */}
       <div className="max-w-6xl mx-auto px-6 md:px-12 mb-20">
-      <h2 className="text-2xl md:text-3xl font-bold text-center text-brandBlue mb-12">
+      <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-12">
           Some facts on Microsoft Power BI Certification
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
