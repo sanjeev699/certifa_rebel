@@ -12,7 +12,6 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
 
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbyxaRO2sM7pg71fDBGZJSvbpIro3lpumcDfq_WF3_MkDmfqvTO8soU7saTyb6ik-x7J/exec";
-    
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -27,8 +26,10 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
     setLoading(true);
 
     try {
-      const response = await fetch(scriptURL, {
+      // Use no-cors mode so the request goes through
+      await fetch(scriptURL, {
         method: "POST",
+        mode: "no-cors",
         body: JSON.stringify({
           ...form,
           guide: guideName
@@ -38,18 +39,16 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
         }
       });
 
-      const result = await response.json();
-      if (result.result === "success") {
-        setSubmitted(true);
+      // Set submitted true immediately since we cannot read response with no-cors
+      setSubmitted(true);
 
-        // Trigger download
-        const link = document.createElement("a");
-        link.href = guideFile;
-        link.download = guideName + ".pdf";
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
-      }
+      // Trigger download
+      const link = document.createElement("a");
+      link.href = guideFile;
+      link.download = guideName + ".pdf";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
     } catch (err) {
       console.error("Error submitting form", err);
       alert("Something went wrong. Please try again!");
