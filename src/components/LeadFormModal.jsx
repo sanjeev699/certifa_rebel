@@ -11,7 +11,7 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
   const [submitted, setSubmitted] = useState(false);
 
   const scriptURL =
-    "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"; // replace with your script ID
+    "https://script.google.com/macros/s/AKfycbwoAoJrNkdTUU8qpCCX_r_Pw9tVQnNTVvnYhNe8S3WzZBR4eyKaYqTSeLXO3aa6S3M0/exec"; // replace with your script ID
 
   // Reset form whenever modal opens
   useEffect(() => {
