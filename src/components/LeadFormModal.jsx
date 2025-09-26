@@ -1,33 +1,24 @@
 import React, { useState, useEffect } from "react";
 
 const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
-  const [form, setForm] = useState({
-    name: "",
-    contact: "",
-    whatsapp: false,
-    email: ""
-  });
+  const [form, setForm] = useState({ name: "", contact: "", whatsapp: false, email: "" });
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const scriptURL =
-    "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbx7N9WH2aRlsfX-ypFgpzLG_KqcXJULZriEICcDo_mJv8JuYwsAv-Rsf_vowTb2g-p0/exec";
 
-  // Reset modal whenever it opens
+  // Reset form when modal opens
   useEffect(() => {
     if (isOpen) {
+      setForm({ name: "", contact: "", whatsapp: false, email: "" });
       setSubmitted(false);
       setLoading(false);
-      setForm({ name: "", contact: "", whatsapp: false, email: "" });
     }
   }, [isOpen]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setForm((prev) => ({
-      ...prev,
-      [name]: type === "checkbox" ? checked : value
-    }));
+    setForm(prev => ({ ...prev, [name]: type === "checkbox" ? checked : value }));
   };
 
   const handleSubmit = async (e) => {
@@ -35,16 +26,10 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
     setLoading(true);
 
     try {
-      const formData = new FormData();
-      formData.append("name", form.name);
-      formData.append("contact", form.contact);
-      formData.append("whatsapp", form.whatsapp);
-      formData.append("email", form.email);
-      formData.append("guide", guideName);
-
       const response = await fetch(scriptURL, {
         method: "POST",
-        body: formData
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, guide: guideName })
       });
 
       const result = await response.json();
@@ -52,7 +37,7 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
       if (result.result === "success") {
         setSubmitted(true);
 
-        // Trigger download after slight delay
+        // Trigger download after UI update
         setTimeout(() => {
           const link = document.createElement("a");
           link.href = guideFile;
@@ -60,12 +45,12 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
           document.body.appendChild(link);
           link.click();
           link.remove();
-        }, 200);
+        }, 100);
       } else {
         throw new Error(result.message || "Unknown error");
       }
     } catch (err) {
-      console.error("Error submitting form", err);
+      console.error("Error submitting form:", err);
       alert("Something went wrong. Please try again!");
     } finally {
       setLoading(false);
@@ -77,12 +62,7 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-md relative">
-        <button
-          className="absolute top-2 right-2 text-gray-600 hover:text-black"
-          onClick={onClose}
-        >
-          ✕
-        </button>
+        <button className="absolute top-2 right-2 text-gray-600 hover:text-black" onClick={onClose}>✕</button>
 
         {!submitted ? (
           <>
@@ -90,47 +70,14 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
               Enter your details to download: {guideName}
             </h2>
             <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={form.name}
-                onChange={handleChange}
-                required
-                className="w-full border rounded-md p-2"
-              />
-              <input
-                type="text"
-                name="contact"
-                placeholder="Contact Number"
-                value={form.contact}
-                onChange={handleChange}
-                required
-                className="w-full border rounded-md p-2"
-              />
+              <input type="text" name="name" placeholder="Your Name" value={form.name} onChange={handleChange} required className="w-full border rounded-md p-2" />
+              <input type="text" name="contact" placeholder="Contact Number" value={form.contact} onChange={handleChange} required className="w-full border rounded-md p-2" />
               <label className="flex items-center space-x-2">
-                <input
-                  type="checkbox"
-                  name="whatsapp"
-                  checked={form.whatsapp}
-                  onChange={handleChange}
-                />
+                <input type="checkbox" name="whatsapp" checked={form.whatsapp} onChange={handleChange} />
                 <span>Available on WhatsApp?</span>
               </label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email ID"
-                value={form.email}
-                onChange={handleChange}
-                required
-                className="w-full border rounded-md p-2"
-              />
-              <button
-                type="submit"
-                className="w-full bg-brandBlue text-white py-2 rounded-md hover:bg-blue-700 transition"
-                disabled={loading}
-              >
+              <input type="email" name="email" placeholder="Email ID" value={form.email} onChange={handleChange} required className="w-full border rounded-md p-2" />
+              <button type="submit" disabled={loading} className="w-full bg-brandBlue text-white py-2 rounded-md hover:bg-blue-700 transition">
                 {loading ? "Submitting..." : "Submit & Download"}
               </button>
             </form>
