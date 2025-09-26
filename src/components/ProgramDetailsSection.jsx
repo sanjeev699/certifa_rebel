@@ -25,10 +25,15 @@ const ProgramDetailsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentDownload, setCurrentDownload] = useState({ guideName: "", guideFile: "" });
 
-  const openModal = (guideName, guideFile) => {
+ const openModal = (guideName, guideFile) => {
+  // Close modal first to force re-render
+  setIsModalOpen(false);
+
+  // Slight delay to ensure state updates
+  setTimeout(() => {
     setCurrentDownload({ guideName, guideFile });
-    setIsModalOpen(true);
-  };
+    setIsModal
+
 
   return (
     <section id="program-details" className="bg-white py-20">
