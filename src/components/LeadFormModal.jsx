@@ -12,6 +12,7 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
 
   const scriptURL =
     "https://script.google.com/macros/s/AKfycby7mMyAemnVOmfWy_qSZICqEROnzpLCka2ohXXubfq_Yt9XP-8H09PGdB0vdADkymG8/exec";
+    
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
