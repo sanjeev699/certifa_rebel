@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
   const [form, setForm] = useState({
@@ -13,6 +13,19 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbyxaRO2sM7pg71fDBGZJSvbpIro3lpumcDfq_WF3_MkDmfqvTO8soU7saTyb6ik-x7J/exec";
 
+  // Reset submitted state whenever modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setSubmitted(false);
+      setForm({
+        name: "",
+        contact: "",
+        whatsapp: false,
+        email: ""
+      });
+    }
+  }, [isOpen]);
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setForm((prev) => ({
@@ -26,10 +39,8 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
     setLoading(true);
 
     try {
-      // Use no-cors mode so the request goes through
-      await fetch(scriptURL, {
+      const response = await fetch(scriptURL, {
         method: "POST",
-        mode: "no-cors",
         body: JSON.stringify({
           ...form,
           guide: guideName
@@ -39,16 +50,18 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
         }
       });
 
-      // Set submitted true immediately since we cannot read response with no-cors
-      setSubmitted(true);
+      const result = await response.json();
+      if (result.result === "success") {
+        setSubmitted(true);
 
-      // Trigger download
-      const link = document.createElement("a");
-      link.href = guideFile;
-      link.download = guideName + ".pdf";
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
+        // Trigger download
+        const link = document.createElement("a");
+        link.href = guideFile;
+        link.download = guideName + ".pdf";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+      }
     } catch (err) {
       console.error("Error submitting form", err);
       alert("Something went wrong. Please try again!");
