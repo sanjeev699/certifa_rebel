@@ -10,7 +10,8 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbzv4qzBnx8DWs6nEgvDEJ6K86hujTSsYjGFDcKPh2oT6IbYTRkUkmtLs833ovqeEAi_/exec"; // <-- paste your Apps Script URL here
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycby7mMyAemnVOmfWy_qSZICqEROnzpLCka2ohXXubfq_Yt9XP-8H09PGdB0vdADkymG8/exec";
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -39,7 +40,8 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
       const result = await response.json();
       if (result.result === "success") {
         setSubmitted(true);
-        // trigger download
+
+        // Trigger download
         const link = document.createElement("a");
         link.href = guideFile;
         link.download = guideName + ".pdf";
