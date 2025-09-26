@@ -13,10 +13,11 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbyxaRO2sM7pg71fDBGZJSvbpIro3lpumcDfq_WF3_MkDmfqvTO8soU7saTyb6ik-x7J/exec";
 
-  // Reset submitted state whenever modal opens
+  // Reset modal state when opened
   useEffect(() => {
     if (isOpen) {
       setSubmitted(false);
+      setLoading(false);
       setForm({
         name: "",
         contact: "",
@@ -41,26 +42,25 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
     try {
       const response = await fetch(scriptURL, {
         method: "POST",
-        body: JSON.stringify({
-          ...form,
-          guide: guideName
-        }),
-        headers: {
-          "Content-Type": "application/json"
-        }
+        body: JSON.stringify({ ...form, guide: guideName }),
+        headers: { "Content-Type": "application/json" }
       });
 
       const result = await response.json();
       if (result.result === "success") {
         setSubmitted(true);
 
-        // Trigger download
-        const link = document.createElement("a");
-        link.href = guideFile;
-        link.download = guideName + ".pdf";
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
+        // Trigger download after small delay to ensure UI updates
+        setTimeout(() => {
+          const link = document.createElement("a");
+          link.href = guideFile;
+          link.download = guideName + ".pdf";
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+        }, 200);
+      } else {
+        throw new Error(result.message || "Unknown error");
       }
     } catch (err) {
       console.error("Error submitting form", err);
