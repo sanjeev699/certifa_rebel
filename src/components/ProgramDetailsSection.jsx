@@ -15,10 +15,10 @@ import pythonLogo from "../Assets/python.png";
 
 import certificateImg from "../Assets/sample_cert1.png";
 
-import brochurePdf from "../brochures/DataAnalyticsPro.pdf";
-import guide1Pdf from "../brochures/PowerBIGuide.pdf";
-import guide2Pdf from "../brochures/ExcelGuide.pdf";
-import guide3Pdf from "../brochures/PythonGuide.pdf";
+import brochurePdf from "../brochures/Certifa_DataAnalyticsPro.pdf";
+import excel_guide from "../brochures/The Ultimate Microsoft Excel Starter Kit_Certifa.pdf";
+import database_guide from "../brochures/Fundamentals of Database Made Super Easy_Certifa.pdf";
+import interview_guide from "../brochures/Interview Communication Mastery_ The Basics You Can’t Afford to Miss_Certifa.pdf";
 
 const ProgramDetailsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -56,10 +56,10 @@ const ProgramDetailsSection = () => {
         {/* Download Brochure Button */}
         <div className="text-center mt-12">
           <button
-            onClick={() => openModal("Data Analytics Pro Brochure", brochurePdf)}
+            onClick={() => openModal("brochurePdf", brochurePdf)}
             className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
           >
-            Request a Brochure for the Complete Curriculum
+            Download Brochure for the Complete Curriculum
           </button>
         </div>
       </div>
@@ -67,26 +67,26 @@ const ProgramDetailsSection = () => {
       {/* Free Guides Section */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
         <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-8">
-          Free Guides to Boost Your Skills
+          Start with the Free Guides to Boost Your Skills
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-items-center">
           <button
-            onClick={() => openModal("Power BI Beginner Guide", guide1Pdf)}
+            onClick={() => openModal("excel_guide", excel_guide)}
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg w-full"
           >
-            Power BI Beginner Guide
+            The Ultimate Microsoft Excel Starter Kit
           </button>
           <button
-            onClick={() => openModal("Excel Formulas Guide", guide2Pdf)}
+            onClick={() => openModal("database_guide", database_guide)}
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg w-full"
           >
-            Excel Formulas Guide
+            Fundamentals of Database Made Super Easy
           </button>
           <button
-            onClick={() => openModal("Python Data Analysis Guide", guide3Pdf)}
+            onClick={() => openModal("interview_guide", interview_guide)}
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg w-full"
           >
-            Python Data Analysis Guide
+            Interview Communication Mastery - The Basics You Can’t Afford to Miss!
           </button>
         </div>
       </div>
