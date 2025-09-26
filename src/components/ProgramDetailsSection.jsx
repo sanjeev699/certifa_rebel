@@ -15,10 +15,11 @@ import pythonLogo from "../Assets/python.png";
 
 import certificateImg from "../Assets/sample_cert1.png";
 
-import brochurePdf from "../brochures/Certifa_DataAnalyticsPro_Brochure.pdf";
-import excel_guide from "../brochures/The Ultimate Microsoft Excel Starter Kit_Certifa.pdf";
-import database_guide from "../brochures/Fundamentals of Database Made Super Easy_Certifa.pdf";
-import interview_guide from "../brochures/Interview Communication Mastery_ The Basics You Can’t Afford to Miss_Certifa.pdf";
+const brochurePdf = "/brochures/Certifa_DataAnalyticsPro_Brochure.pdf";
+const excel_guide = "/brochures/The Ultimate Microsoft Excel Starter Kit_Certifa.pdf";
+const database_guide = "/brochures/Fundamentals of Database Made Super Easy_Certifa.pdf";
+const interview_guide = "/brochures/Interview Communication Mastery_ The Basics You Can’t Afford to Miss_Certifa.pdf";
+
 
 const ProgramDetailsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
