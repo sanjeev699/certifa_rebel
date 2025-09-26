@@ -32,7 +32,10 @@ const ProgramDetailsSection = () => {
   // Slight delay to ensure state updates
   setTimeout(() => {
     setCurrentDownload({ guideName, guideFile });
-    setIsModal
+    setIsModalOpen(true);
+  }, 10); // 10ms delay is enough
+};
+
 
 
   return (
