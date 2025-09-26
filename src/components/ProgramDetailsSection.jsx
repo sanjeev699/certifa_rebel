@@ -56,7 +56,7 @@ const ProgramDetailsSection = () => {
         {/* Download Brochure Button */}
         <div className="text-center mt-12">
           <button
-            onClick={() => openModal("brochurePdf", brochurePdf)}
+            onClick={() => openModal("Data Analytics Pro Program- Power BI Certification Track", brochurePdf)}
             className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
           >
             Download Brochure for the Complete Curriculum
@@ -71,19 +71,19 @@ const ProgramDetailsSection = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-items-center">
           <button
-            onClick={() => openModal("excel_guide", excel_guide)}
+            onClick={() => openModal("The Ultimate Microsoft Excel Starter Kit", excel_guide)}
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg w-full"
           >
             The Ultimate Microsoft Excel Starter Kit
           </button>
           <button
-            onClick={() => openModal("database_guide", database_guide)}
+            onClick={() => openModal("Fundamentals of Database Made Super Easy", database_guide)}
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg w-full"
           >
             Fundamentals of Database Made Super Easy
           </button>
           <button
-            onClick={() => openModal("interview_guide", interview_guide)}
+            onClick={() => openModal("Interview Communication Mastery - The Basics You Can’t Afford to Miss!", interview_guide)}
             className="bg-white p-6 rounded-lg shadow hover:shadow-lg w-full"
           >
             Interview Communication Mastery - The Basics You Can’t Afford to Miss!
