@@ -17,14 +17,11 @@ const ProgramDetailsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentDownload, setCurrentDownload] = useState({ guideName: "", guideFile: "" });
 
-  const openModal = (guideName, guideFile) => {
-    // Force re-render to reset modal
-    setIsModalOpen(false);
-    setTimeout(() => {
-      setCurrentDownload({ guideName, guideFile });
-      setIsModalOpen(true);
-    }, 10);
-  };
+ const openModal = (guideName, guideFile) => {
+  setCurrentDownload({ guideName, guideFile });
+  setIsModalOpen(true);
+};
+
 
   return (
     <section id="program-details" className="bg-white py-20">
