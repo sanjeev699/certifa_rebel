@@ -11,20 +11,14 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
   const [submitted, setSubmitted] = useState(false);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbyV8ps68IiHUj7gw09rk2hcxD8hDmfAGNUNOyDCMy1SOOxSPUF_8nhGvHQxUay8xsB3/exec";
-  
+    "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
 
-  // Reset modal state when opened
+  // Reset modal whenever it opens
   useEffect(() => {
     if (isOpen) {
       setSubmitted(false);
       setLoading(false);
-      setForm({
-        name: "",
-        contact: "",
-        whatsapp: false,
-        email: ""
-      });
+      setForm({ name: "", contact: "", whatsapp: false, email: "" });
     }
   }, [isOpen]);
 
@@ -41,17 +35,24 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
     setLoading(true);
 
     try {
+      const formData = new FormData();
+      formData.append("name", form.name);
+      formData.append("contact", form.contact);
+      formData.append("whatsapp", form.whatsapp);
+      formData.append("email", form.email);
+      formData.append("guide", guideName);
+
       const response = await fetch(scriptURL, {
         method: "POST",
-        body: JSON.stringify({ ...form, guide: guideName }),
-        headers: { "Content-Type": "application/json" }
+        body: formData
       });
 
       const result = await response.json();
+
       if (result.result === "success") {
         setSubmitted(true);
 
-        // Trigger download after small delay to ensure UI updates
+        // Trigger download after slight delay
         setTimeout(() => {
           const link = document.createElement("a");
           link.href = guideFile;
