@@ -11,7 +11,7 @@ const LeadFormModal = ({ isOpen, onClose, guideName, guideFile }) => {
   const [submitted, setSubmitted] = useState(false);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycby7mMyAemnVOmfWy_qSZICqEROnzpLCka2ohXXubfq_Yt9XP-8H09PGdB0vdADkymG8/exec";
+    "https://script.google.com/macros/s/AKfycbyxaRO2sM7pg71fDBGZJSvbpIro3lpumcDfq_WF3_MkDmfqvTO8soU7saTyb6ik-x7J/exec";
     
 
   const handleChange = (e) => {
