@@ -27,6 +27,24 @@ const ProgramDetailsSection = () => {
   setIsModalOpen(true);
 };
 
+        // Guides Data
+const guides = [
+  {
+    title: "The Ultimate Microsoft Excel Starter Kit",
+    file: excel_guide,
+    thumbnail: excelThumb,
+  },
+  {
+    title: "Fundamentals of Database Made Super Easy",
+    file: database_guide,
+    thumbnail: dbThumb,
+  },
+  {
+    title: "Interview Communication Mastery - The Basics You Can’t Afford to Miss!",
+    file: interview_guide,
+    thumbnail: interviewThumb,
+  },
+];
 
   return (
     <section id="program-details" className="bg-white py-20">
@@ -63,24 +81,7 @@ const ProgramDetailsSection = () => {
         </div>
       </div>
 
-      // Guides Data
-const guides = [
-  {
-    title: "The Ultimate Microsoft Excel Starter Kit",
-    file: excel_guide,
-    thumbnail: excelThumb,
-  },
-  {
-    title: "Fundamentals of Database Made Super Easy",
-    file: database_guide,
-    thumbnail: dbThumb,
-  },
-  {
-    title: "Interview Communication Mastery - The Basics You Can’t Afford to Miss!",
-    file: interview_guide,
-    thumbnail: interviewThumb,
-  },
-];
+
 
 {/* Free Guides Section */}
 <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
