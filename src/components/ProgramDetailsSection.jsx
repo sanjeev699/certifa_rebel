@@ -90,28 +90,43 @@ const guides = [
 
 
 {/* Free Guides Section */}
+{/* Free Guides Section */}
 <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
-  <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-8">
-    Start with the Free Guides to Boost Your Skills
+  <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-4">
+    Kickstart your upskilling with our 
+    <span className="text-brandBlue"> ‘Skills Kickstart Series’</span>
   </h2>
+  <p className="text-center text-gray-700 mb-8">
+    Worth <span className="font-bold text-green-600">₹15,000</span>, 
+    <span className="font-bold text-green-600"> absolutely FREE!</span> 🚀<br />
+    Download these guides and begin your learning journey today.
+  </p>
+
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
     {guides.map((guide, idx) => (
       <div
         key={idx}
-        className="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col"
+        className="relative bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col"
       >
+        {/* FREE Ribbon */}
+        <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-br-md">
+          FREE
+        </div>
+
         {/* Thumbnail */}
         <img
           src={guide.thumbnail}
           alt={guide.title}
           className="h-40 w-full object-cover"
         />
+
         {/* Title */}
         <div className="p-4 flex-grow">
           <h3 className="text-gray-800 font-semibold text-lg mb-4 text-center">
             {guide.title}
           </h3>
         </div>
+
         {/* Button */}
         <button
           onClick={() => openModal(guide.title, guide.file)}
@@ -123,6 +138,7 @@ const guides = [
     ))}
   </div>
 </div>
+
 
       {/* Certificate */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 mb-20 text-center">
