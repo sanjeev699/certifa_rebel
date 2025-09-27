@@ -8,6 +8,11 @@ import sqlLogo from "../Assets/database.png";
 import pythonLogo from "../Assets/python.png";
 import certificateImg from "../Assets/sample_cert1.png";
 
+// Assets
+import excelThumb from "../Assets/excel_thumb.png";
+import dbThumb from "../Assets/db_thumb.png";
+import interviewThumb from "../Assets/interview_thumb.png";
+
 const brochurePdf = "/brochures/Certifa_DataAnalyticsPro_Brochure.pdf";
 const excel_guide = "/brochures/The Ultimate Microsoft Excel Starter Kit_Certifa.pdf";
 const database_guide = "/brochures/Fundamentals of Database Made Super Easy_Certifa.pdf";
@@ -58,26 +63,59 @@ const ProgramDetailsSection = () => {
         </div>
       </div>
 
-      {/* Free Guides */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
-        <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-8">
-          Start with the Free Guides to Boost Your Skills
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-items-center">
-          <button onClick={() => openModal("The Ultimate Microsoft Excel Starter Kit", excel_guide)}
-            className="bg-white p-6 rounded-lg shadow hover:shadow-lg w-full">
-            The Ultimate Microsoft Excel Starter Kit
-          </button>
-          <button onClick={() => openModal("Fundamentals of Database Made Super Easy", database_guide)}
-            className="bg-white p-6 rounded-lg shadow hover:shadow-lg w-full">
-            Fundamentals of Database Made Super Easy
-          </button>
-          <button onClick={() => openModal("Interview Communication Mastery - The Basics You Can’t Afford to Miss!", interview_guide)}
-            className="bg-white p-6 rounded-lg shadow hover:shadow-lg w-full">
-            Interview Communication Mastery - The Basics You Can’t Afford to Miss!
-          </button>
+      // Guides Data
+const guides = [
+  {
+    title: "The Ultimate Microsoft Excel Starter Kit",
+    file: excel_guide,
+    thumbnail: excelThumb,
+  },
+  {
+    title: "Fundamentals of Database Made Super Easy",
+    file: database_guide,
+    thumbnail: dbThumb,
+  },
+  {
+    title: "Interview Communication Mastery - The Basics You Can’t Afford to Miss!",
+    file: interview_guide,
+    thumbnail: interviewThumb,
+  },
+];
+
+{/* Free Guides Section */}
+<div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
+  <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-8">
+    Start with the Free Guides to Boost Your Skills
+  </h2>
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    {guides.map((guide, idx) => (
+      <div
+        key={idx}
+        className="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col"
+      >
+        {/* Thumbnail */}
+        <img
+          src={guide.thumbnail}
+          alt={guide.title}
+          className="h-40 w-full object-cover"
+        />
+        {/* Title */}
+        <div className="p-4 flex-grow">
+          <h3 className="text-gray-800 font-semibold text-lg mb-4 text-center">
+            {guide.title}
+          </h3>
         </div>
+        {/* Button */}
+        <button
+          onClick={() => openModal(guide.title, guide.file)}
+          className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded-md transition duration-300"
+        >
+          Get Guide
+        </button>
       </div>
+    ))}
+  </div>
+</div>
 
       {/* Certificate */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 mb-20 text-center">
