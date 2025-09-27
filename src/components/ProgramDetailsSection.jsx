@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LeadFormModal from "./LeadFormModal";
 
-import heroImg from "../Assets/Data Analyst Pro Package.jpg";
+import heroImg from "../Assets/Data Analyst Pro Package.png";
 import excelLogo from "../Assets/excel.png";
 import powerBILogo from "../Assets/powerbi.png";
 import sqlLogo from "../Assets/database.png";
