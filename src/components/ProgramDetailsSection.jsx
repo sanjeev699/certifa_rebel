@@ -70,6 +70,12 @@ const guides = [
           ))}
         </div>
 
+        <p className="text-center text-gray-700 mb-4">
+  Want to explore the curriculum in detail? <br />
+  Grab your brochure below 👇
+</p>
+
+        
         {/* Download Brochure Button */}
         <div className="text-center mt-12">
           <button
