@@ -82,7 +82,7 @@ const guides = [
             onClick={() => openModal("Data Analytics Pro Program- Power BI Certification Track", brochurePdf)}
             className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
           >
-            Download Brochure for the Complete Curriculum
+            Download Brochure
           </button>
         </div>
       </div>
