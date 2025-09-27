@@ -85,7 +85,7 @@ const guides = [
     <span className="text-brandBlue"> ‘Skills Kickstart Series’</span>
   </h2>
   <p className="text-center text-gray-700 mb-8">
-    Worth <span className="font-bold text-green-600">₹15,000</span>, 
+    Worth <span className="font-bold text-green-600">₹18,000</span>, 
     <span className="font-bold text-green-600"> absolutely FREE!</span> 🚀<br />
     Download these mini-courses and begin your learning journey today.
   </p>
