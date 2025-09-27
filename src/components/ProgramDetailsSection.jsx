@@ -58,14 +58,14 @@ const guides = [
           ))}
         </div>
 
-        <p className="text-center text-gray-700 mb-4">
+        <p className="text-center text-gray-700 mb-2">
   Want to explore the curriculum in detail? <br />
   Grab your brochure below 👇
 </p>
 
         
         {/* Download Brochure Button */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-4">
           <button
             onClick={() => openModal("Data Analytics Pro Program- Power BI Certification Track", brochurePdf)}
             className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
@@ -109,11 +109,11 @@ const guides = [
     />
 
     {/* Title */}
-    <div className="p-4 flex-grow text-center">
-      <h3 className="text-gray-800 font-semibold text-lg mb-4">
-        {guide.title}
-      </h3>
-    </div>
+    <div className="p-4 text-center">
+  <h3 className="text-gray-800 font-semibold text-lg mb-2">
+    {guide.title}
+  </h3>
+</div>
 
     {/* Button */}
     <button
