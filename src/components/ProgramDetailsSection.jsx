@@ -63,7 +63,7 @@ const guides = [
             {logo: powerBILogo, title: "Power BI Certification"},
             {logo: sqlLogo, title: "SQL for Data Management"},
             {logo: pythonLogo, title: "Python for Data Analysis"}].map((topic, idx) => (
-            <div key={idx} className="bg-white rounded-lg p-6 flex flex-col items-center shadow hover:shadow-lg transition">
+            <div key={idx} className="bg-white rounded-lg p-6 flex flex-col items-center">
               <img src={topic.logo} alt={topic.title} className="h-16 mb-4" />
               <h3 className="text-gray-800 font-semibold text-lg text-center">{topic.title}</h3>
             </div>
