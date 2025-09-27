@@ -29,21 +29,9 @@ const ProgramDetailsSection = () => {
 
         // Guides Data
 const guides = [
-  {
-    title: "The Ultimate Microsoft Excel Starter Kit",
-    file: excel_guide,
-    thumbnail: excelThumb,
-  },
-  {
-    title: "Fundamentals of Database Made Super Easy",
-    file: database_guide,
-    thumbnail: dbThumb,
-  },
-  {
-    title: "Interview Communication Mastery - The Basics You Can’t Afford to Miss!",
-    file: interview_guide,
-    thumbnail: interviewThumb,
-  },
+  { title: "The Ultimate Microsoft Excel Starter Kit", file: excel_guide, thumbnail: excelThumb, worth: 8000 },
+  { title: "Fundamentals of Database Made Super Easy", file: database_guide, thumbnail: dbThumb, worth: 5000 },
+  { title: "Interview Communication Mastery", file: interview_guide, thumbnail: interviewThumb, worth: 5000 },
 ];
 
   return (
@@ -99,43 +87,44 @@ const guides = [
   <p className="text-center text-gray-700 mb-8">
     Worth <span className="font-bold text-green-600">₹15,000</span>, 
     <span className="font-bold text-green-600"> absolutely FREE!</span> 🚀<br />
-    Download these guides and begin your learning journey today.
+    Download these mini-courses and begin your learning journey today.
   </p>
 
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
     {guides.map((guide, idx) => (
-      <div
-        key={idx}
-        className="relative bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col"
-      >
-        {/* FREE Ribbon */}
-        <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-br-md">
-          FREE
-        </div>
+  <div
+    key={idx}
+    className="relative bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col"
+  >
+    {/* Worth Ribbon */}
+    <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-br-md z-10">
+      Worth ₹{guide.worth}
+    </div>
 
-        {/* Thumbnail */}
-        <img
-          src={guide.thumbnail}
-          alt={guide.title}
-          className="h-40 w-full object-cover"
-        />
+    {/* Thumbnail */}
+    <img
+      src={guide.thumbnail}
+      alt={guide.title}
+      className="h-40 w-full object-cover"
+    />
 
-        {/* Title */}
-        <div className="p-4 flex-grow">
-          <h3 className="text-gray-800 font-semibold text-lg mb-4 text-center">
-            {guide.title}
-          </h3>
-        </div>
+    {/* Title */}
+    <div className="p-4 flex-grow text-center">
+      <h3 className="text-gray-800 font-semibold text-lg mb-4">
+        {guide.title}
+      </h3>
+    </div>
 
-        {/* Button */}
-        <button
-          onClick={() => openModal(guide.title, guide.file)}
-          className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded-md transition duration-300"
-        >
-          Get Guide
-        </button>
-      </div>
-    ))}
+    {/* Button */}
+    <button
+      onClick={() => openModal(guide.title, guide.file)}
+      className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded-md transition duration-300"
+    >
+      Free Download
+    </button>
+  </div>
+))}
+
   </div>
 </div>
 
