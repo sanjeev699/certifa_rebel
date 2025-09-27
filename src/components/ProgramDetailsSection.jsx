@@ -84,7 +84,7 @@ const guides = [
     Kickstart your upskilling with our 
     <span className="text-brandBlue"> ‘Skills Kickstart Series’</span>
   </h2>
-  <p className="text-center text-gray-700 mb-8">
+  <p className="text-center text-gray-700 mb-6">
     Worth <span className="font-bold text-green-600">₹18,000</span>, 
     <span className="font-bold text-green-600"> absolutely FREE!</span> 🚀<br />
     Download these mini-courses and begin your learning journey today.
@@ -92,41 +92,43 @@ const guides = [
 
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
     {guides.map((guide, idx) => (
-  <div
-    key={idx}
-    className="relative bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col"
-  >
-    {/* Worth Ribbon */}
-    <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-br-md z-10">
-      Worth ₹{guide.worth}
-    </div>
+      <div
+        key={idx}
+        className="relative bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col h-full"
+      >
+        {/* Worth Ribbon */}
+        <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-br-md z-10">
+          Worth ₹{guide.worth}
+        </div>
 
-    {/* Thumbnail */}
-    <img
-      src={guide.thumbnail}
-      alt={guide.title}
-      className="h-40 w-full object-cover"
-    />
+        {/* Thumbnail */}
+        <img
+          src={guide.thumbnail}
+          alt={guide.title}
+          className="h-40 w-full object-cover"
+        />
 
-    {/* Title */}
-    <div className="p-4 text-center">
-  <h3 className="text-gray-800 font-semibold text-lg mb-2">
-    {guide.title}
-  </h3>
+        {/* Title */}
+        <div className="p-4 flex-grow text-center">
+          <h3 className="text-gray-800 font-semibold text-lg">
+            {guide.title}
+          </h3>
+        </div>
+
+        {/* Button */}
+        <div className="p-4 pt-0 mt-auto">
+          <button
+            onClick={() => openModal(guide.title, guide.file)}
+            className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded-md transition duration-300"
+          >
+            Free Download
+          </button>
+        </div>
+      </div>
+    ))}
+  </div>
 </div>
 
-    {/* Button */}
-    <button
-      onClick={() => openModal(guide.title, guide.file)}
-      className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded-md transition duration-300"
-    >
-      Free Download
-    </button>
-  </div>
-))}
-
-  </div>
-</div>
 
 
       {/* Certificate */}
