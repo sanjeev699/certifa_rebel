@@ -41,6 +41,36 @@ const guides = [
         <img src={heroImg} alt="Data Analytics Pro Program" className="w-full h-auto rounded-lg shadow-md" />
       </div>
 
+{/* USP Section */}
+<div className="max-w-6xl mx-auto px-6 md:px-12 mb-16 text-center">
+  <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
+    What Makes <span className="text-brandBlue">Our Program Unique?</span>
+  </h2>
+  <p className="text-gray-700 mb-10 max-w-3xl mx-auto">
+    Unlike traditional courses, the <strong>Data Analytics Pro Program</strong> is 
+    designed with a hands-on, outcome-driven approach. We don’t just teach you tools —
+    we prepare you to solve <em>real-world business problems</em> with confidence.  
+  </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+    <div className="bg-gray-50 rounded-xl shadow p-6 hover:shadow-md transition">
+      <h3 className="text-lg font-semibold text-brandBlue mb-2">1. Industry-Relevant Skills</h3>
+      <p className="text-gray-600">Curriculum built in collaboration with top data professionals to ensure you learn what companies actually need today.</p>
+    </div>
+
+    <div className="bg-gray-50 rounded-xl shadow p-6 hover:shadow-md transition">
+      <h3 className="text-lg font-semibold text-brandBlue mb-2">2. Real Projects</h3>
+      <p className="text-gray-600">Work on real datasets and business case studies — making your portfolio job-ready from day one.</p>
+    </div>
+
+    <div className="bg-gray-50 rounded-xl shadow p-6 hover:shadow-md transition">
+      <h3 className="text-lg font-semibold text-brandBlue mb-2">3. Certification + Career Support</h3>
+      <p className="text-gray-600">Earn a globally recognized certificate and access career guidance, mock interviews, and placement support.</p>
+    </div>
+  </div>
+</div>
+
+      
       {/* Skills Covered */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
         <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-12">
