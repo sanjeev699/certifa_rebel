@@ -15,6 +15,11 @@ const ProgramSection = () => {
           Our Certification Programs
         </h2>
 
+<p className="text-gray-800 text-center mb-12 max-w-2xl mx-auto">
+          Carefully tailored to get you a
+          <span className="font-bold text-brandBlue"> Great Career! </span>across industries.
+        </p>
+        
         <div className="grid gap-8 md:grid-cols-3">
           {/* Live Program Card */}
           <div className="bg-white p-6 rounded-xl shadow-lg border hover:shadow-2xl hover:scale-105 transition-all duration-300">
