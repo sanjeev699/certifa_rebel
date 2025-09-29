@@ -83,9 +83,9 @@ const ProgramDetailsSection = () => {
      
       </div>
 
-    {/* Skills Covered */}
-<div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 mb-16"> {/* added mt-12 for spacing from USP */}
-  <h2 className="text-lg md:text-xl font-bold text-center text-brandBlue mb-8">
+{/* Skills Covered */}
+<div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 mb-8"> {/* reduced mb from 16 -> 8 */}
+  <h2 className="text-lg md:text-xl font-bold text-center text-brandBlue mb-6"> {/* reduced mb-8 -> 6 */}
     Skills Covered in the Program
   </h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
@@ -100,21 +100,22 @@ const ProgramDetailsSection = () => {
     ))}
   </div>
 
-        <p className="text-center font-bold text-[#000000] mt-12 mb-2">
-          Want to explore the curriculum in detail? <br />
-          Grab your brochure below 👇
-        </p>
+  <p className="text-center font-bold text-[#000000] mt-6 mb-2"> {/* reduced mt-12 -> 6 */}
+    Want to explore the curriculum in detail? <br />
+    Grab your brochure below 👇
+  </p>
 
-        {/* Download Brochure Button */}
-        <div className="text-center mt-4">
-          <button
-            onClick={() => openModal("Data Analytics Pro Program- Power BI Certification Track", brochurePdf)}
-            className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
-          >
-            Download Brochure
-          </button>
-        </div>
-      </div>
+  {/* Download Brochure Button */}
+  <div className="text-center mt-2"> {/* reduced mt-4 -> 2 */}
+    <button
+      onClick={() => openModal("Data Analytics Pro Program- Power BI Certification Track", brochurePdf)}
+      className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
+    >
+      Download Brochure
+    </button>
+  </div>
+</div>
+
 
    
       {/* Lead Form Modal */}
