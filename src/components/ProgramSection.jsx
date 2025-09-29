@@ -17,7 +17,7 @@ const ProgramSection = () => {
 
 <p className="text-gray-800 text-center mb-12 max-w-2xl mx-auto">
           Carefully tailored to get you a
-          <span className="font-bold text-brandBlue"> Great Career! </span>across industries.
+          <span className="font-bold text-brandBlue"> Great Career </span>across domains.
         </p>
         
         <div className="grid gap-8 md:grid-cols-3">
