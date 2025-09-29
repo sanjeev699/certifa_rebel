@@ -30,7 +30,7 @@ const SkillsKickstartSection = () => {
   return (
     <section
       id="skills-kickstart"
-      className="bg-gradient-to-b from-brandYellow via-white to-brandYellow py-16"
+      className="bg-gradient-to-b from-brandYellow via-white to-brandYellow py-12"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
         <h2 className="text-xl md:text-2xl font-bold text-brandBlue mb-4">
