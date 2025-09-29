@@ -81,22 +81,22 @@ const ProgramDetailsSection = () => {
      
       </div>
 
-      {/* Skills Covered */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
-        <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-12">
-          Skills Covered in the Program
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-          {[{logo: excelLogo, title: "Excel for Analytics"},
-            {logo: powerBILogo, title: "Power BI Certification"},
-            {logo: sqlLogo, title: "SQL for Data Management"},
-            {logo: pythonLogo, title: "Python for Data Analysis"}].map((topic, idx) => (
-            <div key={idx} className="bg-white rounded-lg p-6 flex flex-col items-center">
-              <img src={topic.logo} alt={topic.title} className="h-16 mb-4" />
-              <h2 className="text-gray-800 text-lg text-center">{topic.title}</h2>
-            </div>
-          ))}
-        </div>
+    {/* Skills Covered */}
+<div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 mb-16"> {/* added mt-12 for spacing from USP */}
+  <h2 className="text-lg md:text-xl font-bold text-center text-brandBlue mb-8">
+    Skills Covered in the Program
+  </h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+    {[{logo: excelLogo, title: "Excel for Analytics"},
+      {logo: powerBILogo, title: "Power BI Certification"},
+      {logo: sqlLogo, title: "SQL for Data Management"},
+      {logo: pythonLogo, title: "Python for Data Analysis"}].map((topic, idx) => (
+      <div key={idx} className="bg-white rounded-lg p-4 flex flex-col items-center">
+        <img src={topic.logo} alt={topic.title} className="h-12 mb-2" />
+        <h3 className="text-gray-800 text-base text-center">{topic.title}</h3>
+      </div>
+    ))}
+  </div>
 
         <p className="text-center font-bold text-gray-700 mt-12 mb-2">
           Want to explore the curriculum in detail? <br />
