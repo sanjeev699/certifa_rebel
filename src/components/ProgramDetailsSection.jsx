@@ -42,7 +42,7 @@ const guides = [
       </div>
 
 {/* USP Section */}
-<section className="relative py-16 bg-gradient-to-r from-blue-50 via-white to-blue-50">
+<div className="relative py-16 bg-gradient-to-r from-blue-50 via-white to-blue-50">
   <div className="max-w-6xl mx-auto px-6 md:px-12 text-center">
     <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
       What Makes <span className="text-brandBlue">Our Program Unique?</span>
@@ -61,13 +61,11 @@ const guides = [
       <em>Be Super Ready for a Great Career!</em>
     </h3>
 
-
-
     {/* USP Points */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div className="p-6 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
         <div className="flex justify-center mb-4 text-brandBlue text-4xl">
-          <i className="fas fa-laptop-code"></i> {/* icon */}
+          <i className="fas fa-laptop-code"></i>
         </div>
         <h3 className="font-bold text-lg mb-2">Hands-On Projects</h3>
         <p className="text-gray-600">Work on real-world case studies to build job-ready confidence.</p>
@@ -90,7 +88,7 @@ const guides = [
       </div>
     </div>
   </div>
-</section>
+</div>
 
 
       
