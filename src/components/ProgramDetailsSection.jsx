@@ -41,18 +41,18 @@ const ProgramDetailsSection = () => {
         <img src={heroImg} alt="Data Analytics Pro Program" className="w-full h-auto rounded-lg shadow-md" />
       </div>
 
-      {/* USP Section */}
-<div className="max-w-6xl mx-auto px-6 md:px-12 py-6 text-center font-sans"> {/* slightly reduced padding */}
+     {/* USP Section */}
+<div className="max-w-6xl mx-auto px-6 md:px-12 mt-6 text-center" style={{ fontFamily: 'inherit' }}>
   <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
     What Makes <span className="text-brandBlue">Our Program Unique?</span>
   </h2>
   <p className="text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
-    Unlike traditional courses, the <span className="font-semibold text-gray-800">Data Analytics Pro Package</span> 
-    is designed with a <span className="font-semibold text-gray-800">hands-on, outcome-driven approach</span>. 
-    Along with mastering important tools, you'll become a <span className="font-semibold text-gray-800">well-rounded Data Analyst</span> 
-    who can solve real-world problems with confidence and crack the  
-    <span className="font-semibold text-gray-800">Microsoft Power BI Data Analyst PL-300</span> 
-    certification — <span className="font-semibold text-brandYellow">that actually matters!</span>
+    Unlike traditional courses,{' '}
+    <strong className="text-gray-800"> Data Analytics Pro Package </strong> is designed with a{' '}
+    <strong className="text-gray-800"> hands-on, outcome-driven approach</strong>. Along with mastering important tools, you'll become a{' '}
+    <strong className="text-gray-800"> well-rounded Data Analyst </strong>who can solve real-world problems with confidence and crack the{' '}
+    <strong className="text-gray-800"> Microsoft Power BI Data Analyst PL-300 </strong>certification —{' '}
+    <strong className="text-brandYellow"> that actually matters!</strong>
   </p>
 
   <h3 className="font-bold text-lg text-brandBlue">
