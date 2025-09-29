@@ -58,7 +58,7 @@ const guides = [
     </p>
 
     <h3 className="font-bold text-lg text-brandBlue mb-2">
-      <em>Be Super Ready for a Great Career!</em>
+      <em>Be Super Ready for a Great Career!</em><br/>
     </h3>
 
     {/* USP Points */}
