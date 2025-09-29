@@ -42,33 +42,51 @@ const guides = [
       </div>
 
 {/* USP Section */}
-<div className="max-w-6xl mx-auto px-6 md:px-12 mb-16 text-center">
-  <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
-    What Makes <span className="text-brandBlue">Our Program Unique?</span>
-  </h2>
-  <p className="text-gray-700 mb-10 max-w-3xl mx-auto">
-    Unlike traditional courses, the <strong>Data Analytics Pro Program</strong> is 
-    designed with a hands-on, outcome-driven approach. We don’t just teach you tools —
-    we prepare you to solve <em>real-world business problems</em> with confidence.  
-  </p>
+<section className="relative py-16 bg-gradient-to-r from-blue-50 via-white to-blue-50">
+  <div className="max-w-6xl mx-auto px-6 md:px-12 text-center">
+    <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
+      What Makes <span className="text-brandBlue">Our Program Unique?</span>
+    </h2>
+    <p className="text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+      Unlike traditional courses, the 
+      <span className="text-brandBlue font-semibold"> Data Analytics Pro Package </span> 
+      is designed with a <span className="font-semibold">hands-on, outcome-driven approach</span>.  
+      We don’t just teach you tools — we prepare you to be a 
+      <span className="text-brandBlue font-semibold"> well-rounded Data Analyst</span> 
+      who can solve real-world problems with confidence and crack the 
+      <span className="text-brandBlue font-semibold"> Microsoft Power BI Data Analyst PL-300 exam</span>, 
+      making you <em>super ready for a great career.</em>
+    </p>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-    <div className="bg-gray-50 rounded-xl shadow p-6 hover:shadow-md transition">
-      <h3 className="text-lg font-semibold text-brandBlue mb-2">1. Industry-Relevant Skills</h3>
-      <p className="text-gray-600">Curriculum built in collaboration with top data professionals to ensure you learn what companies actually need today.</p>
-    </div>
+    {/* USP Points */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="p-6 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
+        <div className="flex justify-center mb-4 text-brandBlue text-4xl">
+          <i className="fas fa-laptop-code"></i> {/* icon */}
+        </div>
+        <h3 className="font-bold text-lg mb-2">Hands-On Projects</h3>
+        <p className="text-gray-600">Work on real-world case studies to build job-ready confidence.</p>
+      </div>
 
-    <div className="bg-gray-50 rounded-xl shadow p-6 hover:shadow-md transition">
-      <h3 className="text-lg font-semibold text-brandBlue mb-2">2. Real Projects</h3>
-      <p className="text-gray-600">Work on real datasets and business case studies — making your portfolio job-ready from day one.</p>
-    </div>
+      <div className="p-6 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
+        <div className="flex justify-center mb-4 text-brandBlue text-4xl">
+          <i className="fas fa-certificate"></i>
+        </div>
+        <h3 className="font-bold text-lg mb-2">Certification Ready</h3>
+        <p className="text-gray-600">Prepare for the PL-300 exam with guided practice and expert mentorship.</p>
+      </div>
 
-    <div className="bg-gray-50 rounded-xl shadow p-6 hover:shadow-md transition">
-      <h3 className="text-lg font-semibold text-brandBlue mb-2">3. Certification + Career Support</h3>
-      <p className="text-gray-600">Earn a globally recognized certificate and access career guidance, mock interviews, and placement support.</p>
+      <div className="p-6 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
+        <div className="flex justify-center mb-4 text-brandBlue text-4xl">
+          <i className="fas fa-briefcase"></i>
+        </div>
+        <h3 className="font-bold text-lg mb-2">Career-Focused</h3>
+        <p className="text-gray-600">Get interview prep, resume support, and industry insights.</p>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
 
       
       {/* Skills Covered */}
