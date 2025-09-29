@@ -100,7 +100,7 @@ const ProgramDetailsSection = () => {
     ))}
   </div>
 
-        <p className="text-center font-bold text-gray-700 mt-12 mb-2">
+        <p className="text-center font-bold text-[#000000] mt-12 mb-2">
           Want to explore the curriculum in detail? <br />
           Grab your brochure below 👇
         </p>
