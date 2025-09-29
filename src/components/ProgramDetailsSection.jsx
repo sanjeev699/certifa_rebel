@@ -54,10 +54,10 @@ const guides = [
       Along with mastering important tools, you'll become a <span className="font-semibold">well-rounded Data Analyst </span>
       who can solve real-world problems with confidence and crack the  
       <span className="font-semibold"> Microsoft Power BI Data Analyst PL-300 </span> 
-      certification, <span className="text-brandYellow font-semibold"> that actually matters! </span> 
+      certification - <span className="text-brandYellow font-semibold"> that actually matters! </span> 
       </p>
 
-    <h2 className="text-xl md:text-2xl font-bold text-brandBlue mb-6">
+    <h2 className="text-xl md:text-2xl font-semibold text-brandBlue mb-6">
      <em><span className="text-brandBlue">Be Super Ready for a Great Career!</span></em>
     </h2>
 
@@ -104,7 +104,7 @@ const guides = [
             {logo: pythonLogo, title: "Python for Data Analysis"}].map((topic, idx) => (
             <div key={idx} className="bg-white rounded-lg p-6 flex flex-col items-center">
               <img src={topic.logo} alt={topic.title} className="h-16 mb-4" />
-              <h3 className="text-gray-800 font-semibold text-lg text-center">{topic.title}</h3>
+              <h3 className="text-gray-800 text-lg text-center">{topic.title}</h3>
             </div>
           ))}
         </div>
