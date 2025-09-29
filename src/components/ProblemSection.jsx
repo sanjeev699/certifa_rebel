@@ -13,14 +13,14 @@ const ProblemSection = () => {
           </h2>
           <p className="text-gray-800">
             Thousands of students spend lakhs on foreign/domestic university certificates that{" "}
-            <span className="font-bold text-brandYellow">add no real value</span> to their career.
+            <span className="font-bold text-brandBlue">add no real value</span> to their career.
           </p>
           <p className="text-gray-800">
             Courses are overpriced, promise jobs they can’t deliver, and leave learners frustrated.
           </p>
           <p className="text-gray-800">
-            <span className="font-bold text-brandYellow">We rebel</span> against fake prestige and empty promises. Certifa focuses on{" "}
-            <span className="font-bold text-brandYellow">real skills, global certifications, and career preparation</span>.
+            <span className="font-bold text-brandBlue">We rebel</span> against fake prestige and empty promises. Certifa focuses on{" "}
+            <span className="font-bold text-brandBlue">real skills, global certifications, and career preparation</span>.
           </p>
         </div>
 
