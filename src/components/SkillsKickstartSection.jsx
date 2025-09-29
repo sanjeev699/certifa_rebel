@@ -30,22 +30,22 @@ const SkillsKickstartSection = () => {
   return (
     <section
       id="skills-kickstart"
-      className="bg-gradient-to-b from-brandYellow via-white to-brandYellow py-12"
+      className="bg-gradient-to-b from-[#fde87c] via-white to-[#fde87c] py-10 md:py-12"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
         <h2 className="text-xl md:text-2xl font-bold text-brandBlue mb-4">
-          In the meantime, start your learning with our <span className="text-brandBlue">Skills Kickstart Series</span>
+          In the meantime, <span className="text-brandBlue">jumpstart your learning</span> with our Skills Kickstart Series
         </h2>
-        <p className="text-gray-700 mb-8">
-          Worth <span className="font-bold text-green-600">₹18,000</span>, <span className="font-bold text-green-600">absolutely FREE!</span> 🚀<br />
-          Download these mini-courses and begin your learning journey today.
+        <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+          Access curated mini-courses worth <span className="font-bold text-green-600">₹18,000</span>, completely <span className="font-bold text-green-600">FREE</span>! 🚀 <br />
+          Dive in now and build essential skills while exploring the full Data Analytics Pro Program.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {guides.map((guide, idx) => (
             <div
               key={idx}
-              className="relative bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col h-full"
+              className="relative bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col h-full"
             >
               {/* Worth Ribbon */}
               <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-br-md z-10">
