@@ -109,8 +109,8 @@ const guides = [
           ))}
         </div>
 
-        <p className="text-center text-gray-700 mb-2">
-  <Want to explore the curriculum in detail? <br />
+        <p className="text-center  text-gray-700 mb-2">
+  Want to explore the curriculum in detail? <br />
   Grab your brochure below 👇
 </p>
 
