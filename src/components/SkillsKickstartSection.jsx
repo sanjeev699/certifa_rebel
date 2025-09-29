@@ -33,8 +33,8 @@ const SkillsKickstartSection = () => {
       className="bg-gradient-to-b from-[#fde87c] via-white to-[#fde87c] py-10 md:py-12"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
-        <h2 className="text-xl md:text-2xl font-bold text-brandBlue mb-4">
-          In the meantime, jumpstart your learning with our <br/><span className="font-bold text-[#000000]"> Skills Kickstart Series</span>
+        <h2 className="text-xl md:text-2xl font-bold text-[#000000] mb-4">
+          In the meantime, jumpstart your learning with our <br/><span className="font-bold text-brandBlue"> Skills Kickstart Series</span>
         </h2>
         <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
           Access curated mini-courses worth <span className="font-bold text-green-600">₹18,000</span>, completely <span className="font-bold text-green-600">FREE</span>! 🚀 <br />
