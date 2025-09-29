@@ -50,11 +50,11 @@ const guides = [
     <p className="text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
       Unlike traditional courses, 
       the <span className="font-semibold">Data Analytics Pro Package</span>
-      is designed with a <span className="font-semibold">hands-on, outcome-driven approach.</span> 
-      Along with training you in high-in-demand tools — we also prepare you to become a <span className="font-semibold">well-rounded Data Analyst</span>
-      who can solve real-world problems with confidence and crack the well-sought-after 
-      <span className="font-semibold">Microsoft Power BI Data Analyst PL-300</span> 
-      certification exam. This makes you super ready for a <span className="font-semibold">great career</span>.
+      is designed with a <span className="font-semibold">hands-on, outcome-driven approach. </span> 
+      Along with mastering important tools, you'll become a <span className="font-semibold">well-rounded Data Analyst </span>
+      who can solve real-world problems with confidence and crack the  
+      <span className="font-semibold">Microsoft Power BI Data Analyst PL-300 </span> 
+      certification, that actually matters! . With this you will be all super ready for a <span className="font-semibold">great career</span>.
       
       </p>
 
