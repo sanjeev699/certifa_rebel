@@ -34,7 +34,7 @@ const ProgramDetailsSection = () => {
   ];
 
   return (
-    <section id="program-details" className="bg-white py-16 md:py-20">
+    <section id="program-details" className="bg-white pt-16 md:pt-20 pb-8">
       
       {/* Hero Image */}
       <div className="w-full mb-12 md:mb-16">
@@ -84,7 +84,7 @@ const ProgramDetailsSection = () => {
       </div>
 
 {/* Skills Covered */}
-<div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 mb-8"> {/* reduced mb from 16 -> 8 */}
+ <div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 mb-4">
   <h2 className="text-lg md:text-xl font-bold text-center text-brandBlue mb-6"> {/* reduced mb-8 -> 6 */}
     Skills Covered in the Program
   </h2>
