@@ -42,24 +42,24 @@ const guides = [
       </div>
 
 {/* USP Section */}
-<div className="relative py-16 bg-gradient-to-r from-blue-50 via-white to-blue-50">
-  <div className="max-w-6xl mx-auto px-6 md:px-12 text-center">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brandBlue mb-6">
-      What Makes <span className="text-brandBlue">Our Program Unique?</span>
-    </h2>
+<div className="max-w-6xl mx-auto px-6 md:px-12 py-12 text-center font-sans">
+  <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
+    What Makes <span className="text-brandBlue">Our Program Unique?</span>
+  </h2>
+  <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+    Unlike traditional courses, the <span className="font-semibold">Data Analytics Pro Package</span> 
+    is designed with a <span className="font-semibold">hands-on, outcome-driven approach</span>. 
+    Along with mastering important tools, you'll become a <span className="font-semibold">well-rounded Data Analyst</span> 
+    who can solve real-world problems with confidence and crack the  
+    <span className="font-semibold">Microsoft Power BI Data Analyst PL-300</span> 
+    certification — <span className="text-brandYellow font-semibold">that actually matters!</span>
+  </p>
 
-    <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl">
-      Unlike traditional courses, the <span className="font-bold">Data Analytics Pro Package </span> 
-      is designed with a <span className="font-bold">hands-on, outcome-driven approach </span>. 
-      Along with mastering the most important tools, you'll become a <span className="font-bold"> well-rounded Data Analyst </span> 
-      who can solve real-world problems with confidence and crack the 
-      <span className="font-bold"> Microsoft Power BI Data Analyst PL-300 </span> certification — 
-      <span className="font-bold text-brandYellow"> that actually matters!</span>
-    </p>
+  <h3 className="font-bold text-lg text-brandBlue">
+    <em>Be Super Ready for a Great Career!</em>
+  </h3>
+</div>
 
-    <h3 className="font-bold text-lg sm:text-xl md:text-2xl text-brandBlue mb-4">
-      <em>Be Super Ready for a Great Career!</em>
-    </h3>
 
     <div className="flex justify-center gap-6 mt-8 flex-wrap">
       {/* Example USP points with icons */}
