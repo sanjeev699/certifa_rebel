@@ -42,8 +42,8 @@ const ProgramDetailsSection = () => {
       </div>
 
       {/* USP Section */}
-      <div className="max-w-6xl mx-auto px-6 md:px-12 py-8 md:py-12 text-center font-sans">
-        <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mt-6 mb-6">
+   <div className="max-w-6xl mx-auto px-6 md:px-12 py-8 text-center font-sans">
+        <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
           What Makes <span className="text-brandBlue">Our Program Unique?</span>
         </h2>
         <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
