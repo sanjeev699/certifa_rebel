@@ -44,48 +44,41 @@ const guides = [
 {/* USP Section */}
 <div className="relative py-16 bg-gradient-to-r from-blue-50 via-white to-blue-50">
   <div className="max-w-6xl mx-auto px-6 md:px-12 text-center">
-    <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brandBlue mb-6">
       What Makes <span className="text-brandBlue">Our Program Unique?</span>
     </h2>
-    <p className="text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-  Unlike traditional courses, 
-  the <span className="font-semibold sm:font-semibold">Data Analytics Pro Package</span>
-  is designed with a <span className="font-semibold sm:font-semibold">hands-on, outcome-driven approach</span>. 
-  Along with mastering important tools, you'll become a <span className="font-semibold sm:font-semibold">well-rounded Data Analyst</span>
-  who can solve real-world problems with confidence and crack the  
-  <span className="font-semibold sm:font-semibold text-brandYellow">Microsoft Power BI Data Analyst PL-300</span> 
-  certification - <span className="text-brandYellow font-semibold sm:font-semibold">that actually matters!</span>
-</p>
 
+    <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl">
+      Unlike traditional courses, the <span className="font-bold">Data Analytics Pro Package</span> 
+      is designed with a <span className="font-bold">hands-on, outcome-driven approach</span>. 
+      Along with mastering the most important tools, you'll become a <span className="font-bold">well-rounded Data Analyst</span> 
+      who can solve real-world problems with confidence and crack the 
+      <span className="font-bold text-brandYellow"> Microsoft Power BI Data Analyst PL-300</span> certification — 
+      <span className="font-bold text-brandYellow">that actually matters!</span>
+    </p>
 
-    <h3 className="font-bold text-lg text-brandBlue mb-4">
-      <em>Be Super Ready for a Great Career!</em><br/>
+    <h3 className="font-bold text-lg sm:text-xl md:text-2xl text-brandBlue mb-4">
+      <em>Be Super Ready for a Great Career!</em>
     </h3>
 
-    {/* USP Points */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div className="p-6 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
-        <div className="flex justify-center mb-4 text-brandBlue text-4xl">
-          <i className="fas fa-laptop-code"></i>
-        </div>
-        <h3 className="font-bold text-lg mb-2">Hands-On Projects</h3>
-        <p className="text-gray-600">Work on real-world case studies to build job-ready confidence.</p>
+    <div className="flex justify-center gap-6 mt-8 flex-wrap">
+      {/* Example USP points with icons */}
+      <div className="flex flex-col items-center max-w-xs text-center">
+        <img src="/icons/handson.png" alt="Hands-on" className="h-12 mb-2" />
+        <p className="font-bold text-gray-800">Hands-on Learning</p>
+        <p className="text-gray-600 text-sm sm:text-base">Practical exercises and real-world projects.</p>
       </div>
 
-      <div className="p-6 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
-        <div className="flex justify-center mb-4 text-brandBlue text-4xl">
-          <i className="fas fa-certificate"></i>
-        </div>
-        <h3 className="font-bold text-lg mb-2">Certification Ready</h3>
-        <p className="text-gray-600">Prepare for the PL-300 exam with guided practice and expert mentorship.</p>
+      <div className="flex flex-col items-center max-w-xs text-center">
+        <img src="/icons/career.png" alt="Career Ready" className="h-12 mb-2" />
+        <p className="font-bold text-gray-800">Career Focused</p>
+        <p className="text-gray-600 text-sm sm:text-base">Prepare to land top data analyst roles.</p>
       </div>
 
-      <div className="p-6 bg-white shadow-md rounded-2xl hover:shadow-xl transition">
-        <div className="flex justify-center mb-4 text-brandBlue text-4xl">
-          <i className="fas fa-briefcase"></i>
-        </div>
-        <h3 className="font-bold text-lg mb-2">Career-Focused</h3>
-        <p className="text-gray-600">Get interview prep, resume support, and industry insights.</p>
+      <div className="flex flex-col items-center max-w-xs text-center">
+        <img src="/icons/certification.png" alt="Certification" className="h-12 mb-2" />
+        <p className="font-bold text-gray-800">Certification Ready</p>
+        <p className="text-gray-600 text-sm sm:text-base">Microsoft PL-300 exam preparation included.</p>
       </div>
     </div>
   </div>
