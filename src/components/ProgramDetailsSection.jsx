@@ -57,7 +57,7 @@ const guides = [
       certification - <span className="text-brandYellow font-semibold">that actually matters!</span>
     </p>
 
-    <h3 className="font-bold text-lg text-brandBlue mb-2">
+    <h3 className="font-bold text-lg text-brandBlue mb-4">
       <em>Be Super Ready for a Great Career!</em><br/>
     </h3>
 
