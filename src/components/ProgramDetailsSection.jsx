@@ -22,70 +22,64 @@ const ProgramDetailsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentDownload, setCurrentDownload] = useState({ guideName: "", guideFile: "" });
 
- const openModal = (guideName, guideFile) => {
-  setCurrentDownload({ guideName, guideFile });
-  setIsModalOpen(true);
-};
+  const openModal = (guideName, guideFile) => {
+    setCurrentDownload({ guideName, guideFile });
+    setIsModalOpen(true);
+  };
 
-        // Guides Data
-const guides = [
-  { title: "The Ultimate Microsoft Excel Starter Kit", file: excel_guide, thumbnail: excelThumb, worth: 8000 },
-  { title: "Fundamentals of Database Made Super Easy", file: database_guide, thumbnail: dbThumb, worth: 5000 },
-  { title: "Interview Communication Mastery", file: interview_guide, thumbnail: interviewThumb, worth: 5000 },
-];
+  const guides = [
+    { title: "The Ultimate Microsoft Excel Starter Kit", file: excel_guide, thumbnail: excelThumb, worth: 8000 },
+    { title: "Fundamentals of Database Made Super Easy", file: database_guide, thumbnail: dbThumb, worth: 5000 },
+    { title: "Interview Communication Mastery", file: interview_guide, thumbnail: interviewThumb, worth: 5000 },
+  ];
 
   return (
-    <section id="program-details" className="bg-white py-20">
+    <section id="program-details" className="bg-white py-16 md:py-20">
+      
       {/* Hero Image */}
-      <div className="w-full mb-16">
+      <div className="w-full mb-12 md:mb-16">
         <img src={heroImg} alt="Data Analytics Pro Program" className="w-full h-auto rounded-lg shadow-md" />
       </div>
 
-{/* USP Section */}
-<div className="max-w-6xl mx-auto px-6 md:px-12 py-12 text-center font-sans">
-  <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
-    What Makes <span className="text-brandBlue">Our Program Unique?</span>
-  </h2>
-  <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-    Unlike traditional courses, the <span className="font-semibold">Data Analytics Pro Package</span> 
-    is designed with a <span className="font-semibold">hands-on, outcome-driven approach</span>. 
-    Along with mastering important tools, you'll become a <span className="font-semibold">well-rounded Data Analyst</span> 
-    who can solve real-world problems with confidence and crack the  
-    <span className="font-semibold">Microsoft Power BI Data Analyst PL-300</span> 
-    certification — <span className="text-brandYellow font-semibold">that actually matters!</span>
-  </p>
+      {/* USP Section */}
+      <div className="max-w-6xl mx-auto px-6 md:px-12 py-8 md:py-12 text-center font-sans">
+        <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
+          What Makes <span className="text-brandBlue">Our Program Unique?</span>
+        </h2>
+        <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+          Unlike traditional courses, the <span className="font-semibold">Data Analytics Pro Package</span> 
+          is designed with a <span className="font-semibold">hands-on, outcome-driven approach</span>. 
+          Along with mastering important tools, you'll become a <span className="font-semibold">well-rounded Data Analyst</span> 
+          who can solve real-world problems with confidence and crack the  
+          <span className="font-semibold">Microsoft Power BI Data Analyst PL-300</span> 
+          certification — <span className="text-brandYellow font-semibold">that actually matters!</span>
+        </p>
 
-  <h3 className="font-bold text-lg text-brandBlue">
-    <em>Be Super Ready for a Great Career!</em>
-  </h3>
-</div>
+        <div className="flex justify-center gap-6 mt-8 flex-wrap">
+          <div className="flex flex-col items-center max-w-xs text-center">
+            <img src="/icons/handson.png" alt="Hands-on" className="h-12 mb-2" />
+            <p className="font-bold text-gray-800">Hands-on Learning</p>
+            <p className="text-gray-600 text-sm sm:text-base">Practical exercises and real-world projects.</p>
+          </div>
 
+          <div className="flex flex-col items-center max-w-xs text-center">
+            <img src="/icons/career.png" alt="Career Ready" className="h-12 mb-2" />
+            <p className="font-bold text-gray-800">Career Focused</p>
+            <p className="text-gray-600 text-sm sm:text-base">Prepare to land top data analyst roles.</p>
+          </div>
 
-    <div className="flex justify-center gap-6 mt-8 flex-wrap">
-      {/* Example USP points with icons */}
-      <div className="flex flex-col items-center max-w-xs text-center">
-        <img src="/icons/handson.png" alt="Hands-on" className="h-12 mb-2" />
-        <p className="font-bold text-gray-800">Hands-on Learning</p>
-        <p className="text-gray-600 text-sm sm:text-base">Practical exercises and real-world projects.</p>
+          <div className="flex flex-col items-center max-w-xs text-center">
+            <img src="/icons/certification.png" alt="Certification" className="h-12 mb-2" />
+            <p className="font-bold text-gray-800">Certification Ready</p>
+            <p className="text-gray-600 text-sm sm:text-base">Microsoft PL-300 exam preparation included.</p>
+          </div>
+        </div>
+
+        <h3 className="font-bold text-lg text-brandBlue mt-8">
+          <em>Be Super Ready for a Great Career!</em>
+        </h3>
       </div>
 
-      <div className="flex flex-col items-center max-w-xs text-center">
-        <img src="/icons/career.png" alt="Career Ready" className="h-12 mb-2" />
-        <p className="font-bold text-gray-800">Career Focused</p>
-        <p className="text-gray-600 text-sm sm:text-base">Prepare to land top data analyst roles.</p>
-      </div>
-
-      <div className="flex flex-col items-center max-w-xs text-center">
-        <img src="/icons/certification.png" alt="Certification" className="h-12 mb-2" />
-        <p className="font-bold text-gray-800">Certification Ready</p>
-        <p className="text-gray-600 text-sm sm:text-base">Microsoft PL-300 exam preparation included.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      
       {/* Skills Covered */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
         <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-12">
@@ -103,12 +97,11 @@ const guides = [
           ))}
         </div>
 
-        <p className="text-center font-bold text-gray-700 mb-2">
-  Want to explore the curriculum in detail? <br />
-  Grab your brochure below 👇
-</p>
+        <p className="text-center font-bold text-gray-700 mt-12 mb-2">
+          Want to explore the curriculum in detail? <br />
+          Grab your brochure below 👇
+        </p>
 
-        
         {/* Download Brochure Button */}
         <div className="text-center mt-4">
           <button
@@ -120,61 +113,49 @@ const guides = [
         </div>
       </div>
 
+      {/* Free Guides Section */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
+        <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-4">
+          Kickstart your upskilling with our <span className="text-brandBlue">‘Skills Kickstart Series’</span>
+        </h2>
+        <p className="text-center text-gray-700 mb-6">
+          Worth <span className="font-bold text-green-600">₹18,000</span>, 
+          <span className="font-bold text-green-600"> absolutely FREE!</span> 🚀<br />
+          Download these mini-courses and begin your learning journey today.
+        </p>
 
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {guides.map((guide, idx) => (
+            <div
+              key={idx}
+              className="relative bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col h-full"
+            >
+              <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-br-md z-10">
+                Worth ₹{guide.worth}
+              </div>
 
-{/* Free Guides Section */}
-{/* Free Guides Section */}
-<div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
-  <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-4">
-    Kickstart your upskilling with our 
-    <span className="text-brandBlue"> ‘Skills Kickstart Series’</span>
-  </h2>
-  <p className="text-center text-gray-700 mb-6">
-    Worth <span className="font-bold text-green-600">₹18,000</span>, 
-    <span className="font-bold text-green-600"> absolutely FREE!</span> 🚀<br />
-    Download these mini-courses and begin your learning journey today.
-  </p>
+              <img
+                src={guide.thumbnail}
+                alt={guide.title}
+                className="h-40 w-full object-cover"
+              />
 
-  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-    {guides.map((guide, idx) => (
-      <div
-        key={idx}
-        className="relative bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col h-full"
-      >
-        {/* Worth Ribbon */}
-        <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-br-md z-10">
-          Worth ₹{guide.worth}
-        </div>
+              <div className="p-4 flex-grow text-center">
+                <h3 className="text-gray-800 font-semibold text-lg">{guide.title}</h3>
+              </div>
 
-        {/* Thumbnail */}
-        <img
-          src={guide.thumbnail}
-          alt={guide.title}
-          className="h-40 w-full object-cover"
-        />
-
-        {/* Title */}
-        <div className="p-4 flex-grow text-center">
-          <h3 className="text-gray-800 font-semibold text-lg">
-            {guide.title}
-          </h3>
-        </div>
-
-        {/* Button */}
-        <div className="p-4 pt-0 mt-auto">
-          <button
-            onClick={() => openModal(guide.title, guide.file)}
-            className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded-md transition duration-300"
-          >
-            Free Download
-          </button>
+              <div className="p-4 pt-0 mt-auto">
+                <button
+                  onClick={() => openModal(guide.title, guide.file)}
+                  className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded-md transition duration-300"
+                >
+                  Free Download
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    ))}
-  </div>
-</div>
-
-
 
       {/* Certificate */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 mb-20 text-center">
