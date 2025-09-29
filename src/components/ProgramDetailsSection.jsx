@@ -53,10 +53,13 @@ const guides = [
       is designed with a <span className="font-semibold">hands-on, outcome-driven approach. </span> 
       Along with mastering important tools, you'll become a <span className="font-semibold">well-rounded Data Analyst </span>
       who can solve real-world problems with confidence and crack the  
-      <span className="font-semibold">Microsoft Power BI Data Analyst PL-300 </span> 
-      certification, that actually matters! . With this you will be all super ready for a <span className="font-semibold">great career</span>.
-      
+      <span className="font-semibold"> Microsoft Power BI Data Analyst PL-300 </span> 
+      certification, <span className="text-brandYellow font-semibold"> that actually matters! </span>. 
       </p>
+
+    <h2 className="text-2xl md:text-3xl font-bold text-brandBlue mb-6">
+     <em></em><span className="text-brandBlue">Be Super Ready for a Great Career!</span></em>
+    </h2>
 
     {/* USP Points */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
