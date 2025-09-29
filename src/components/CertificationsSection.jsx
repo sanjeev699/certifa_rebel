@@ -10,7 +10,7 @@ const CertificationsSection = () => {
     <section className="relative py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-brandBlue mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-brandBlue mb-2">
           Why Get a Globally Recognized Certification?
         </h2>
         <p className="text-gray-800 text-center mb-12 max-w-2xl mx-auto">
