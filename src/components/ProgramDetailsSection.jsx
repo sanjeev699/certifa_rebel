@@ -57,7 +57,7 @@ const guides = [
       certification - <span className="text-brandYellow font-semibold"> that actually matters! </span> 
       </p>
 
-   <h3 className="font-bold text-lg text-brandBlue mb-2"><em></em>Hands-On Projects</em></h3>
+   <h3 className="font-bold text-lg text-brandBlue mb-2"><em>Be Super Ready for a Great Career!</em></h3>
 
     {/* USP Points */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
