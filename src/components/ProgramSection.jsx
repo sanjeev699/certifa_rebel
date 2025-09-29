@@ -25,11 +25,11 @@ const ProgramSection = () => {
               className="w-full h-40 object-cover rounded-lg mb-4"
             />
 
-            <h3 className="text-xl font-semibold mb-2 text-brandYellow">
+            <h3 className="text-xl font-semibold mb-2 text-brandBlue">
               Data Analytics Pro Package
             </h3>
             <p className="text-gray-700 mb-4">
-              <span className="font-bold text-brandBlue">
+              <span className="font-bold text-[#000000]">
                 Microsoft Power BI Certification Track
               </span>{" "}
               — Get certified, build real projects, and boost your analytics career.
