@@ -1,4 +1,5 @@
 import React from "react";
+import programImg from "../Assets/data_analytics_program.png"; // replace with your actual image path
 
 const ProgramSection = () => {
   return (
@@ -16,15 +17,22 @@ const ProgramSection = () => {
 
         <div className="grid gap-8 md:grid-cols-3">
           {/* Live Program Card */}
-          <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-2xl transition-all duration-300">
-            <h3 className="text-xl font-semibold mb-4 text-brandYellow">
+          <div className="bg-white p-6 rounded-xl shadow-lg border hover:shadow-2xl hover:scale-105 transition-all duration-300">
+            {/* Image */}
+            <img
+              src={programImg}
+              alt="Data Analytics Program"
+              className="w-full h-40 object-cover rounded-lg mb-4"
+            />
+
+            <h3 className="text-xl font-semibold mb-2 text-brandYellow">
               Data Analytics Pro Package
             </h3>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-4">
               <span className="font-bold text-brandBlue">
                 Microsoft Power BI Certification Track
               </span>{" "}
-              Get certified, build real projects, and boost your analytics career.
+              — Get certified, build real projects, and boost your analytics career.
             </p>
             <a
               href="/programs/data-analytics-pro"
