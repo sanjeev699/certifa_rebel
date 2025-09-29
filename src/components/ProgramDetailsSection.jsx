@@ -48,15 +48,15 @@ const guides = [
       What Makes <span className="text-brandBlue">Our Program Unique?</span>
     </h2>
     <p className="text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-      Unlike traditional courses, the 
-      <span className="text-brandBlue font-semibold"> Data Analytics Pro Package </span> 
-      is designed with a <span className="font-semibold">hands-on, outcome-driven approach</span>.  
-      We don’t just teach you tools — we prepare you to be a 
-      <span className="text-brandBlue font-semibold"> well-rounded Data Analyst</span> 
-      who can solve real-world problems with confidence and crack the 
-      <span className="text-brandBlue font-semibold"> Microsoft Power BI Data Analyst PL-300 exam</span>, 
-      making you <em>super ready for a great career.</em>
-    </p>
+      Unlike traditional courses, 
+      the <span className="font-semibold">Data Analytics Pro Package</span>
+      is designed with a <span className="font-semibold">hands-on, outcome-driven approach.</span> 
+      Along with training you in high-in-demand tools — we also prepare you to become a <span className="font-semibold">well-rounded Data Analyst</span>
+      who can solve real-world problems with confidence and crack the well-sought-after 
+      <span className="font-semibold">Microsoft Power BI Data Analyst PL-300</span> 
+      certification exam. This makes you super ready for a <span className="font-semibold">great career</span>.
+      
+      </p>
 
     {/* USP Points */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
