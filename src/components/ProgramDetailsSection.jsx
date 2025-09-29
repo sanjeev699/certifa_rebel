@@ -49,15 +49,19 @@ const guides = [
     </h2>
     <p className="text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
       Unlike traditional courses, 
-      the <span className="font-semibold"> Data Analytics Pro Package </span>
-      is designed with a <span className="font-semibold">hands-on, outcome-driven approach. </span> 
-      Along with mastering important tools, you'll become a <span className="font-semibold">well-rounded Data Analyst </span>
+      the <span className="font-semibold">Data Analytics Pro Package</span>
+      is designed with a <span className="font-semibold">hands-on, outcome-driven approach</span>. 
+      Along with mastering important tools, you'll become a <span className="font-semibold">well-rounded Data Analyst</span>
       who can solve real-world problems with confidence and crack the  
-      <span className="font-semibold"> Microsoft Power BI Data Analyst PL-300 </span> 
-      certification - <span className="text-brandYellow font-semibold"> that actually matters! </span> 
-      </p>
+      <span className="font-semibold">Microsoft Power BI Data Analyst PL-300</span> 
+      certification - <span className="text-brandYellow font-semibold">that actually matters!</span>
+    </p>
 
-   <h3 className="font-bold text-lg text-brandBlue mb-2"><em>Be Super Ready for a Great Career!</em></h3>
+    <h3 className="font-bold text-lg text-brandBlue mb-2">
+      <em>Be Super Ready for a Great Career!</em>
+    </h3>
+
+
 
     {/* USP Points */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
