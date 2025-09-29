@@ -104,12 +104,12 @@ const guides = [
             {logo: pythonLogo, title: "Python for Data Analysis"}].map((topic, idx) => (
             <div key={idx} className="bg-white rounded-lg p-6 flex flex-col items-center">
               <img src={topic.logo} alt={topic.title} className="h-16 mb-4" />
-              <h3 className="text-gray-800 text-lg text-center">{topic.title}</h3>
+              <h2 className="text-gray-800 text-lg text-center">{topic.title}</h2>
             </div>
           ))}
         </div>
 
-        <p className="text-center  text-gray-700 mb-2">
+        <p className="text-center font-bold text-gray-700 mb-2">
   Want to explore the curriculum in detail? <br />
   Grab your brochure below 👇
 </p>
