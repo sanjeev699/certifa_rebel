@@ -54,7 +54,10 @@ const ProgramDetailsSection = () => {
           <span className="font-semibold">Microsoft Power BI Data Analyst PL-300</span> 
           certification — <span className="text-brandYellow font-semibold">that actually matters!</span>
         </p>
-
+   <h3 className="font-bold text-lg text-brandBlue mt-8">
+          <em>Be Super Ready for a Great Career!</em>
+        </h3>
+        
         <div className="flex justify-center gap-6 mt-8 flex-wrap">
           <div className="flex flex-col items-center max-w-xs text-center">
             <img src="/icons/handson.png" alt="Hands-on" className="h-12 mb-2" />
@@ -75,9 +78,7 @@ const ProgramDetailsSection = () => {
           </div>
         </div>
 
-        <h3 className="font-bold text-lg text-brandBlue mt-8">
-          <em>Be Super Ready for a Great Career!</em>
-        </h3>
+     
       </div>
 
       {/* Skills Covered */}
