@@ -116,58 +116,7 @@ const ProgramDetailsSection = () => {
         </div>
       </div>
 
-      {/* Free Guides Section */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
-        <h2 className="text-xl md:text-2xl font-bold text-center text-brandBlue mb-4">
-          Kickstart your upskilling with our <span className="text-brandBlue">‘Skills Kickstart Series’</span>
-        </h2>
-        <p className="text-center text-gray-700 mb-6">
-          Worth <span className="font-bold text-green-600">₹18,000</span>, 
-          <span className="font-bold text-green-600"> absolutely FREE!</span> 🚀<br />
-          Download these mini-courses and begin your learning journey today.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {guides.map((guide, idx) => (
-            <div
-              key={idx}
-              className="relative bg-white rounded-lg shadow hover:shadow-lg overflow-hidden flex flex-col h-full"
-            >
-              <div className="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-br-md z-10">
-                Worth ₹{guide.worth}
-              </div>
-
-              <img
-                src={guide.thumbnail}
-                alt={guide.title}
-                className="h-40 w-full object-cover"
-              />
-
-              <div className="p-4 flex-grow text-center">
-                <h3 className="text-gray-800 font-semibold text-lg">{guide.title}</h3>
-              </div>
-
-              <div className="p-4 pt-0 mt-auto">
-                <button
-                  onClick={() => openModal(guide.title, guide.file)}
-                  className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded-md transition duration-300"
-                >
-                  Free Download
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Certificate */}
-      <div className="max-w-4xl mx-auto px-6 md:px-12 mb-20 text-center">
-        <h2 className="text-xl md:text-2xl font-bold text-brandBlue mb-8">
-          Here’s a Sample Microsoft Power BI Certificate
-        </h2>
-        <img src={certificateImg} alt="Sample Power BI Certificate" className="w-full rounded-lg shadow-lg border" />
-      </div>
-
+   
       {/* Lead Form Modal */}
       <LeadFormModal
         isOpen={isModalOpen}
