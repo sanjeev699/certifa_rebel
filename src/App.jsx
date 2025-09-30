@@ -18,25 +18,18 @@ import FloatingWhatsApp from "./components/FloatingWhatsApp";
 function App() {
   return (
     <div className="font-sans">
-      {/* Hero Section */}
-       <Navbar />
+      <Navbar />
       <HeroSection />
-
-      {/* Problem / Rebel Section */}
       <ProblemSection />
-
-      {/* Add more sections below as we build them */}
       <ComparisonSection /> 
       <CertificationsSection />
       <ProgramSection />
-      <ProgramDetailsSection/>
-      <SkillsKickstartSection/>
-      <FAQSection/>
-      <ContactSection/>
-      <FloatingWhatsApp/>
-      {/* <AdvantagesSection /> */}
-      {/* <ManifestoSection /> */}
-      {/* <CTASection /> */}
+      <ProgramDetailsSection />
+      <SkillsKickstartSection />
+      <FAQSection />
+      <ContactSection />
+      <FloatingWhatsApp />
+
     </div>
   );
 }
