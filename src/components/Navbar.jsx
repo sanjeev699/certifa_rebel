@@ -1,70 +1,77 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
-import { Menu, X } from "lucide-react";
-import logo from "../Assets/logo4.jpg"; // ensure this path is correct
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const sections = ["home", "courses", "about", "contact", "faq"];
-
   return (
-    <nav className="fixed w-full z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center h-16">
+        {/* Left: Hamburger + Logo */}
+        <div className="flex items-center gap-4">
+          {/* Hamburger */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-brandBlue text-2xl focus:outline-none"
+          >
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </button>
+
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <img
-              src={logo}
-              alt="Logo"
-              className="h-12 w-auto cursor-pointer" // increased size
-            />
-          </div>
-
-          {/* Desktop menu */}
-          <div className="hidden md:flex space-x-8">
-            {sections.map((section) => (
-              <Link
-                key={section}
-                to={section}
-                smooth={true}
-                duration={500}
-                className="cursor-pointer text-gray-700 hover:text-blue-600 font-medium transition"
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </Link>
-            ))}
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 focus:outline-none"
-            >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
-          </div>
+          <img src="/logo4.png" alt="Certifa Logo" className="h-12 md:h-16" />
         </div>
       </div>
 
-      {/* Mobile dropdown */}
+      {/* Dropdown Menu for both Desktop & Mobile */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-56 bg-white rounded-2xl shadow-2xl border border-gray-100 animate-slide-down">
-          <div className="flex flex-col py-4 px-6 space-y-3">
-            {sections.map((section) => (
-              <Link
-                key={section}
-                to={section}
-                smooth={true}
-                duration={500}
-                className="cursor-pointer text-gray-700 hover:text-blue-600 font-medium transition"
+        <div className="absolute top-16 left-0 w-64 bg-white bg-opacity-95 shadow-lg border border-gray-200 rounded-r-lg p-4 space-y-4 z-50">
+          <ul className="flex flex-col gap-4 text-brandBlue font-semibold">
+            <li>
+              <a
+                href="#hero"
                 onClick={() => setIsOpen(false)}
+                className="hover:text-blue-700 transition-colors"
               >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </Link>
-            ))}
-          </div>
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#programs"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-700 transition-colors"
+              >
+                Programs
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills-kickstart"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-700 transition-colors"
+              >
+                Free Guides
+              </a>
+            </li>
+            <li>
+              <a
+                href="#certifications"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-700 transition-colors"
+              >
+                Certifications
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-700 transition-colors"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
       )}
     </nav>
