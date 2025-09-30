@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/Navbar";  
+import navbar from "./components/navbar";  
 import HeroSection from "./components/HeroSection";
 import ProblemSection from "./components/ProblemSection";
 import ComparisonSection from "./components/ComparisonSection";
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-       <Navbar />
+       <navbar />
       <HeroSection />
 
       {/* Problem / Rebel Section */}
