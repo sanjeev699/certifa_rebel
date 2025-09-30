@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../Assets/logo4.png"; // update path to your logo
+ // update path to your logo
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,8 @@ const Navbar = () => {
           </button>
 
           {/* Logo */}
-          <img src={logo} alt="Certifa Logo" className="h-10 w-auto" />
+      <img src="/logo4.png" alt="Certifa Logo" className="h-8" />
+
         </div>
 
         {/* Desktop Menu */}
