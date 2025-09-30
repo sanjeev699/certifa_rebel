@@ -8,7 +8,7 @@ import ProgramSection from "./components/ProgramSection";
 import ProgramDetailsSection from "./components/ProgramDetailsSection";
 import SkillsKickstartSection from "./components/SkillsKickstartSection";
 import FAQSection from "./components/FAQSection";
-import ContactSection from "./components/ContactSection";
+//import ContactSection from "./components/ContactSection";
 //import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 
@@ -27,7 +27,6 @@ function App() {
       <ProgramDetailsSection />
       <SkillsKickstartSection />
       <FAQSection />
-      <ContactSection />
 
     </div>
   );
