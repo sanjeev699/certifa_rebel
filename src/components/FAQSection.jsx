@@ -1,80 +1,80 @@
-import React from "react";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "@/components/ui/accordion";
+import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "Who is this program designed for?",
+    question: "What makes Certifa different from others?",
     answer:
-      "Our programs are designed for students, professionals, and career changers who want to build in-demand skills and gain recognized certifications."
+      "We focus on real, industry-validated certifications that prove your skills. Our programs are designed to double your job opportunities and give you practical, career-ready knowledge.",
   },
   {
-    question: "Do I need prior experience to enroll?",
+    question: "Are the certifications recognized globally?",
     answer:
-      "No prior technical knowledge is required. Our courses are beginner-friendly and build step-by-step skills."
+      "Yes. Certifications like Microsoft, AWS, Salesforce, and PMI are globally trusted across industries and geographies.",
   },
   {
-    question: "Is the certification globally recognized?",
+    question: "Do I need prior experience to join?",
     answer:
-      "Yes! Our certifications are trusted by employers worldwide and validated across industries."
+      "Not necessarily. Some programs are beginner-friendly, while others require basic knowledge. Each program clearly mentions prerequisites.",
   },
   {
-    question: "Will this program help me get a job or promotion?",
+    question: "Will I get placement assistance?",
     answer:
-      "Absolutely. Our certifications are designed to double your job opportunities, strengthen your resume, and help you stand out in interviews."
+      "Absolutely! We offer dedicated career guidance, resume building, mock interviews, and job connections through our network.",
   },
   {
-    question: "Do you provide career guidance or placement support?",
+    question: "What if I miss a class?",
     answer:
-      "Yes, we offer career mentorship, resume reviews, and placement support to ensure you achieve your goals."
+      "No worries. All live sessions are recorded and made available, so you can catch up anytime.",
   },
   {
-    question: "What is the program fee, and are there EMI options?",
+    question: "Is there a refund policy?",
     answer:
-      "Program fees vary by course. We provide affordable EMI/payment plans and occasional scholarship offers."
+      "Yes, we have a transparent refund policy that ensures you feel confident enrolling with us. Details are available in our Terms & Conditions.",
   },
-  {
-    question: "Will I get lifetime access to the content?",
-    answer:
-      "Yes, once enrolled you’ll have lifetime access to all course content, resources, and updates."
-  },
-  {
-    question: "How do I enroll?",
-    answer:
-      "Simply click on the 'Enroll Now' button, fill in your details, and complete the payment. Our team will guide you from there."
-  }
 ];
 
 const FAQSection = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-6 md:px-12">
+    <section className="py-20 bg-gray-50" id="faq">
+      <div className="max-w-4xl mx-auto px-6 md:px-12">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-brandBlue mb-4">
           Frequently Asked Questions
         </h2>
-        <p className="text-gray-700 text-center mb-12 max-w-2xl mx-auto">
-          Got questions? We’ve got you covered. Here are some answers to help you
-          understand our programs better.
+        <p className="text-center text-gray-700 mb-12">
+          Got questions? We’ve got answers.
         </p>
 
-        {/* Accordion */}
-        <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
+        {/* FAQ List */}
+        <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-lg font-semibold text-brandBlue">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
+            <div
+              key={index}
+              className="border rounded-lg bg-white shadow-sm overflow-hidden"
+            >
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="w-full flex justify-between items-center px-6 py-4 text-left focus:outline-none"
+              >
+                <span className="font-medium text-gray-800">
+                  {faq.question}
+                </span>
+                <span className="text-brandBlue font-bold text-xl">
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </button>
+              {openIndex === index && (
+                <div className="px-6 pb-4 text-gray-600">{faq.answer}</div>
+              )}
+            </div>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );
