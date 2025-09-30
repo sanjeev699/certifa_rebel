@@ -35,7 +35,7 @@ const faqs = [
     question: "Can I start learning before enrolling?",
     answer: (
       <p>
-        Yes! You can kickstart your learning with our high-competence, in-demand courses worth <span className="font-bold text-brandBlue">₹18,000</span>, <span className="font-bold text-brandBlue">absolutely free</span>! 
+        Yes! You can kickstart your learning with our high-competence, in-demand courses worth <span className="font-bold">₹18,000</span>, <span className="font-bold">absolutely free</span>! 
         These courses let you explore Excel, Databases, and Interview Communication even before you join the program. 
         Start learning now. You may{" "}
         <a href="#skills-kickstart" className="text-brandBlue font-bold underline">
