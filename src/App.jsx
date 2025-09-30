@@ -9,7 +9,7 @@ import ProgramDetailsSection from "./components/ProgramDetailsSection";
 import SkillsKickstartSection from "./components/SkillsKickstartSection";
 import FAQSection from "./components/FAQSection";
 import ContactSection from "./components/ContactSection";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
+//import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 
 
@@ -28,7 +28,7 @@ function App() {
       <SkillsKickstartSection />
       <FAQSection />
       <ContactSection />
-      <FloatingWhatsApp />
+   //   <FloatingWhatsApp />
 
     </div>
   );
