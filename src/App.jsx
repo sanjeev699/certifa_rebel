@@ -7,6 +7,7 @@ import CertificationsSection from "./components/CertificationsSection";
 import ProgramSection from "./components/ProgramSection";
 import ProgramDetailsSection from "./components/ProgramDetailsSection";
 import SkillsKickstartSection from "./components/SkillsKickstartSection";
+import FAQSection from "./components/FAQSection";
 
 
 // You will add other sections later, e.g. ComparisonSection, CertificationsSection, etc.
@@ -27,6 +28,8 @@ function App() {
       <ProgramSection />
       <ProgramDetailsSection/>
       <SkillsKickstartSection/>
+      <FAQSection/>
+      
       {/* <AdvantagesSection /> */}
       {/* <ManifestoSection /> */}
       {/* <CTASection /> */}
