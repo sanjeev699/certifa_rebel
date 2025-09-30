@@ -3,7 +3,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 const ComparisonSection = () => {
   return (
-     id="comparison"
+     //id="comparison"
     <section className="relative py-20 overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#fde87c] via-[#fff8c2] to-[#fff5c2] z-0"></div>
