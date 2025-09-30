@@ -37,11 +37,47 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href="#problem"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-700 transition-colors"
+              >
+                Why is Certifa a rebel?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#comparison"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-700 transition-colors"
+              >
+                How's Certifa different than others?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#whycert"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-700 transition-colors"
+              >
+                Why get Global Certifications?
+              </a>
+            </li>
+            <li>
+               <a
                 href="#programs"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Programs
+                Programs we offer
+              </a>
+            </li>
+            <li>
+             <a
+             href="#program-details"
+             onClick={() => setIsOpen(false)}
+             className="hover:text-blue-700 transition-colors"
+             >
+                Flag ship program - Data Analyst Pro Package(PL-300 certification)
               </a>
             </li>
             <li>
@@ -50,16 +86,16 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Free Guides
+                ₹18,000 worth Courses for Free - Start learning now!
               </a>
             </li>
             <li>
               <a
-                href="#certifications"
+                href="#Faq"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Certifications
+                FAQs
               </a>
             </li>
             <li>
