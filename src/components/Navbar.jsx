@@ -77,7 +77,7 @@ const Navbar = () => {
              onClick={() => setIsOpen(false)}
              className="hover:text-blue-700 transition-colors"
              >
-                Data Analyst Pro Package(PL-300 cert) -<strong> Flagship program</strong>
+                Data Analyst Pro(PL-300 cert) <strong> Flagship program</strong>
               </a>
             </li>
             <li>
@@ -86,7 +86,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-               Start learning now -  ₹18,000 worth Courses<strong>[Free]</strong>
+               Start learning -  ₹18,000 worth Courses<strong>[Free]</strong>
               </a>
             </li>
             <li>
