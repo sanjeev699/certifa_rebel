@@ -8,6 +8,9 @@ import ProgramSection from "./components/ProgramSection";
 import ProgramDetailsSection from "./components/ProgramDetailsSection";
 import SkillsKickstartSection from "./components/SkillsKickstartSection";
 import FAQSection from "./components/FAQSection";
+import ContactSection from "./components/ContactSection";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
+
 
 
 // You will add other sections later, e.g. ComparisonSection, CertificationsSection, etc.
@@ -29,7 +32,8 @@ function App() {
       <ProgramDetailsSection/>
       <SkillsKickstartSection/>
       <FAQSection/>
-      
+      <ContactSection/>
+      <FloatingWhatsApp/>
       {/* <AdvantagesSection /> */}
       {/* <ManifestoSection /> */}
       {/* <CTASection /> */}
