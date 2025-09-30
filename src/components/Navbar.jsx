@@ -1,87 +1,70 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../Assets/logo4.jpg"; // adjust path
+import { Link } from "react-scroll";
+import { Menu, X } from "lucide-react";
+import logo from "../Assets/logo.png"; // ensure this path is correct
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
-        {/* Left: Hamburger + Logo */}
-        <div className="flex items-center gap-4">
-          {/* Hamburger */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-brandBlue text-2xl focus:outline-none"
-          >
-            {isOpen ? <FaTimes /> : <FaBars />}
-          </button>
+  const sections = ["home", "courses", "about", "contact", "faq"];
 
+  return (
+    <nav className="fixed w-full z-50 bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <img src={logo} alt="Certifa Logo" className="h-8" />
+          <div className="flex-shrink-0">
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-12 w-auto cursor-pointer" // increased size
+            />
+          </div>
+
+          {/* Desktop menu */}
+          <div className="hidden md:flex space-x-8">
+            {sections.map((section) => (
+              <Link
+                key={section}
+                to={section}
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-gray-700 hover:text-blue-600 font-medium transition"
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-700 focus:outline-none"
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Dropdown Menu (shows on all screen sizes) */}
+      {/* Mobile dropdown */}
       {isOpen && (
-        <div className="absolute top-16 left-0 bg-white shadow-lg rounded-r-lg w-64">
-          <ul className="flex flex-col py-6 space-y-4 text-brandBlue font-semibold px-4">
-            <li>
-              <a
-                href="#hero"
+        <div className="absolute top-16 left-0 w-56 bg-white rounded-2xl shadow-2xl border border-gray-100 animate-slide-down">
+          <div className="flex flex-col py-4 px-6 space-y-3">
+            {sections.map((section) => (
+              <Link
+                key={section}
+                to={section}
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-gray-700 hover:text-blue-600 font-medium transition"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-blue-700 transition-colors"
               >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#programs"
-                onClick={() => setIsOpen(false)}
-                className="hover:text-blue-700 transition-colors"
-              >
-                Programs
-              </a>
-            </li>
-            <li>
-              <a
-                href="#skills-kickstart"
-                onClick={() => setIsOpen(false)}
-                className="hover:text-blue-700 transition-colors"
-              >
-                Free Guides
-              </a>
-            </li>
-            <li>
-              <a
-                href="#certifications"
-                onClick={() => setIsOpen(false)}
-                className="hover:text-blue-700 transition-colors"
-              >
-                Certifications
-              </a>
-            </li>
-            <li>
-              <a
-                href="#faq"
-                onClick={() => setIsOpen(false)}
-                className="hover:text-blue-700 transition-colors"
-              >
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                onClick={() => setIsOpen(false)}
-                className="hover:text-blue-700 transition-colors"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </nav>
