@@ -28,7 +28,6 @@ function App() {
       <SkillsKickstartSection />
       <FAQSection />
       <ContactSection />
-   //   <FloatingWhatsApp />
 
     </div>
   );
