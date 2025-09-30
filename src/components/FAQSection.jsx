@@ -36,7 +36,7 @@ const faqs = [
     answer: (
       <p>
         Yes! You can kickstart your learning with our high-competence, in-demand <span className="font-bold">Skills Kickstart Series
-</span> worth ₹18,000, absolutely free</span>! 
+</span> worth ₹18,000, absolutely free! 
         These courses let you explore Excel, Databases, and Interview Communication even before you join the program. 
         You may{" "}
         <a href="#skills-kickstart" className="text-brandBlue font-bold underline">
