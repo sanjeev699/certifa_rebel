@@ -10,7 +10,8 @@
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
     "react-icons": "^4.10.1",
-    "react-scroll": "^1.9.0"
+    "react-scroll": "^1.9.0",
+    "lucide-react": "^0.441.0"
 
   },
   "scripts": {
