@@ -7,7 +7,9 @@ import pmiLogo from "../Assets/PMI-Logo.png";
 
 const CertificationsSection = () => {
   return (
-    <section className="relative py-20 bg-white">
+    <section 
+      id="whycert"
+      className="relative py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-brandBlue mb-4">
