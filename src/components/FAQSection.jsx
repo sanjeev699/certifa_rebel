@@ -16,21 +16,36 @@ const faqs = [
     answer:
       "Not necessarily. Some programs are beginner-friendly, while others require basic knowledge. Each program clearly mentions prerequisites.",
   },
+
+   {
+    question: "What will be the mode of teaching?",
+    answer:
+      "Classes will be held over Live-Zoom sessions. These classes will be recorded and made available for future reference",
+  },
   {
     question: "Will I get placement assistance?",
     answer:
-      "Absolutely! We offer dedicated career guidance, resume building, mock interviews, and job connections through our network.",
+      "Absolutely! We offer dedicated career guidance, resume building, and mock interviews. There are certain courses with specific offers, please check with the team for more info.",
   },
   {
+    
     question: "What if I miss a class?",
     answer:
       "No worries. All live sessions are recorded and made available, so you can catch up anytime.",
   },
   {
-    question: "Is there a refund policy?",
+    
+    question: "Can I start learning before enrolling?",
     answer:
-      "Yes, we have a transparent refund policy that ensures you feel confident enrolling with us. Details are available in our Terms & Conditions.",
+      (
+      <p>
+        Yes! You can kickstart your learning with our high competent and in-demand courses worth ₹18,000, aboslutley free of cost! These courses let you explore Excel, Databases, and Interview Communication even before you join the program. Start learning now
+      You may {' '}
+        <a href="#skills-kickstart" className="text-brandBlue font-bold underline">
+        start 
+        </a>{' '} here</p>
   },
+  
 ];
 
 const FAQSection = () => {
