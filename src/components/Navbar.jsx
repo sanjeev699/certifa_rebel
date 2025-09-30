@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
-import logo from "../Assets/logo.jpg"; // ensure this path is correct
+import logo from "../Assets/logo4.jpg"; // ensure this path is correct
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
