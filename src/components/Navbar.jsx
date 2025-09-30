@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../Assets/logo4.png"; // adjust path
+import logo from "../Assets/logo4.jpg"; // adjust path
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
