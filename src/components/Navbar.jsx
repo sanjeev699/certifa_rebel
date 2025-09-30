@@ -41,7 +41,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Why is Certifa a rebel?
+                Certifa is a rebel. But why?
               </a>
             </li>
             <li>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                How's Certifa different than others?
+                How's Certifa different
               </a>
             </li>
             <li>
@@ -77,7 +77,7 @@ const Navbar = () => {
              onClick={() => setIsOpen(false)}
              className="hover:text-blue-700 transition-colors"
              >
-                Flag ship program - Data Analyst Pro Package(PL-300 certification)
+                Data Analyst Pro Package(PL-300 cert) -<strong> Flagship program</strong>
               </a>
             </li>
             <li>
@@ -86,7 +86,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                ₹18,000 worth Courses for Free - Start learning now!
+               Start learning now -  ₹18,000 worth Courses<strong>[Free]</strong>
               </a>
             </li>
             <li>
@@ -104,7 +104,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Contact
+                Get in touch!
               </a>
             </li>
           </ul>
