@@ -18,7 +18,7 @@ const Navbar = () => {
           </button>
 
           {/* Logo */}
-          <img src="/logo4.png" alt="Certifa Logo" className="h-12 md:h-16" />
+          <img src="/logo4.jpg" alt="Certifa Logo" className="h-12 md:h-16" />
         </div>
       </div>
 
