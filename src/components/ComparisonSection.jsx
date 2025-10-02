@@ -13,7 +13,7 @@ const ComparisonSection = () => {
   className="absolute inset-0"
   style={{
     backgroundColor: "#f9cd05",
-    backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 5px)",
+    backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 3px)",
     backgroundSize: "20px 20px"
   }}
 ></div>
