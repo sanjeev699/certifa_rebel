@@ -14,7 +14,7 @@ const HeroSection = () => {
    //<div className="absolute inset-0 bg-black bg-opacity-40"></div>*/}
 
       {/* Content */}
-      <div className="relative z-10 px-4">
+      <div className="relative z-10 px-4 -mt-2">
         <h1 className="text-6xl md:text-10xl font-extrabold text-white mb-6">
          Earn Certifications that matter!
         </h1>
