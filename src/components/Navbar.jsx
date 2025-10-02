@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white bg-opacity-95 shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center h-16">
         {/* Left: Hamburger + Logo */}
         <div className="flex items-center gap-4">
