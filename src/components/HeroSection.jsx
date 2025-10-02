@@ -14,13 +14,13 @@ const HeroSection = () => {
    //<div className="absolute inset-0 bg-black bg-opacity-40"></div>*/}
 
       {/* Content */}
-      <div className="relative z-10 px-4 -mt-2">
+      <div className="relative z-10 px-4 -mt-3">
         <h1 className="text-6xl md:text-10xl font-extrabold text-white mb-6">
          Earn Certifications that matter!
         </h1>
-        <p className="text-brandBlue text-lg md:text-2xl mb-8">
-          Certifa helps you earn <span className="font-semibold">Global Certifications</span> and 
-          <span className="font-semibold"> hands-on skills</span> that hiring managers actually seek and respect.
+        <p className="text-brandBlue text-lg md:text-2xl mb-8 -mt-3">
+          Certifa helps you earn <span className="font-bold">Global Certifications</span> and 
+          <span className="font-bold"> hands-on skills</span> that hiring managers actually seek and respect.
         </p>
 
         
