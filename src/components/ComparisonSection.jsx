@@ -11,20 +11,7 @@ const ComparisonSection = () => {
       {/* Background Gradient */}
 <div className="absolute inset-0 bg-[#f9cd05]"> </div>
 
-   {/* Blob 1 */}
-  <div className="absolute w-72 h-72 bg-white/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse top-10 left-10"></div>
-
-  {/* Blob 2 */}
-  <div className="absolute w-96 h-96 bg-orange-400/30 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-ping top-40 right-10"></div>
-
-  {/* Blob 3 */}
-  <div className="absolute w-80 h-80 bg-pink-400/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-bounce bottom-20 left-1/4"></div>
-
-
-
-
-
-      {/* Floating/Abstract Shapes 
+       {/* Floating/Abstract Shapes 
       <div className="absolute top-10 left-1/4 w-72 h-72 bg-blue-300 opacity-6 rounded-full rotate-12 animate-pulse-slow"></div>
       <div className="absolute bottom-20 right-1/3 w-80 h-80 bg-blue-400 opacity-5 rounded-full -rotate-6 animate-ping-slow"></div>
       <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-blue-200 opacity-8 rounded-full rotate-45 animate-pulse-slow"></div>
