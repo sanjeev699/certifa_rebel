@@ -35,18 +35,16 @@ const ProblemSection = () => {
         </div>
       </div>
 
-      {/* Buttons container: placed after the flex row so it spans full width */}
-     <div className="mt-12 flex flex-col md:flex-row justify-center gap-4 max-w-md mx-auto">
-        {/* Narrative button: goes to next logical section */}
-        <CTAButton link="#comparison" variant="blue">
-          How are we different?
-        </CTAButton>
+     {/* Buttons container */}
+         <div className="mt-12 flex flex-row justify-center gap-4">
+          <CTAButton link="#problem" variant="blue" className="w-auto">
+            How're we different
+          </CTAButton>
 
-        {/* Enroll button: goes to enroll section */}
-        <CTAButton link="#enroll" variant="yellow">
-          Enroll Now
-        </CTAButton>
-      </div>
+          <CTAButton link="#enroll" variant="yellow" className="w-auto">
+            Enroll Now
+          </CTAButton>
+        </div>
     </section>
   );
 };
