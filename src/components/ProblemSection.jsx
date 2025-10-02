@@ -36,7 +36,7 @@ const ProblemSection = () => {
       </div>
 
       {/* Buttons container: placed after the flex row so it spans full width */}
-      <div className="mt-12 flex flex-col md:flex-row justify-center gap-4">
+     <div className="mt-12 flex flex-col md:flex-row justify-center gap-4 max-w-md mx-auto">
         {/* Narrative button: goes to next logical section */}
         <CTAButton link="#comparison" variant="blue">
           How are we different?
