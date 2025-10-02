@@ -27,8 +27,9 @@ function App() {
       <ProgramDetailsSection />
       <SkillsKickstartSection />
       <FAQSection />
-      <ContactSection/>
        <EnrollForm/>
+      <ContactSection/>
+      
 
 
 
