@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import CTAButton from "./CTAButton";
+
 
 const faqs = [
   {
@@ -91,6 +93,12 @@ const FAQSection = () => {
             </div>
           ))}
         </div>
+
+<div className="mt-12 flex flex-row justify-center gap-4">
+    <CTAButton link="#enroll" variant="yellow" className="w-auto">
+            Enroll Now
+          </CTAButton>
+        </div>    
       </div>
     </section>
   );
