@@ -13,10 +13,10 @@ const ProgramSection = () => {
        {/* Floating/Abstract Shapes */}
      {/* Animated Background Blobs */}
 {/* Diagonal Floating Animated Blobs */}
-<div className="absolute top-16 left-1/3 w-40 h-40 md:w-64 md:h-64 bg-white opacity-18 rounded-full -rotate-6 animate-ping-slow"></div>
-<div className="absolute bottom-10 left-1/4 w-48 h-48 md:w-72 md:h-72 bg-blue-300 opacity-20 rounded-full rotate-12 animate-ping-slow"></div>
-<div className="absolute top-1/3 right-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-56 md:h-56 bg-blue-400 opacity-12 rounded-full -rotate-45 animate-ping-slow"></div>
-<div className="absolute bottom-0 right-0 w-28 h-28 md:w-44 md:h-44 bg-brandBlue opacity-15 rounded-full rotate-18 animate-ping-slow"></div>
+<div className="absolute top-15 left-3/4 w-48 h-48 md:w-72 md:h-72 bg-white opacity-20 rounded-full rotate-12 animate-ping-slow"></div>
+<div className="absolute bottom-10 right-1/4 w-56 h-56 md:w-80 md:h-80 bg-blue-500 opacity-25 rounded-full -rotate-6 animate-ping-slow"></div>
+<div className="absolute top-1/2 left-3/4 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-60 md:h-60 bg-blue-400 opacity-10 rounded-full rotate-45 animate-ping-slow"></div>
+<div className="absolute bottom-0 right-0 w-32 h-32 md:w-48 md:h-48 bg-brandBlue opacity-20 rounded-full -rotate-12 animate-ping-slow"></div>
 
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center">
