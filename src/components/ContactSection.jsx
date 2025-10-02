@@ -1,4 +1,5 @@
 import React from "react";
+import CTAButton from "./CTAButton";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const ContactSection = () => {
@@ -29,19 +30,15 @@ const ContactSection = () => {
             Chat on WhatsApp
           </a>
 
-          {/* Email */}
-          <a
-            href="mailto:contact@certifa.com"
-            className="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 shadow-lg transform hover:-translate-y-1"
-          >
-            <FaEnvelope className="text-2xl" />
-            Send Email
-          </a>
+          {/* Enroll */}
+        <CTAButton link="#enroll" variant="yellow" className="w-auto">
+            Enroll Now
+          </CTAButton>
         </div>
 
         {/* Optional Footer Note */}
         <p className="text-gray-500 mt-8 text-sm">
-          We’re here to assist you 24/7. Your queries are important to us.
+          We’re here to assist you. Your queries are important to us.
         </p>
       </div>
     </section>
