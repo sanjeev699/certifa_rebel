@@ -5,13 +5,12 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 const ComparisonSection = () => {
   return (
-        <section 
-          id="comparison"
-          className="relative py-20 overflow-hidden"
-      {/* Background Gradient */}
-style={{
-        background: "linear-gradient(0deg, #f9cd05 0%, #fde87c 50%, #f9cd05 100%)",
-      }}
+       <section
+  id="comparison"
+  className="relative py-20 overflow-hidden"
+  style={{
+    background: "linear-gradient(0deg, #f9cd05 0%, #fde87c 50%, #f9cd05 100%)",
+  }}
 >
        {/* Floating/Abstract Shapes */}
      {/* Animated Background Blobs */}
