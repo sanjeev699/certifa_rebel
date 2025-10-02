@@ -15,8 +15,8 @@ const HeroSection = () => {
 
       <div className="absolute top-16 left-1/3 w-40 h-40 md:w-64 md:h-64 bg-white opacity-18 rounded-full -rotate-6 animate-ping-slow"></div>
 <div className="absolute bottom-10 left-3/4 w-48 h-48 md:w-72 md:h-72 bg-brandBlue opacity-18 rounded-full rotate-12 animate-ping-slow"></div>
-<div className="absolute top-1/3 right-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-56 md:h-56 bg-blue-400 opacity-12 rounded-full -rotate-45 animate-ping-slow"></div>
-<div className="absolute bottom-0 right-2/3 w-28 h-28 md:w-44 md:h-44 bg-yellow-200 opacity-18 rounded-full rotate-18 animate-ping-slow"></div>
+<div className="absolute top-1/3 right-1/4 transform -translate-x-1/2 -translate-y-1/2 w-36 h-36 md:w-56 md:h-56 bg-yellow-400 opacity-12 rounded-full -rotate-45 animate-ping-slow"></div>
+<div className="absolute bottom-0 right-2/3 w-28 h-28 md:w-44 md:h-44 bg-blue-200 opacity-18 rounded-full rotate-18 animate-ping-slow"></div>
 
 
       {/* Content */}
