@@ -10,7 +10,7 @@ import SkillsKickstartSection from "./components/SkillsKickstartSection";
 import FAQSection from "./components/FAQSection";
 import ContactSection from "./components/ContactSection";
 import EnrollForm from "./components/EnrollForm";
-import footer from "./components/footer";
+import Footer from "./components/Footer";
 
 
 
@@ -30,7 +30,7 @@ function App() {
       <FAQSection />
        <EnrollForm/>
       <ContactSection/>
-      <footer/>
+      <Footer/>
       
 
 
