@@ -108,7 +108,7 @@ const ComparisonSection = () => {
 
          {/* Buttons container */}
          <div className="mt-12 flex flex-row justify-center gap-4">
-          <CTAButton link="#problem" variant="white" className="w-auto">
+          <CTAButton link="#whycert" variant="white" className="w-auto">
             Why Global Certification?
           </CTAButton>
 
