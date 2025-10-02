@@ -1,54 +1,82 @@
 import React, { useState } from "react";
 
-const EnrollForm = ({ isOpen, onClose }) => {
+const EnrollSection = () => {
   const [formData, setFormData] = useState({
     name: "",
     education: "",
     experience: "",
     location: "",
     program: "",
+    declaration: false,
   });
 
-  if (!isOpen) return null;
-
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!formData.declaration) {
+      alert("Please accept the self-declaration to enroll.");
+      return;
+    }
 
-    // ✅ 1. Send to Google Sheets (via Apps Script Webhook)
-    fetch("YOUR_GOOGLE_SCRIPT_URL", {
+    // 1️⃣ WhatsApp link
+    const whatsappMessage = `Hi, I want to enroll for ${formData.program}. Here are my details:
+Name: ${formData.name}
+Education: ${formData.education}
+Experience: ${formData.experience} years
+Location: ${formData.location}`;
+    const whatsappLink = `https://wa.me/916366072794?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+    window.open(whatsappLink, "_blank");
+
+    // 2️⃣ Google Sheet integration via Google Apps Script webhook
+    fetch("YOUR_GOOGLE_SCRIPT_WEBHOOK_URL", {
       method: "POST",
       body: JSON.stringify(formData),
-      headers: { "Content-Type": "application/json" },
+    })
+      .then(() => alert("Enrollment request submitted successfully!"))
+      .catch(() => alert("Something went wrong. Please try again."));
+
+    // Reset form
+    setFormData({
+      name: "",
+      education: "",
+      experience: "",
+      location: "",
+      program: "",
+      declaration: false,
     });
-
-    // ✅ 2. Open WhatsApp with pre-filled message
-    const message = `Hi, I want to enroll.\n\nName: ${formData.name}\nEducation: ${formData.education}\nExperience: ${formData.experience}\nLocation: ${formData.location}\nProgram: ${formData.program}`;
-    window.open(`https://wa.me/916366072794?text=${encodeURIComponent(message)}`, "_blank");
-
-    // ✅ 3. Close modal
-    onClose();
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-xl shadow-lg p-8 w-full max-w-lg">
-        <h2 className="text-2xl font-bold text-brandBlue mb-6 text-center">
+    <section id="enroll" className="py-20 bg-white">
+      <div className="max-w-3xl mx-auto px-6 md:px-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-brandBlue text-center mb-6">
           Enroll Now
         </h2>
+        <p className="text-center text-gray-700 mb-12">
+          Fill out the form below and secure your spot in your chosen program.
+        </p>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-gray-50 p-8 rounded-xl shadow-md space-y-6"
+        >
           <input
             type="text"
             name="name"
             placeholder="Full Name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full border px-4 py-2 rounded-md"
             required
+            className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-brandBlue"
           />
 
           <input
@@ -57,18 +85,18 @@ const EnrollForm = ({ isOpen, onClose }) => {
             placeholder="Highest Education"
             value={formData.education}
             onChange={handleChange}
-            className="w-full border px-4 py-2 rounded-md"
             required
+            className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-brandBlue"
           />
 
           <input
-            type="text"
+            type="number"
             name="experience"
-            placeholder="Years of Work Experience"
+            placeholder="Overall Years of Work Experience"
             value={formData.experience}
             onChange={handleChange}
-            className="w-full border px-4 py-2 rounded-md"
             required
+            className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-brandBlue"
           />
 
           <input
@@ -77,51 +105,49 @@ const EnrollForm = ({ isOpen, onClose }) => {
             placeholder="Current Location"
             value={formData.location}
             onChange={handleChange}
-            className="w-full border px-4 py-2 rounded-md"
             required
+            className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-brandBlue"
           />
 
           <select
             name="program"
             value={formData.program}
             onChange={handleChange}
-            className="w-full border px-4 py-2 rounded-md"
             required
+            className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-brandBlue"
           >
             <option value="">Select Program</option>
-            <option value="Data Science">Data Science</option>
-            <option value="Cloud Computing">Cloud Computing</option>
-            <option value="Project Management">Project Management</option>
-            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Data Analytics Pro Package">
+              Data Analytics Pro Package
+            </option>
+            <option value="Skills Kickstart Series">Skills Kickstart Series</option>
+            {/* Add more programs here */}
           </select>
 
-          {/* Declaration */}
-          <div className="flex items-start gap-2">
-            <input type="checkbox" required />
-            <p className="text-sm text-gray-700">
-              I hereby declare I want to enroll for this program. Kindly guide me further.
-            </p>
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              name="declaration"
+              checked={formData.declaration}
+              onChange={handleChange}
+              className="h-5 w-5 text-brandBlue"
+              required
+            />
+            <label className="text-gray-700">
+              I want to enroll for this program
+            </label>
           </div>
 
-          <div className="flex justify-between mt-6">
-            <button
-              type="button"
-              onClick={onClose}
-              className="px-4 py-2 bg-gray-300 rounded-md"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="px-6 py-2 bg-brandBlue text-white font-bold rounded-md hover:bg-blue-700"
-            >
-              Submit
-            </button>
-          </div>
+          <button
+            type="submit"
+            className="w-full bg-brandYellow text-black font-semibold py-3 rounded-full hover:bg-yellow-500 transition"
+          >
+            Submit & WhatsApp Now
+          </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default EnrollForm;
+export default EnrollSection;
