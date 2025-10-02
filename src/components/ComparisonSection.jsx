@@ -106,14 +106,15 @@ const ComparisonSection = () => {
           </div>
         </div>
 
-        {/* Button */}
-        <div className="text-center mt-12">
-          <a
-            href="#certifications"
-            className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
-          >
-            Explore Certifications
-          </a>
+         {/* Buttons container */}
+         <div className="mt-12 flex flex-row justify-center gap-4">
+          <CTAButton link="#problem" variant="white" className="w-auto">
+            Why Global Certification?
+          </CTAButton>
+
+          <CTAButton link="#enroll" variant="blue" className="w-auto">
+            Enroll Now
+          </CTAButton>
         </div>
       </div>
     </section>
