@@ -22,12 +22,20 @@ const HeroSection = () => {
           Certifa helps you earn <span className="font-semibold">Global Certifications</span> and 
           <span className="font-semibold"> hands-on skills</span> that hiring managers actually seek and respect.
         </p>
-        <a
-          href="#brochure"
-          className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
-        >
-          Get Started!
-        </a>
+
+        
+     {/* Buttons container */}
+        <div className="flex flex-col md:flex-row justify-center gap-4">
+          {/* Narrative button: goes to next logical section */}
+          <CTAButton link="#problem" variant="blue">
+            Meet the rebels
+          </CTAButton>
+
+          {/* Enroll button: goes to enroll section */}
+          <CTAButton link="#enroll" variant="enrol">
+            Enroll Now
+          </CTAButton>
+        </div>
       </div>
     </section>
   );
