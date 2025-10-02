@@ -25,14 +25,12 @@ const HeroSection = () => {
 
         
      {/* Buttons container */}
-       <div className="mt-12 flex flex-col md:flex-row justify-center gap-4 max-w-md mx-auto">
-          {/* Narrative button: goes to next logical section */}
-          <CTAButton link="#problem" variant="white">
+         <div className="mt-12 flex flex-row justify-center gap-4">
+          <CTAButton link="#problem" variant="white" className="w-auto">
             Meet the rebels
           </CTAButton>
 
-          {/* Enroll button: goes to enroll section */}
-          <CTAButton link="#enroll" variant="blue">
+          <CTAButton link="#enroll" variant="blue" className="w-auto">
             Enroll Now
           </CTAButton>
         </div>
