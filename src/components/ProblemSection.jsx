@@ -1,6 +1,5 @@
 import React from "react";
-import CTAButton from "./CTAButton";
-
+import CTAButton from "./CTAButton"; // make sure path is correct
 import brokenEducationImg from "../Assets/rebel.jpg";
 
 const ProblemSection = () => {
@@ -34,20 +33,19 @@ const ProblemSection = () => {
             className="w-80 md:w-[600px] h-80 md:h-[600px] transform transition-transform duration-500 hover:scale-105 rounded-lg shadow-lg"
           />
         </div>
+      </div>
 
-       {/* Buttons container */}
-        <div className="flex flex-col md:flex-row justify-center gap-4">
-          {/* Narrative button: goes to next logical section */}
-          <CTAButton link="#comparison" variant="blue">
-           How are we different?
-          </CTAButton>
+      {/* Buttons container: placed after the flex row so it spans full width */}
+      <div className="mt-12 flex flex-col md:flex-row justify-center gap-4">
+        {/* Narrative button: goes to next logical section */}
+        <CTAButton link="#comparison" variant="blue">
+          How are we different?
+        </CTAButton>
 
-          {/* Enroll button: goes to enroll section */}
-          <CTAButton link="#enroll" variant="yellow">
-            Enroll Now
-          </CTAButton>
-        </div>
-
+        {/* Enroll button: goes to enroll section */}
+        <CTAButton link="#enroll" variant="enrol">
+          Enroll Now
+        </CTAButton>
       </div>
     </section>
   );
