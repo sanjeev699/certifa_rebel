@@ -33,8 +33,10 @@ const ContactSection = () => {
           {/* Enroll 
         <CTAButton link="#enroll" variant="yellow" className="w-auto">
             Enroll Now
-          </CTAButton>
-        </div> */}
+          </CTAButton>*/}
+
+          
+        </div> 
 
         {/* Optional Footer Note */}
         <p className="text-gray-500 mt-8 text-sm">
