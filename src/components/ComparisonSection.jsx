@@ -1,4 +1,6 @@
 import React from "react";
+import CTAButton from "./CTAButton";
+
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 const ComparisonSection = () => {
