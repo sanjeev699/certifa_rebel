@@ -107,7 +107,7 @@ const ProgramDetailsSection = () => {
     Grab your brochure below 👇
   </p>
 
-  <div className="mt-12 flex flex-row justify-center gap-4 flex-wrap">
+  <div className="mt-8 flex flex-row justify-center gap-4 flex-wrap">
   {/* Why Global Certification Button */}
  
 
