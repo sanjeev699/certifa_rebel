@@ -9,7 +9,7 @@ const ComparisonSection = () => {
           id="comparison"
           className="relative py-20 overflow-hidden">
       {/* Background Gradient */}
-<div className="absolute inset-0 bg-[#f9cd05]"> </div>
+<div className="linear-gradient(0deg, #f9cd05 0%, #fde87c 50%, #f9cd05 100%)"> </div>
 
        {/* Floating/Abstract Shapes */}
      {/* Animated Background Blobs */}
