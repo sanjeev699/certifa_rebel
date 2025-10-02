@@ -7,12 +7,12 @@ const ComparisonSection = () => {
   return (
         <section 
           id="comparison"
-          className="relative py-20 overflow-hidden">
+          className="relative py-20 overflow-hidden"
       {/* Background Gradient */}
 style={{
         background: "linear-gradient(0deg, #f9cd05 0%, #fde87c 50%, #f9cd05 100%)",
       }}
-
+>
        {/* Floating/Abstract Shapes */}
      {/* Animated Background Blobs */}
 <div className="absolute top-10 left-1/4 w-48 h-48 md:w-72 md:h-72 bg-white opacity-20 rounded-full rotate-12 animate-ping-slow"></div>
