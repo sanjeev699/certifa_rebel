@@ -33,7 +33,7 @@ const HeroSection = () => {
      {/* Buttons container */}
          <div className="mt-12 flex flex-row justify-center gap-4">
           <CTAButton link="#problem" variant="white" className="w-auto">
-            Meet the rebels
+            Reason we rebel
           </CTAButton>
 
           <CTAButton link="#enroll" variant="blue" className="w-auto">
