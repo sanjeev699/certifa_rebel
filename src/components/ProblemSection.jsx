@@ -33,14 +33,17 @@ const ProblemSection = () => {
           />
         </div>
 
-        {/* Single Button — below image on mobile, below text on desktop */}
-        <div className="flex justify-center mt-6 order-3 md:order-2 w-full md:w-auto">
-          <a
-            href="#comparison"
-            className="bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 w-auto md:w-max text-center"
-          >
-            See How We Are Different
-          </a>
+       {/* Buttons container */}
+        <div className="flex flex-col md:flex-row justify-center gap-4">
+          {/* Narrative button: goes to next logical section */}
+          <CTAButton link="#comparison" variant="blue">
+           How are we different?
+          </CTAButton>
+
+          {/* Enroll button: goes to enroll section */}
+          <CTAButton link="#enroll" variant="yellow">
+            Enroll Now
+          </CTAButton>
         </div>
 
       </div>
