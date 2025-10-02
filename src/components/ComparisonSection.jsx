@@ -9,16 +9,11 @@ const ComparisonSection = () => {
           id="comparison"
           className="relative py-20 overflow-hidden">
       {/* Background Gradient */}
- <div className="absolute inset-0 bg-[#f9cd05]">
-  <svg className="w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-        <path d="M40 0H0V40" fill="none" stroke="white" strokeWidth="2"/>
-      </pattern>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#grid)" />
-  </svg>
+<div className="absolute inset-0 bg-[#f9cd05]">
+  <div className="absolute top-10 left-1/4 w-40 h-40 bg-white opacity-20 rounded-full blur-2xl"></div>
+  <div className="absolute bottom-10 right-1/3 w-60 h-60 bg-brandBlue opacity-10 rounded-full blur-3xl"></div>
 </div>
+
 
 
 
