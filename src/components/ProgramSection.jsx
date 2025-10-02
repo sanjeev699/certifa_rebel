@@ -7,7 +7,7 @@ const ProgramSection = () => {
       id="programs"
       className="py-20"
       style={{
-        background: "linear-gradient(135deg, #f9cd05 0% #fde87c 33%, #f9cd05 67%)",
+        background: "linear-gradient(135deg, #f9cd05 0%, #fde87c 50%, #f9cd05 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
