@@ -25,7 +25,7 @@ const HeroSection = () => {
 
         
      {/* Buttons container */}
-        <div className="flex flex-col md:flex-row justify-center gap-4">
+       <div className="mt-12 flex flex-col md:flex-row justify-center gap-4 max-w-md mx-auto">
           {/* Narrative button: goes to next logical section */}
           <CTAButton link="#problem" variant="white">
             Meet the rebels
