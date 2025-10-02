@@ -11,12 +11,12 @@ const ComparisonSection = () => {
       {/* Background Gradient */}
 <div className="absolute inset-0 bg-[#f9cd05]"> </div>
 
-       {/* Floating/Abstract Shapes 
+       {/* Floating/Abstract Shapes */}
       <div className="absolute top-10 left-1/4 w-72 h-72 bg-blue-300 opacity-6 rounded-full rotate-12 animate-pulse-slow"></div>
       <div className="absolute bottom-20 right-1/3 w-80 h-80 bg-blue-400 opacity-5 rounded-full -rotate-6 animate-ping-slow"></div>
       <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-blue-200 opacity-8 rounded-full rotate-45 animate-pulse-slow"></div>
       <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500 opacity-6 rounded-full -rotate-12 animate-ping-slow"></div>
-*/}
+
       {/* Main Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
 
