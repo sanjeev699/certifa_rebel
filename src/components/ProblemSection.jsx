@@ -1,4 +1,6 @@
 import React from "react";
+import CTAButton from "./CTAButton";
+
 import brokenEducationImg from "../Assets/rebel.jpg";
 
 const ProblemSection = () => {
