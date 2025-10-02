@@ -70,7 +70,7 @@ Location: ${formData.location}`;
 
         <form
           onSubmit={handleSubmit}
-          className="bg-brandblue-500 p-8 rounded-xl shadow-md space-y-6"
+          className="bg-bg-gray-50 p-8 rounded-xl shadow-md space-y-6"
         >
           <input
             type="text"
