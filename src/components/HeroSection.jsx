@@ -18,7 +18,7 @@ const HeroSection = () => {
         <h1 className="text-6xl md:text-10xl font-extrabold text-white mb-6">
          Earn Certifications that matter!
         </h1>
-        <p className="text-white text-lg md:text-2xl mb-8">
+        <p className="text-brandBlue text-lg md:text-2xl mb-8">
           Certifa helps you earn <span className="font-semibold">Global Certifications</span> and 
           <span className="font-semibold"> hands-on skills</span> that hiring managers actually seek and respect.
         </p>
