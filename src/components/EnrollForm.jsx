@@ -56,7 +56,21 @@ Location: ${formData.location}`;
   };
 
   return (
-    <section id="enroll" className="py-20 bg-white">
+    <section id="enroll" 
+      className="relative py-20 overflow-hidden"
+  style={{
+    background: "linear-gradient(0deg, #f9cd05 0%, #fde87c 50%, #f9cd05 100%)",
+  }}
+>
+       {/* Floating/Abstract Shapes */}
+     {/* Animated Background Blobs */}
+{/* Diagonal Floating Animated Blobs */}
+<div className="absolute top-15 left-1/4 w-48 h-48 md:w-72 md:h-72 bg-white opacity-20 rounded-full rotate-12 animate-ping-slow"></div>
+<div className="absolute bottom-10 right-3/4 w-56 h-56 md:w-80 md:h-80 bg-blue-500 opacity-25 rounded-full -rotate-6 animate-ping-slow"></div>
+<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-60 md:h-60 bg-blue-400 opacity-10 rounded-full rotate-45 animate-ping-slow"></div>
+<div className="absolute bottom-0 right-0 w-32 h-32 md:w-48 md:h-48 bg-brandBlue opacity-20 rounded-full -rotate-12 animate-ping-slow"></div>
+      
+      
       <div className="max-w-3xl mx-auto px-6 md:px-12">
         <h2 className="text-3xl md:text-4xl font-bold text-brandBlue text-center mb-6">
           Enroll Now
@@ -67,7 +81,7 @@ Location: ${formData.location}`;
 
         <form
           onSubmit={handleSubmit}
-          className="bg-gray-50 p-8 rounded-xl shadow-md space-y-6"
+          className="bg-brandblue-500 p-8 rounded-xl shadow-md space-y-6"
         >
           <input
             type="text"
