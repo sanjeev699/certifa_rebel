@@ -9,7 +9,8 @@ const ComparisonSection = () => {
           id="comparison"
           className="relative py-20 overflow-hidden">
       {/* Background Gradient */}
-<div className="absolute inset-0 bg-[#f9cd05]">
+<div className="absolute inset-0 bg-[#f9cd05]"> </div>
+
    {/* Blob 1 */}
   <div className="absolute w-72 h-72 bg-white/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse top-10 left-10"></div>
 
@@ -18,7 +19,7 @@ const ComparisonSection = () => {
 
   {/* Blob 3 */}
   <div className="absolute w-80 h-80 bg-pink-400/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-bounce bottom-20 left-1/4"></div>
-</div>
+
 
 
 
