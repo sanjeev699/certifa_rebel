@@ -88,13 +88,15 @@ const CertificationsSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
-          <a
-            href="#programs"
-            className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
-          >
-            Explore Certification Programs
-          </a>
+       {/* Buttons container */}
+         <div className="mt-12 flex flex-row justify-center gap-4">
+          <CTAButton link="#programs" variant="blue" className="w-auto">
+            Explore Programs
+          </CTAButton>
+
+          <CTAButton link="#enroll" variant="yellow" className="w-auto">
+            Enroll Now
+          </CTAButton>
         </div>
       </div>
     </section>
