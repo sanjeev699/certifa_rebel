@@ -5,11 +5,19 @@ const ProgramSection = () => {
   return (
     <section
       id="programs"
-      className="py-20"
-      style={{
-        background: "linear-gradient(0deg, #f9cd05 0%, #fde87c 50%, #f9cd05 100%)",
-      }}
-    >
+     className="relative py-20 overflow-hidden"
+  style={{
+    background: "linear-gradient(0deg, #f9cd05 0%, #fde87c 50%, #f9cd05 100%)",
+  }}
+>
+       {/* Floating/Abstract Shapes */}
+     {/* Animated Background Blobs */}
+{/* Diagonal Floating Animated Blobs */}
+<div className="absolute top-10 left-10 w-32 h-32 md:w-56 md:h-56 bg-white opacity-15 rounded-full -rotate-12 animate-ping-slow"></div>
+<div className="absolute top-1/4 left-1/3 w-40 h-40 md:w-64 md:h-64 bg-blue-300 opacity-18 rounded-full rotate-8 animate-ping-slow"></div>
+<div className="absolute top-1/2 left-1/2 w-36 h-36 md:w-60 md:h-60 bg-blue-400 opacity-12 rounded-full -rotate-6 animate-ping-slow"></div>
+<div className="absolute bottom-10 right-10 w-28 h-28 md:w-44 md:h-44 bg-brandBlue opacity-22 rounded-full rotate-20 animate-ping-slow"></div>
+      
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-brandBlue">
           Our Certification Programs
