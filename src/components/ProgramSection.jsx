@@ -19,7 +19,7 @@ const ProgramSection = () => {
 <div className="absolute bottom-0 right-1/5 w-28 h-28 md:w-44 md:h-44 bg-brandBlue opacity-22 rounded-full rotate-18 animate-ping-slow"></div>
 
       
-      <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-brandBlue">
           Our Certification Programs
         </h2>
