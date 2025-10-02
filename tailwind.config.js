@@ -5,11 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-
-      animation: {
-        'pulse-slow': 'pulse 3s ease-in-out infinite',
-        'ping-slow': 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
-      },
       colors: {
         brandYellow: "#f9cd05",
         brandBlue: "#0531f9",
@@ -18,6 +13,8 @@ module.exports = {
         sans: ['Inter', 'sans-serif'],
       },
       animation: {
+        'pulse-slow': 'pulse 3s ease-in-out infinite',
+        'ping-slow': 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
         'slide-down': 'slideDown 0.3s ease-out',
       },
       keyframes: {
