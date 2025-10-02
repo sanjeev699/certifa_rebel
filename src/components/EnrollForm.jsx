@@ -123,7 +123,7 @@ Location: ${formData.location}`;
             <option value="Data Analytics Pro Package">
               Data Analytics Pro Package
             </option>
-            <option value="Skills Kickstart Series">Skills Kickstart Series</option>
+            {/*<option value="Skills Kickstart Series">Skills Kickstart Series</option>
             {/* Add more programs here */}
           </select>
 
