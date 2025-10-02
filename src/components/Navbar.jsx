@@ -91,7 +91,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#Faq"
+                href="#faq"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
