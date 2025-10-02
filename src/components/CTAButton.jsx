@@ -5,10 +5,10 @@ const CTAButton = ({ variant = "enrol", children, onClick, link }) => {
     "font-medium px-6 py-3 rounded-full transition duration-300 text-center";
 
   const styles = {
-    enrol:
-      "bg-brandYellow text-black font-semibold shadow-md hover:bg-yellow-500",
-    narrative:
-      "border-2 border-brandBlue text-brandBlue hover:bg-brandBlue hover:text-white",
+    yellow:
+      "bg-brandYellow text-brandBlue font-semibold shadow-md hover:bg-yellow-500",
+    white:
+      "bg-white text-brandBlue font-semibold shadow-md hover:bg-yellow-500",
     blue:
       "bg-brandBlue text-white font-semibold shadow-md hover:bg-blue-700", // For yellow backgrounds
   };
