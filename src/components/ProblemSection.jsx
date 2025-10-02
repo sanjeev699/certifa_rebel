@@ -43,7 +43,7 @@ const ProblemSection = () => {
         </CTAButton>
 
         {/* Enroll button: goes to enroll section */}
-        <CTAButton link="#enroll" variant="enrol">
+        <CTAButton link="#enroll" variant="yellow">
           Enroll Now
         </CTAButton>
       </div>
