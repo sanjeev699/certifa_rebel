@@ -1,5 +1,5 @@
 import React from "react";
-
+import CTAButton from "./CTAButton";
 
 const HeroSection = () => {
   return (
