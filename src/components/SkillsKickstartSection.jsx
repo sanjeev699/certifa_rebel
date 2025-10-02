@@ -34,11 +34,11 @@ const SkillsKickstartSection = () => {
 >
   <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
     {/* Heading */}
-    <h2 className="text-xl md:text-3xl font-bold text-[#000000] mb-6 text-center">
+    <h2 className="text-xl md:text-3xl  text-[#000000] mb-6 text-center">
       Jumpstart your learning with our <br />
       <span className="font-bold text-brandBlue"> Skills Kickstart Series</span>
     </h2>
-        <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
           Access curated mini-courses worth <span className="font-bold text-green-600">₹18,000</span>, completely <span className="font-bold text-green-600">FREE</span>! 🚀 
           
         </p>
