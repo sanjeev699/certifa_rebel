@@ -12,10 +12,12 @@ const ComparisonSection = () => {
 <div className="absolute inset-0 bg-[#f9cd05]"> </div>
 
        {/* Floating/Abstract Shapes */}
-      <div className="absolute top-10 left-1/4 w-72 h-72 bg-blue-300 opacity-100 rounded-full rotate-12 animate-pulse-slow"></div>
-      <div className="absolute bottom-20 right-1/3 w-80 h-80 bg-blue-500 opacity-15 rounded-full -rotate-6 animate-ping-slow"></div>
-      <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-blue-200 opacity-8 rounded-full rotate-45 animate-pulse-slow"></div>
-      <div className="absolute top-0 right-0 w-48 h-48 bg-blue-100 opacity-6 rounded-full -rotate-12 animate-ping-slow"></div>
+     {/* Animated Background Blobs */}
+<div className="absolute top-10 left-1/4 w-48 h-48 md:w-72 md:h-72 bg-blue-300 opacity-20 rounded-full rotate-12 animate-pulse-slow"></div>
+<div className="absolute bottom-20 right-1/4 w-56 h-56 md:w-80 md:h-80 bg-blue-500 opacity-15 rounded-full -rotate-6 animate-ping-slow"></div>
+<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-60 md:h-60 bg-blue-200 opacity-10 rounded-full rotate-45 animate-pulse-slow"></div>
+<div className="absolute top-0 right-0 w-32 h-32 md:w-48 md:h-48 bg-blue-100 opacity-10 rounded-full -rotate-12 animate-ping-slow"></div>
+
 
       {/* Main Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
