@@ -10,8 +10,8 @@ const HeroSection = () => {
       backgroundImage: `url('/hero4.jpg')`, // notice the slash
       }}
     >
-      {/* Overlay */}
-   //<div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      {/* Overlay 
+   //<div className="absolute inset-0 bg-black bg-opacity-40"></div>*/}
 
       {/* Content */}
       <div className="relative z-10 px-4">
