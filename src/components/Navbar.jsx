@@ -100,11 +100,20 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href="#enroll"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-blue-700 transition-colors"
+              >
+                Enroll now!
+              </a>
+            </li>
+            <li>
+              <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Get in touch!
+                Get in touch
               </a>
             </li>
           </ul>
