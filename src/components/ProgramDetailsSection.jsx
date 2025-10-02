@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import CTAButton from "./CTAButton";
+
 import LeadFormModal from "./LeadFormModal";
 
 import heroImg from "../Assets/Data Analyst Pro Package (3).png";
@@ -105,15 +107,21 @@ const ProgramDetailsSection = () => {
     Grab your brochure below 👇
   </p>
 
-  {/* Download Brochure Button */}
-  <div className="text-center mt-2"> {/* reduced mt-4 -> 2 */}
-    <button
-      onClick={() => openModal("Data Analytics Pro Program- Power BI Certification Track", brochurePdf)}
-      className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition duration-300"
-    >
-      Download Brochure
-    </button>
-  </div>
+  <div className="mt-12 flex flex-row justify-center gap-4 flex-wrap">
+  {/* Why Global Certification Button */}
+ 
+
+  {/* Enroll Now Button */}
+ <CTAButton
+  onClick={() => openModal("Data Analytics Pro Program- Power BI Certification Track", brochurePdf)}
+  variant="blue"
+>
+  Download Brochure
+</CTAButton>
+ <CTAButton link="#enroll" variant="yellow" className="w-auto">
+  Enroll Now
+  </CTAButton>
+</div>
 </div>
 
 
