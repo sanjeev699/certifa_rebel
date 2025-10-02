@@ -10,7 +10,7 @@ const CTAButton = ({ variant = "enrol", children, onClick, link }) => {
     white:
       "bg-white text-brandBlue font-semibold shadow-md hover:bg-yellow-500",
     blue:
-      "bg-brandBlue text-white font-semibold shadow-md hover:bg-blue-700", // For yellow backgrounds
+      "bg-brandBlue text-white font-semibold shadow-md hover:bg-blue-500", // For yellow backgrounds
   };
 
   return link ? (
