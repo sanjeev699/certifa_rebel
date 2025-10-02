@@ -1,4 +1,5 @@
 import React from "react";
+import CTAButton from "./CTAButton"; // make sure path is correct
 import { FaCheckCircle } from "react-icons/fa";
 import microsoftLogo from "../Assets/microsoft.png";
 import awsLogo from "../Assets/aws.png";
