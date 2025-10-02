@@ -40,7 +40,7 @@ const ContactSection = () => {
 
         {/* Optional Footer Note */}
         <p className="text-gray-500 mt-8 text-sm">
-          We’re here to assist you all days 10AM to 7PM. Your queries are important to us.
+          We’re here to assist you all days 10AM to 7PM </br>. Your queries are important to us.
         </p>
       </div>
     </section>
