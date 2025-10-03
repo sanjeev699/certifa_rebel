@@ -21,7 +21,7 @@ const ContactSection = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
           {/* WhatsApp */}
           <a
-            href="https://wa.me/919902914906"
+            href="https://wa.me/916366072794"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md transition duration-300 shadow-lg transform hover:-translate-y-1"
