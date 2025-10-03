@@ -43,8 +43,8 @@ const Footer = () => {
             <a href="#" className="hover:text-brandYellow transition-colors"><FaTwitter /></a>
           </div>   
           
-          */}
-        </div>
+         
+        </div> */}
       </div>
 
       {/* Bottom Bar */}
