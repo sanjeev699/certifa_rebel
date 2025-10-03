@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-4">About Certifa</h3>
           <p className="text-gray-200 leading-relaxed">
-            Certifa helps you gain global certifications and hands-on skills that hiring managers actually seek and respect. Start your learning journey today!
+            Certifa is a rebellious education brand on a mission to fix learning. We equip students with real-world skills and global certifications that employers actually value, helping them build standout careers. Start your learning journey today!
           </p>
         </div>
 
@@ -20,7 +20,7 @@ const Footer = () => {
             <li><a href="#hero" className="hover:text-brandYellow transition-colors">Home</a></li>
             <li><a href="#comparison" className="hover:text-brandYellow transition-colors">Why Certifa</a></li>
             <li><a href="#skills-kickstart" className="hover:text-brandYellow transition-colors">Skills Kickstart</a></li>
-            <li><a href="#Faq" className="hover:text-brandYellow transition-colors">FAQs</a></li>
+            <li><a href="#faq" className="hover:text-brandYellow transition-colors">FAQs</a></li>
             <li><a href="#enroll" className="hover:text-brandYellow transition-colors">Enroll Now</a></li>
           </ul>
         </div>
@@ -28,12 +28,12 @@ const Footer = () => {
         {/* Contact */}
         <div>
           <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-          <p className="text-gray-200 mb-2">📍 123, Main Street, Bangalore, India</p>
-          <p className="text-gray-200 mb-2">📞 +91 99029 14906</p>
+          <p className="text-gray-200 mb-2">📍 628, 2nd cross, Banshankari 1st stage, Bangalore, India</p>
+          {/*<p className="text-gray-200 mb-2">📞 +91 99029 14906</p>  */}
           <p className="text-gray-200">✉️ support@certifa.com</p>
         </div>
 
-        {/* Socials */}
+        {/*   Socials 
         <div>
           <h3 className="text-xl font-bold mb-4">Follow Us</h3>
           <div className="flex gap-4 text-gray-200">
@@ -41,7 +41,9 @@ const Footer = () => {
             <a href="#" className="hover:text-brandYellow transition-colors"><FaInstagram /></a>
             <a href="#" className="hover:text-brandYellow transition-colors"><FaLinkedinIn /></a>
             <a href="#" className="hover:text-brandYellow transition-colors"><FaTwitter /></a>
-          </div>
+          </div>   
+          
+          */}
         </div>
       </div>
 
