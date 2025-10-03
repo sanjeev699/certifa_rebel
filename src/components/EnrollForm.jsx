@@ -25,6 +25,10 @@ const EnrollSection = () => {
       return;
     }
 
+     const scriptURL =
+    "https://script.google.com/macros/s/AKfycbwoAoJrNkdTUU8qpCCX_r_Pw9tVQnNTVvnYhNe8S3WzZBR4eyKaYqTSeLXO3aa6S3M0/exec"; // same as Downloads, script will route to 'Enroll now' tab
+
+ 
     // 1️⃣ WhatsApp link
     const whatsappMessage = `Hi, I want to enroll for ${formData.program}. Here are my details:
 Name: ${formData.name}
