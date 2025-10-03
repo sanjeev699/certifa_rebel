@@ -19,6 +19,7 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-200">
             <li><a href="#hero" className="hover:text-brandYellow transition-colors">Home</a></li>
             <li><a href="#comparison" className="hover:text-brandYellow transition-colors">Why Certifa</a></li>
+            <li><a href="#programs" className="hover:text-brandYellow transition-colors">Courses Offered</a></li>
             <li><a href="#skills-kickstart" className="hover:text-brandYellow transition-colors">Skills Kickstart</a></li>
             <li><a href="#faq" className="hover:text-brandYellow transition-colors">FAQs</a></li>
             <li><a href="#enroll" className="hover:text-brandYellow transition-colors">Enroll Now</a></li>
