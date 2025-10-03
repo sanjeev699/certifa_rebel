@@ -41,7 +41,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Certifa is a rebel. But why?
+                Certifa Is a Rebel. But Why?
               </a>
             </li>
             <li>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                How's Certifa different
+                How's Certifa Different
               </a>
             </li>
             <li>
@@ -59,7 +59,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Why get Global Certifications?
+                Why Get Global Certifications?
               </a>
             </li>
             <li>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Programs we offer
+                Programs We Offer
               </a>
             </li>
             <li>
