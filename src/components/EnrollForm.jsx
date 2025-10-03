@@ -40,7 +40,7 @@ Location: ${formData.location}`;
     try {
       // 2️⃣ Google Sheet integration via Google Apps Script webhook
       await fetch(
-        "https://script.google.com/macros/s/AKfycbxRXHa461jUwQO9uThFZCn236MSW5B9o8Bss9e4EwmP33S6IIVds6gVcqoAWykK9PbF/exec",
+        "https://script.google.com/macros/s/AKfycby--re-jk5b44DexKzS0lJM3EldcKIQHZqEOfn5Xhqt2Kv-u-QP46FFQsJukOiHjZ9E/exec",
         {
           method: "POST",
           body: JSON.stringify(formData),
