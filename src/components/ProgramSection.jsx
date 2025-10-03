@@ -50,7 +50,7 @@ const ProgramSection = () => {
               — Get certified, build real projects, and boost your analytics career.
             </p>
             <a
-              href="/programs/data-analytics-pro"
+              href="#program-details"
               className="inline-block bg-brandBlue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
             >
               View Details
