@@ -37,7 +37,7 @@ const ProblemSection = () => {
 
      {/* Buttons container */}
          <div className="mt-12 flex flex-row justify-center gap-4">
-          <CTAButton link="#problem" variant="blue" className="w-auto">
+          <CTAButton link="#comparison" variant="blue" className="w-auto">
             How're we different
           </CTAButton>
 
