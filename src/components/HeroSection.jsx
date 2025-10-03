@@ -24,7 +24,7 @@ const HeroSection = () => {
         <h1 className="text-6xl md:text-10xl font-extrabold text-white mb-6">
          Earn Certifications that matter!
         </h1>
-        <p className="text-brandBlue text-lg md:text-2xl mb-8">
+        <p className="text-brandBlue text-lg md:text-3xl mb-8">
           Certifa <span className="font-bold"> rebels </span> against useless education - arming you with  
           <span className="font-bold">  Real Skills </span> and <span className="font-bold"> Global certifications </span> recruiters can’t ignore!
         </p>
