@@ -18,17 +18,14 @@ const EnrollSection = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  // ✅ make this async
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.declaration) {
       alert("Please accept the self-declaration to enroll.");
       return;
     }
 
-     const scriptURL =
-    "https://script.google.com/macros/s/AKfycbwoAoJrNkdTUU8qpCCX_r_Pw9tVQnNTVvnYhNe8S3WzZBR4eyKaYqTSeLXO3aa6S3M0/exec"; // same as Downloads, script will route to 'Enroll now' tab
-
- 
     // 1️⃣ WhatsApp link
     const whatsappMessage = `Hi, I want to enroll for ${formData.program}. Here are my details:
 Name: ${formData.name}
@@ -40,21 +37,20 @@ Location: ${formData.location}`;
     )}`;
     window.open(whatsappLink, "_blank");
 
-    // 2️⃣ Google Sheet integration via Google Apps Script webhook
-   try {
-      await fetch(scriptURL, {
-        method: "POST",
-        mode: "no-cors", // required for Apps Script
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          type: "enroll", // 👈 this tells script to use "Enroll now" tab
-          ...formData,
-        }),
-      });
-      .then(() => alert("Enrollment request submitted successfully!"))
-      .catch(() => alert("Something went wrong. Please try again."));
+    try {
+      // 2️⃣ Google Sheet integration via Google Apps Script webhook
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbwoAoJrNkdTUU8qpCCX_r_Pw9tVQnNTVvnYhNe8S3WzZBR4eyKaYqTSeLXO3aa6S3M0/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+        }
+      );
+      alert("Enrollment request submitted successfully!");
+    } catch (err) {
+      alert("Something went wrong. Please try again.");
+      console.error(err);
+    }
 
     // Reset form
     setFormData({
@@ -68,10 +64,7 @@ Location: ${formData.location}`;
   };
 
   return (
-    <section id="enroll" 
-     className="py-20 bg-white relative z-10"
-      >
-      
+    <section id="enroll" className="py-20 bg-white relative z-10">
       <div className="max-w-3xl mx-auto px-6 md:px-12">
         <h2 className="text-3xl md:text-4xl font-bold text-brandBlue text-center mb-6">
           Enroll Now
@@ -135,7 +128,6 @@ Location: ${formData.location}`;
             <option value="Data Analytics Pro Package">
               Data Analytics Pro Package
             </option>
-            {/*<option value="Skills Kickstart Series">Skills Kickstart Series</option>
             {/* Add more programs here */}
           </select>
 
