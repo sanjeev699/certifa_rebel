@@ -44,6 +44,7 @@ Location: ${formData.location}`;
         {
           method: "POST",
           body: JSON.stringify(formData),
+           type: "enroll"
         }
       );
       alert("Enrollment request submitted successfully!");
