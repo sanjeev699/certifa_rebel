@@ -43,8 +43,7 @@ Location: ${formData.location}`;
         "https://script.google.com/macros/s/AKfycby--re-jk5b44DexKzS0lJM3EldcKIQHZqEOfn5Xhqt2Kv-u-QP46FFQsJukOiHjZ9E/exec",
         {
           method: "POST",
-          body: JSON.stringify(formData),
-           type: "enroll"
+         body: JSON.stringify({ ...formData, type: "enroll" }),
         }
       );
       alert("Enrollment request submitted successfully!");
