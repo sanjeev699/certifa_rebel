@@ -25,8 +25,8 @@ const HeroSection = () => {
          Earn Certifications that matter!
         </h1>
         <p className="text-brandBlue text-lg md:text-2xl mb-8">
-          <span className="font-bold">Certifa</span> helps you earn <span className="font-bold">Global Certifications</span> and 
-          <span className="font-bold"> hands-on skills</span> that hiring managers actually seek and respect.
+          Certifa <span className="font-bold"> rebels </span> against useless education - arming you with  
+          <span className="font-bold">  Real Skills </span> and <span className="font-bold"> Global certifications </span> recruiters can’t ignore!
         </p>
 
         
