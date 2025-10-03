@@ -37,10 +37,18 @@ Location: ${formData.location}`;
     window.open(whatsappLink, "_blank");
 
     // 2️⃣ Google Sheet integration via Google Apps Script webhook
-    fetch("YOUR_GOOGLE_SCRIPT_WEBHOOK_URL", {
-      method: "POST",
-      body: JSON.stringify(formData),
-    })
+   try {
+      await fetch(scriptURL, {
+        method: "POST",
+        mode: "no-cors", // required for Apps Script
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          type: "enroll", // 👈 this tells script to use "Enroll now" tab
+          ...formData,
+        }),
+      });
       .then(() => alert("Enrollment request submitted successfully!"))
       .catch(() => alert("Something went wrong. Please try again."));
 
