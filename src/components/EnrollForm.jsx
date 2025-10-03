@@ -40,12 +40,15 @@ Location: ${formData.location}`;
     try {
       // 2️⃣ Google Sheet integration via Google Apps Script webhook
       await fetch(
-        "https://script.google.com/macros/s/AKfycby--re-jk5b44DexKzS0lJM3EldcKIQHZqEOfn5Xhqt2Kv-u-QP46FFQsJukOiHjZ9E/exec",
-        {
-          method: "POST",
-         body: JSON.stringify({ ...formData, type: "enroll" }),
-        }
-      );
+  "https://script.google.com/macros/s/AKfycby--re-jk5b44DexKzS0lJM3EldcKIQHZqEOfn5Xhqt2Kv-u-QP46FFQsJukOiHjZ9E/exec",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json", // ✅ must include
+    },
+    body: JSON.stringify({ ...formData, type: "enroll" }),
+  }
+);
       alert("Enrollment request submitted successfully!");
     } catch (err) {
       alert("Something went wrong. Please try again.");
