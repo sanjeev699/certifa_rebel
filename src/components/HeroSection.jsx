@@ -37,7 +37,7 @@ const HeroSection = () => {
           </CTAButton>
 
           <CTAButton link="#program-details" variant="blue" className="w-auto">
-            Check Our Programs
+            Explore Programs
           </CTAButton>
         </div>
       </div>
