@@ -115,8 +115,8 @@ const ComparisonSection = () => {
             Why Global Certification?
           </CTAButton>
 
-          <CTAButton link="#enroll" variant="blue" className="w-auto">
-            Enroll Now
+          <CTAButton link="#program-details" variant="blue" className="w-auto">
+            Explore Programs
           </CTAButton>
         </div>
       </div>
