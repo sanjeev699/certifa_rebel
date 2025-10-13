@@ -89,7 +89,7 @@ const ProgramDetailsSection = () => {
 {/* Skills Covered */}
  <div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 mb-4">
   <h2 className="text-lg md:text-xl font-bold text-center text-brandBlue mb-6"> {/* reduced mb-8 -> 6 */}
-    What do we cover
+    What Skills and Services do we cover?
   </h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
     {[{logo: bsLogo, title: "Business Statistics for Data Analysis"},
