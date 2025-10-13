@@ -92,7 +92,8 @@ const ProgramDetailsSection = () => {
     What do we cover
   </h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
-    {[{logo: excelLogo, title: "Excel for Analytics"},
+    {[{logo: bsLogo, title: "Business Statistics for Data Analysis"},
+      {logo: excelLogo, title: "Excel for Analytics"},
       {logo: powerBILogo, title: "Power BI Certification"},
       {logo: sqlLogo, title: "SQL for Data Management"},
       {logo: pythonLogo, title: "Python for Data Analysis"},
