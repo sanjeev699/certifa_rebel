@@ -42,7 +42,7 @@ Reason to join: ${formData.reason} `;
     try {
       // 2️⃣ Google Sheet integration via Google Apps Script webhook
       await fetch(
-  "https://script.google.com/macros/s/AKfycbw6YAKEQ4E3ysNTPhVlptWizfwXIZsJHy_QT9C5pBZwlVheu6VqEO67O2THlWnglCHu/exec",
+  "https://script.google.com/macros/s/AKfycbys1aNVVyU7pgwmxTWDf9fVVrNf9cAGLXzEG5vQ6tioRltTCntB3tTTRmXez071HM_T/exec",
   {
     method: "POST",
     headers: {
