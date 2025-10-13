@@ -21,7 +21,7 @@ function App() {
     // This runs once after the component mounts
     if (window.location.hash) {
       const targetId = window.location.hash.substring(1);
-      const targetEleyoment = document.getElementById(targetId);
+      const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
         // Use a small delay to ensure the scroll calculation runs after the DOM is fully settled.
