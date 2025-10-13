@@ -4,11 +4,12 @@ import CTAButton from "./CTAButton";
 import LeadFormModal from "./LeadFormModal";
 
 import heroImg from "../Assets/Data Analyst Pro Package (3).png";
+import bsLogo from "../Assets/business_stats.png";
 import excelLogo from "../Assets/excel.png";
 import powerBILogo from "../Assets/powerbi.png";
 import sqlLogo from "../Assets/database.png";
 import pythonLogo from "../Assets/python.png";
-import certificateImg from "../Assets/sample_cert1.png";
+import resumebuilding from "../Assets/resume building.jpg";
 
 // Assets
 import excelThumb from "../Assets/excel_thumb.png";
@@ -88,13 +89,14 @@ const ProgramDetailsSection = () => {
 {/* Skills Covered */}
  <div className="max-w-7xl mx-auto px-6 md:px-12 mt-12 mb-4">
   <h2 className="text-lg md:text-xl font-bold text-center text-brandBlue mb-6"> {/* reduced mb-8 -> 6 */}
-    Skills Covered in the Program
+    What do we cover
   </h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
     {[{logo: excelLogo, title: "Excel for Analytics"},
       {logo: powerBILogo, title: "Power BI Certification"},
       {logo: sqlLogo, title: "SQL for Data Management"},
-      {logo: pythonLogo, title: "Python for Data Analysis"}].map((topic, idx) => (
+      {logo: pythonLogo, title: "Python for Data Analysis"},
+      {logo: resumebuilding, title: "Placement Assistance"}].map((topic, idx) => (
       <div key={idx} className="bg-white rounded-lg p-4 flex flex-col items-center">
         <img src={topic.logo} alt={topic.title} className="h-12 mb-2" />
         <h3 className="text-gray-800 text-base text-center">{topic.title}</h3>
