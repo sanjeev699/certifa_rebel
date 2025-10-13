@@ -104,7 +104,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-blue-700 transition-colors"
               >
-                Application for Transformation        
+                Enroll Now!        
               </a>
             </li>
             <li>
