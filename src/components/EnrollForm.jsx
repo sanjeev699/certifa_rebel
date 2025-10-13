@@ -39,19 +39,28 @@ Reason to join: ${formData.reason} `;
     )}`;
     window.open(whatsappLink, "_blank");
 
-    try {
-      // 2️⃣ Google Sheet integration via Google Apps Script webhook
-      await fetch(
-  "https://script.google.com/macros/s/AKfycbys1aNVVyU7pgwmxTWDf9fVVrNf9cAGLXzEG5vQ6tioRltTCntB3tTTRmXez071HM_T/exec",
-  {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json", // ✅ must include
-    },
-    body: JSON.stringify({ ...formData, type: "enroll" }),
-  }
-);
-      alert("Enrollment request submitted successfully!");
+   try {
+    // 2️⃣ Google Sheet integration via Google Apps Script webhook
+    
+    // Convert JSON data to URLSearchParams for URL-encoded submission
+    const urlEncodedData = new URLSearchParams();
+    for (const key in formData) {
+        // Use the simplified data structure
+        urlEncodedData.append(key, formData[key]); 
+    }
+    urlEncodedData.append("type", "enroll"); // Ensure 'type' is still included
+
+    await fetch(
+        "https://script.google.com/macros/s/AKfycbys1aNVVyU7pgwmxTWDf9fVVrNf9cAGLXzEG5vQ6tioRltTCntB3tTTRmXez071HM_T/exec", // Your URL
+        {
+            method: "POST",
+            // REMOVE the 'Content-Type: application/json' header
+            body: urlEncodedData, // Send as URL-encoded data
+        }
+    );
+    
+    alert("Enrollment request submitted successfully!");
+    // ... rest of the try block
     } catch (err) {
       alert("Something went wrong. Please try again.");
       console.error(err);
