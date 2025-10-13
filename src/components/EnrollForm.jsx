@@ -7,6 +7,7 @@ const EnrollSection = () => {
     experience: "",
     location: "",
     program: "",
+    reason: "",
     declaration: false,
   });
 
@@ -31,7 +32,8 @@ const EnrollSection = () => {
 Name: ${formData.name}
 Education: ${formData.education}
 Experience: ${formData.experience} years
-Location: ${formData.location}`;
+Location: ${formData.location}
+Reason to join: ${formData.reason} `;
     const whatsappLink = `https://wa.me/916366072794?text=${encodeURIComponent(
       whatsappMessage
     )}`;
@@ -62,6 +64,7 @@ Location: ${formData.location}`;
       experience: "",
       location: "",
       program: "",
+      reason: "",
       declaration: false,
     });
   };
@@ -70,10 +73,11 @@ Location: ${formData.location}`;
     <section id="enroll" className="py-20 bg-white relative z-10">
       <div className="max-w-3xl mx-auto px-6 md:px-12">
         <h2 className="text-3xl md:text-4xl font-bold text-brandBlue text-center mb-6">
-          Enroll Now
+          Application of Interest
         </h2>
         <p className="text-center text-gray-700 mb-12">
-          Fill out the form below and secure your spot in your chosen program.
+          Take the first step at a bright future. </br>
+        Fill out the form below and initiate your admission process.
         </p>
 
         <form
@@ -134,6 +138,16 @@ Location: ${formData.location}`;
             {/* Add more programs here */}
           </select>
 
+           <input
+            type="text"
+            name="reason"
+            placeholder="Please explain why do you want to join the above selected program"
+            value={formData.location}
+            onChange={handleChange}
+            required
+            className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-brandBlue"
+          />
+
           <div className="flex items-center gap-2">
             <input
               type="checkbox"
@@ -144,7 +158,7 @@ Location: ${formData.location}`;
               required
             />
             <label className="text-gray-700">
-              I want to enroll for this program
+              I hereby declare that I am interested in the above program and would want to book an Admission Interview call.
             </label>
           </div>
 
