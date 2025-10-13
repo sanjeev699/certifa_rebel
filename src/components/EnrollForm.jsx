@@ -73,11 +73,11 @@ Reason to join: ${formData.reason} `;
     <section id="enroll" className="py-20 bg-white relative z-10">
       <div className="max-w-3xl mx-auto px-6 md:px-12">
         <h2 className="text-3xl md:text-4xl font-bold text-brandBlue text-center mb-6">
-          Application of Interest
+          Application for Transformation
         </h2>
         <p className="text-center text-gray-700 mb-12">
-          Take the first step at a bright future. </br>
-        Fill out the form below and initiate your admission process.
+          You've seen the value and the path to a high-demand career. <br />
+          Take the first step at a bright future by filling out this quick application to initiate your Admission Interview and secure your spot in the next cohort.
         </p>
 
         <form
@@ -107,7 +107,7 @@ Reason to join: ${formData.reason} `;
           <input
             type="number"
             name="experience"
-            placeholder="Overall Years of Work Experience"
+            placeholder="Total Years of Work Experience (Enter 0 if Fresher)"
             value={formData.experience}
             onChange={handleChange}
             required
@@ -133,7 +133,7 @@ Reason to join: ${formData.reason} `;
           >
             <option value="">Select Program</option>
             <option value="Data Analytics Pro Package">
-              Data Analytics Pro Package
+              Data Analytics Pro Package - Microsoft PL-300 Certification Track
             </option>
             {/* Add more programs here */}
           </select>
@@ -141,7 +141,7 @@ Reason to join: ${formData.reason} `;
            <input
             type="text"
             name="reason"
-            placeholder="Please explain why do you want to join the above selected program"
+            placeholder="Your Motivation: Why is this program the right choice for your career now?"
             value={formData.location}
             onChange={handleChange}
             required
@@ -158,7 +158,7 @@ Reason to join: ${formData.reason} `;
               required
             />
             <label className="text-gray-700">
-              I hereby declare that I am interested in the above program and would want to book an Admission Interview call.
+              I confirm my interest and would like to proceed by booking a mandatory Admission Interview call to finalize my enrollment.
             </label>
           </div>
 
