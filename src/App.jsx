@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"; // 👈 IMPORT useEffect
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";  
 import HeroSection from "./components/HeroSection";
 import ProblemSection from "./components/ProblemSection";
@@ -12,29 +12,44 @@ import ContactSection from "./components/ContactSection";
 import EnrollForm from "./components/EnrollForm";
 import Footer from "./components/Footer";
 
+// Set OFFSET_HEIGHT to 64 pixels, which corresponds to the 'h-16' class in the Navbar.
+const OFFSET_HEIGHT = 64; 
 
 function App() {
 
-  // 👈 ADD THE useEffect HOOK HERE
   useEffect(() => {
-    // This code runs once after the component mounts (loads)
+    // This runs once after the component mounts
     if (window.location.hash) {
-      // Get the ID from the URL (e.g., '#enroll' becomes 'enroll')
       const targetId = window.location.hash.substring(1);
-      const targetElement = document.getElementById(targetId);
+      const targetEleyoment = document.getElementById(targetId);
 
-      // Check if the element exists
       if (targetElement) {
-        // Use scrollIntoView to smoothly scroll to the element
-        targetElement.scrollIntoView({
-          behavior: 'smooth' 
-        });
+        // Use a small delay to ensure the scroll calculation runs after the DOM is fully settled.
+        setTimeout(() => {
+          
+          // 1. Calculate the target element's position relative to the document top
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          
+          // 2. Calculate the final scroll position, subtracting the height of the fixed Navbar
+          const offsetPosition = elementPosition - OFFSET_HEIGHT;
+
+          // 3. Perform the smooth scroll
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth' 
+          });
+
+        }, 100); 
       }
     }
-  }, []); // The empty dependency array '[]' ensures this runs only once after the initial render
+  }, []);
 
   return (
     <div className="font-sans">
+      {/* NOTE: Since the Navbar is 'fixed', you may need to ensure your HeroSection 
+        or the main content div has adequate top padding (like pt-16) 
+        to prevent content from hiding under the fixed bar on initial load.
+      */}
       <Navbar />
       <HeroSection />
       <ProblemSection />
@@ -44,7 +59,7 @@ function App() {
       <ProgramDetailsSection />
       <SkillsKickstartSection />
       <FAQSection />
-       <EnrollForm/>
+      <EnrollForm/>
       <ContactSection/>
       <Footer/>
     </div>
