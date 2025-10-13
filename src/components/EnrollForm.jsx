@@ -77,7 +77,7 @@ Reason to join: ${formData.reason} `;
         </h2>
         <p className="text-center text-gray-700 mb-12">
           You've seen the value and the path to a high-demand career. <br />
-          Take the first step at a bright future by filling out this quick application to initiate your Admission Interview and secure your spot in the next cohort.
+          Now fill this quick application to initiate your Admission Interview and secure your spot in the next cohort.
         </p>
 
         <form
@@ -158,7 +158,7 @@ Reason to join: ${formData.reason} `;
               required
             />
             <label className="text-gray-700">
-              I confirm my interest and would like to proceed by booking a mandatory Admission Interview call.
+              I confirm my interest and would like to proceed with the Admission Interview call.
             </label>
           </div>
 
