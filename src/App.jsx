@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // 👈 IMPORT useEffect
 import Navbar from "./components/Navbar";  
 import HeroSection from "./components/HeroSection";
 import ProblemSection from "./components/ProblemSection";
@@ -13,10 +13,26 @@ import EnrollForm from "./components/EnrollForm";
 import Footer from "./components/Footer";
 
 
-
-// You will add other sections later, e.g. ComparisonSection, CertificationsSection, etc.
-
 function App() {
+
+  // 👈 ADD THE useEffect HOOK HERE
+  useEffect(() => {
+    // This code runs once after the component mounts (loads)
+    if (window.location.hash) {
+      // Get the ID from the URL (e.g., '#enroll' becomes 'enroll')
+      const targetId = window.location.hash.substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      // Check if the element exists
+      if (targetElement) {
+        // Use scrollIntoView to smoothly scroll to the element
+        targetElement.scrollIntoView({
+          behavior: 'smooth' 
+        });
+      }
+    }
+  }, []); // The empty dependency array '[]' ensures this runs only once after the initial render
+
   return (
     <div className="font-sans">
       <Navbar />
@@ -31,12 +47,6 @@ function App() {
        <EnrollForm/>
       <ContactSection/>
       <Footer/>
-      
-
-
-
-
-      
     </div>
   );
 }
