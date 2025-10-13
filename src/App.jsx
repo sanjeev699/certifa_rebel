@@ -13,7 +13,7 @@ import EnrollForm from "./components/EnrollForm";
 import Footer from "./components/Footer";
 
 // Set OFFSET_HEIGHT to 64 pixels, which corresponds to the 'h-16' class in the Navbar.
-const OFFSET_HEIGHT = 64; 
+const OFFSET_HEIGHT = 0; 
 
 function App() {
 
