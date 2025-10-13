@@ -36,8 +36,8 @@ const HeroSection = () => {
             Reason we rebel
           </CTAButton>
 
-          <CTAButton link="#enroll" variant="blue" className="w-auto">
-            Enroll Now
+          <CTAButton link="#program-details" variant="blue" className="w-auto">
+            Check Programs
           </CTAButton>
         </div>
       </div>
