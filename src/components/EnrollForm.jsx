@@ -142,7 +142,7 @@ Reason to join: ${formData.reason} `;
             type="text"
             name="reason"
             placeholder="Your Motivation: Why is this program the right choice for your career now?"
-            value={formData.location}
+            value={formData.reason}
             onChange={handleChange}
             required
             className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-brandBlue"
