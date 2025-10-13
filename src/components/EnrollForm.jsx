@@ -158,7 +158,7 @@ Reason to join: ${formData.reason} `;
               required
             />
             <label className="text-gray-700">
-              I confirm my interest and would like to proceed by booking a mandatory Admission Interview call to finalize my enrollment.
+              I confirm my interest and would like to proceed by booking a mandatory Admission Interview call.
             </label>
           </div>
 
