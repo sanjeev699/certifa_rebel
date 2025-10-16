@@ -150,7 +150,7 @@ Reason to join: ${formData.reason} `;
            <input
             type="text"
             name="reason"
-            placeholder="State your strong reasons to do this program"
+            placeholder="State your reasons to do this program"
             value={formData.reason}
             onChange={handleChange}
             required
